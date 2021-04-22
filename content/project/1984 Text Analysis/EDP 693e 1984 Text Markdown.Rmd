@@ -1,0 +1,299 @@
+---
+title: "1984 Text Analysis"
+author: "C. Jackson"
+date: "March 16, 2021"
+summary: A Text analysis of 1984 by George Orwell.
+linktitle: "1984 Text Analysis"
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  docs:
+    
+    parent: "Text Analysis"
+    weight: 2
+type: docs
+tag:
+  - Orwell
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+
+
+```
+
+```{r loaded libraries, message = FALSE, warning = FALSE}
+
+library(SnowballC)
+library(tm)
+library(tidyverse)
+library(cluster)
+library(biclust)
+library(igraph)
+library(fpc)
+library(Rcampdf)
+library(wordcloud)
+library(tidytext)
+library(flextable)
+library(glue)
+library(viridis)
+library(reshape2)
+library(readr)
+
+chapter.labs <- c("Chapter 1", "Chapter 2", "Chapter 3")
+names(chapter.labs) <- c(1, 2, 3)
+
+get_sentiments("bing")
+get_sentiments("nrc")
+get_sentiments("afinn")
+
+```
+
+## Importing the text by Chapter
+```{r By Chapter}
+
+Ch1 <- read_file("1984 Orwell Chapter 1.txt")
+
+Ch2 <- read_file("1984 Orwell Chapter 2.txt")
+
+Ch3 <- read_file("1984 Orwell Chapter 3.txt")
+
+```
+## Importing the whole text
+```{r The Whole Text}
+Text1984 <- read_file("1984 Orwell text.txt")
+Text1984 <- gsub("\\$", "", Text1984)
+
+```
+
+## Tidying data
+```{r Tidy Chapters, include = FALSE}
+gsub("\\$", "", c(Ch1, Ch2, Ch3))
+
+Ch1Tokens <- data_frame(text = Ch1) %>%
+  unnest_tokens(word, text)
+Ch2Tokens <- data_frame(text = Ch2) %>%
+  unnest_tokens(word, text)
+Ch3Tokens <- data_frame(text = Ch3) %>%
+  unnest_tokens(word, text)
+
+
+Ch1Tokens <- Ch1Tokens %>% 
+  mutate(chapter = 1)
+Ch2Tokens <- Ch2Tokens %>% 
+  mutate(chapter = 2)
+Ch3Tokens <- Ch3Tokens %>% 
+  mutate(chapter = 3)
+
+
+TidyCh1 <- Ch1Tokens %>% 
+  anti_join(stop_words)
+TidyCh2 <- Ch2Tokens %>% 
+  anti_join(stop_words)
+TidyCh3 <- Ch3Tokens %>% 
+  anti_join(stop_words)
+
+TidyBook <- rbind(TidyCh1, TidyCh2,TidyCh3)
+
+```
+
+```{r}
+
+tokens1984 <- data_frame(text = Text1984) %>% 
+  unnest_tokens(word, text)
+
+
+tidy_tokens_1984 <- tokens1984 %>%
+  anti_join(stop_words)
+
+```
+
+
+## Exploring Most used Words
+```{r}
+
+TidyCh1 %>% 
+  count(word, sort = TRUE) %>%
+  head()
+
+
+TidyCh2 %>% 
+  count(word, sort = TRUE) %>% 
+  head()
+
+
+TidyCh3 %>% 
+  count(word, sort = TRUE) %>% 
+  head()
+
+
+tidy_tokens_1984 %>%
+  count(word, sort = TRUE) %>%
+  head()
+
+
+```
+
+
+
+
+```{r, warning = FALSE}
+
+
+tidy_tokens_1984 %>%
+  count(word, sort = TRUE) %>%
+  filter(n > 100) %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(n, word, fill=n)) +
+  geom_col() +
+  theme_minimal() +
+  labs(y = NULL, title = "Words Used more than 100 Times",
+       x = "Word Count", fill = "Count") +
+  scale_fill_viridis() +
+  geom_text(aes(label = n), hjust = -0.15)
+
+
+tidy_tokens_1984 %>%
+  anti_join(stop_words) %>%
+  count(word) %>%
+  with(wordcloud(word, n, max.words = 100, scales = c(3, 0.1)))
+
+```
+
+
+
+
+
+```{r Bing Analysis, warning = FALSE}
+
+
+
+bing_1984 <- tidy_tokens_1984 %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(sentiment) %>%
+  spread(sentiment, n, fill = 0) %>%
+  mutate(sentiment = positive - negative)
+
+
+
+tidy_tokens_1984 %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(word, sentiment, sort = TRUE) %>%
+  acast(word ~ sentiment, value.var = "n", fill = 0) %>%
+  comparison.cloud(scale = c(5, 0.5), colors = c("grey20", "coral"),
+                   max.words = 50, title.size = 2.5, title.bg.colors = NULL,
+                   fixed.asp = TRUE, title.colors = "skyblue")
+
+
+```
+
+### Bing Analysis
+```{r Bing by Chapter, warning = FALSE}
+TidyCh1 %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(word, sentiment, sort = TRUE) %>%
+  acast(word ~ sentiment, value.var = "n", fill = 0) %>%
+  comparison.cloud(scale = c(3, 0.1), colors = c("grey20", "coral"),
+                   max.words = 50, title.size = 1.5, title.bg.colors = NULL,
+                   fixed.asp = TRUE, title.colors = "skyblue")
+
+TidyCh2 %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(word, sentiment, sort = TRUE) %>%
+  acast(word ~ sentiment, value.var = "n", fill = 0) %>%
+  comparison.cloud(scale = c(3, 0.1), colors = c("grey20", "coral"),
+                   max.words = 30, title.size = 1.5, title.bg.colors = NULL,
+                   fixed.asp = TRUE, title.colors = "skyblue")
+
+TidyCh3 %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(word, sentiment, sort = TRUE) %>%
+  acast(word ~ sentiment, value.var = "n", fill = 0) %>%
+  comparison.cloud(scale = c(3, 0.1), colors = c("grey20", "coral"),
+                   max.words = 30, title.size = 1.5, title.bg.colors = NULL,
+                   fixed.asp = TRUE, title.colors = "skyblue")
+
+
+
+
+
+
+
+TidyBook %>%
+  group_by(chapter) %>% 
+  mutate(word_count = 1:n(),
+         index = word_count %/% 500 + 1) %>% 
+  inner_join(get_sentiments("bing")) %>%
+  count(chapter, index = index , sentiment) %>%
+  ungroup() %>%
+  spread(sentiment, n, fill = 0) %>%
+  mutate(sentiment = positive - negative,
+         chapter = factor(chapter, levels = c(1, 2, 3))) %>%
+  ggplot(aes(index, sentiment, fill = chapter)) +
+  geom_bar(alpha = 0.5, stat = "identity", show.legend = FALSE) +
+  facet_wrap(~ chapter, ncol = 2, scales = "free_x", 
+             labeller = labeller(chapter = chapter.labs)) +
+  labs(y = "Sentiment", x = "Index", title = "Sentiment Analysis of 1984 by Chapter", 
+       subtitle = "Index = Groups of 500 words")
+
+
+```
+
+
+### NRC Analysis
+```{r nrc Analysis}
+
+nrc_1984 <- tokens1984 %>%
+  right_join(get_sentiments("nrc")) %>%
+  filter(!is.na(sentiment)) %>%
+  count(sentiment, sort = TRUE)
+
+nrc_1984
+
+
+NRCBook <- TidyBook %>%
+  group_by(chapter) %>% 
+  mutate(word_count = 1:n(), 
+         index = word_count %/% 500 + 1) %>% 
+  inner_join(get_sentiments("nrc")) %>%
+  filter(!is.na(sentiment)) %>%
+  count(chapter, index = index, sentiment) %>% 
+  ungroup()
+
+ggplot(NRCBook, aes(n, sentiment, fill = as.factor(chapter))) +
+  geom_bar(stat = "identity", show.legend = FALSE, alpha = 0.5) +
+  facet_wrap(~ chapter, ncol = 2, labeller = labeller(chapter = chapter.labs), 
+             scales = "free") +
+  labs(x = "Count", y = "Sentiment", title = "NRC Sentiments by Chapter in 1984 by George Owell") +
+  scale_y_discrete(labels = c("Anger", "Anticipation", "Disgust", "Fear", "Joy",
+                              "Negative", "Postive", "Sadness", "Surprise", "Trust"))
+
+
+```
+
+### AFINN Analysis
+```{r AFINN Analysis}
+
+bookAfinn <- TidyBook %>%
+  group_by(chapter) %>% 
+  inner_join(get_sentiments("afinn"), by = "word") %>% 
+  count(chapter, word, value) %>% 
+  mutate(avg.val = sum(value * n) / sum(n)) %>% 
+  ungroup()
+
+ggplot(bookAfinn, aes(value, n, color = as.factor(chapter))) +
+  geom_jitter(show.legend = FALSE, alpha = 0.5) +
+  facet_wrap(~ chapter, ncol = 2, scales = "free", labeller = labeller(chapter = chapter.labs)) +
+  labs(y = "Word Count", x = "AFINN Value", 
+       title = "AFINN Value of Words by Chapter in 1984 by George Orwell")
+
+```
+
+
+
+

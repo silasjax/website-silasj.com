@@ -1,0 +1,311 @@
+---
+title: "1984 Text Analysis"
+author: "C. Jackson"
+date: "March 16, 2021"
+summary: A Text analysis of 1984 by George Orwell.
+linktitle: "1984 Text Analysis"
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  docs:
+    parent: "Text Analysis"
+    weight: 2
+    
+type: docs
+tag:
+  - Orwell
+editor_options: 
+  chunk_output_type: console
+---
+
+<script src="EDP 693e 1984 Text Markdown_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#importing-the-text-by-chapter">Importing the text by Chapter</a></li>
+<li><a href="#importing-the-whole-text">Importing the whole text</a></li>
+<li><a href="#tidying-data">Tidying data</a></li>
+<li><a href="#exploring-most-used-words">Exploring Most used Words</a>
+<ul>
+<li><a href="#bing-analysis">Bing Analysis</a></li>
+<li><a href="#nrc-analysis">NRC Analysis</a></li>
+<li><a href="#afinn-analysis">AFINN Analysis</a></li>
+</ul></li>
+</ul>
+</div>
+
+<pre class="r"><code>library(SnowballC)
+library(tm)
+library(tidyverse)
+library(cluster)
+library(biclust)
+library(igraph)
+library(fpc)
+library(Rcampdf)
+library(wordcloud)
+library(tidytext)
+library(flextable)
+library(glue)
+library(viridis)
+library(reshape2)
+library(readr)
+
+chapter.labs &lt;- c(&quot;Chapter 1&quot;, &quot;Chapter 2&quot;, &quot;Chapter 3&quot;)
+names(chapter.labs) &lt;- c(1, 2, 3)
+
+get_sentiments(&quot;bing&quot;)</code></pre>
+<pre><code>## # A tibble: 6,786 x 2
+##    word        sentiment
+##    &lt;chr&gt;       &lt;chr&gt;    
+##  1 2-faces     negative 
+##  2 abnormal    negative 
+##  3 abolish     negative 
+##  4 abominable  negative 
+##  5 abominably  negative 
+##  6 abominate   negative 
+##  7 abomination negative 
+##  8 abort       negative 
+##  9 aborted     negative 
+## 10 aborts      negative 
+## # ... with 6,776 more rows</code></pre>
+<pre class="r"><code>get_sentiments(&quot;nrc&quot;)</code></pre>
+<pre><code>## # A tibble: 13,901 x 2
+##    word        sentiment
+##    &lt;chr&gt;       &lt;chr&gt;    
+##  1 abacus      trust    
+##  2 abandon     fear     
+##  3 abandon     negative 
+##  4 abandon     sadness  
+##  5 abandoned   anger    
+##  6 abandoned   fear     
+##  7 abandoned   negative 
+##  8 abandoned   sadness  
+##  9 abandonment anger    
+## 10 abandonment fear     
+## # ... with 13,891 more rows</code></pre>
+<pre class="r"><code>get_sentiments(&quot;afinn&quot;)</code></pre>
+<pre><code>## # A tibble: 2,477 x 2
+##    word       value
+##    &lt;chr&gt;      &lt;dbl&gt;
+##  1 abandon       -2
+##  2 abandoned     -2
+##  3 abandons      -2
+##  4 abducted      -2
+##  5 abduction     -2
+##  6 abductions    -2
+##  7 abhor         -3
+##  8 abhorred      -3
+##  9 abhorrent     -3
+## 10 abhors        -3
+## # ... with 2,467 more rows</code></pre>
+<div id="importing-the-text-by-chapter" class="section level2">
+<h2>Importing the text by Chapter</h2>
+<pre class="r"><code>Ch1 &lt;- read_file(&quot;1984 Orwell Chapter 1.txt&quot;)
+
+Ch2 &lt;- read_file(&quot;1984 Orwell Chapter 2.txt&quot;)
+
+Ch3 &lt;- read_file(&quot;1984 Orwell Chapter 3.txt&quot;)</code></pre>
+</div>
+<div id="importing-the-whole-text" class="section level2">
+<h2>Importing the whole text</h2>
+<pre class="r"><code>Text1984 &lt;- read_file(&quot;1984 Orwell text.txt&quot;)
+Text1984 &lt;- gsub(&quot;\\$&quot;, &quot;&quot;, Text1984)</code></pre>
+</div>
+<div id="tidying-data" class="section level2">
+<h2>Tidying data</h2>
+<pre class="r"><code>tokens1984 &lt;- data_frame(text = Text1984) %&gt;% 
+  unnest_tokens(word, text)
+
+
+tidy_tokens_1984 &lt;- tokens1984 %&gt;%
+  anti_join(stop_words)</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+</div>
+<div id="exploring-most-used-words" class="section level2">
+<h2>Exploring Most used Words</h2>
+<pre class="r"><code>TidyCh1 %&gt;% 
+  count(word, sort = TRUE) %&gt;%
+  head()</code></pre>
+<pre><code>## # A tibble: 6 x 2
+##   word        n
+##   &lt;chr&gt;   &lt;int&gt;
+## 1 winston   172
+## 2 party      98
+## 3 time       64
+## 4 moment     53
+## 5 people     49
+## 6 brother    46</code></pre>
+<pre class="r"><code>TidyCh2 %&gt;% 
+  count(word, sort = TRUE) %&gt;% 
+  head()</code></pre>
+<pre><code>## # A tibble: 6 x 2
+##   word        n
+##   &lt;chr&gt;   &lt;int&gt;
+## 1 winston   141
+## 2 party     126
+## 3 time       85
+## 4 war        83
+## 5 julia      69
+## 6 moment     55</code></pre>
+<pre class="r"><code>TidyCh3 %&gt;% 
+  count(word, sort = TRUE) %&gt;% 
+  head()</code></pre>
+<pre><code>## # A tibble: 6 x 2
+##   word        n
+##   &lt;chr&gt;   &lt;int&gt;
+## 1 winston   141
+## 2 o&#39;brien   119
+## 3 pain       55
+## 4 party      52
+## 5 eyes       49
+## 6 moment     48</code></pre>
+<pre class="r"><code>tidy_tokens_1984 %&gt;%
+  count(word, sort = TRUE) %&gt;%
+  head()</code></pre>
+<pre><code>## # A tibble: 6 x 2
+##   word        n
+##   &lt;chr&gt;   &lt;int&gt;
+## 1 winston   454
+## 2 party     276
+## 3 time      197
+## 4 o&#39;brien   178
+## 5 moment    156
+## 6 war       124</code></pre>
+<pre class="r"><code>tidy_tokens_1984 %&gt;%
+  count(word, sort = TRUE) %&gt;%
+  filter(n &gt; 100) %&gt;%
+  mutate(word = reorder(word, n)) %&gt;%
+  ggplot(aes(n, word, fill=n)) +
+  geom_col() +
+  theme_minimal() +
+  labs(y = NULL, title = &quot;Words Used more than 100 Times&quot;,
+       x = &quot;Word Count&quot;, fill = &quot;Count&quot;) +
+  scale_fill_viridis() +
+  geom_text(aes(label = n), hjust = -0.15)</code></pre>
+<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>tidy_tokens_1984 %&gt;%
+  anti_join(stop_words) %&gt;%
+  count(word) %&gt;%
+  with(wordcloud(word, n, max.words = 100, scales = c(3, 0.1)))</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
+<pre class="r"><code>bing_1984 &lt;- tidy_tokens_1984 %&gt;%
+  inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
+  count(sentiment) %&gt;%
+  spread(sentiment, n, fill = 0) %&gt;%
+  mutate(sentiment = positive - negative)</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<pre class="r"><code>tidy_tokens_1984 %&gt;%
+  inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
+  count(word, sentiment, sort = TRUE) %&gt;%
+  acast(word ~ sentiment, value.var = &quot;n&quot;, fill = 0) %&gt;%
+  comparison.cloud(scale = c(5, 0.5), colors = c(&quot;grey20&quot;, &quot;coral&quot;),
+                   max.words = 50, title.size = 2.5, title.bg.colors = NULL,
+                   fixed.asp = TRUE, title.colors = &quot;skyblue&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20Analysis-1.png" width="672" /></p>
+<div id="bing-analysis" class="section level3">
+<h3>Bing Analysis</h3>
+<pre class="r"><code>TidyCh1 %&gt;%
+  inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
+  count(word, sentiment, sort = TRUE) %&gt;%
+  acast(word ~ sentiment, value.var = &quot;n&quot;, fill = 0) %&gt;%
+  comparison.cloud(scale = c(3, 0.1), colors = c(&quot;grey20&quot;, &quot;coral&quot;),
+                   max.words = 50, title.size = 1.5, title.bg.colors = NULL,
+                   fixed.asp = TRUE, title.colors = &quot;skyblue&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-1.png" width="672" /></p>
+<pre class="r"><code>TidyCh2 %&gt;%
+  inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
+  count(word, sentiment, sort = TRUE) %&gt;%
+  acast(word ~ sentiment, value.var = &quot;n&quot;, fill = 0) %&gt;%
+  comparison.cloud(scale = c(3, 0.1), colors = c(&quot;grey20&quot;, &quot;coral&quot;),
+                   max.words = 30, title.size = 1.5, title.bg.colors = NULL,
+                   fixed.asp = TRUE, title.colors = &quot;skyblue&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-2.png" width="672" /></p>
+<pre class="r"><code>TidyCh3 %&gt;%
+  inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
+  count(word, sentiment, sort = TRUE) %&gt;%
+  acast(word ~ sentiment, value.var = &quot;n&quot;, fill = 0) %&gt;%
+  comparison.cloud(scale = c(3, 0.1), colors = c(&quot;grey20&quot;, &quot;coral&quot;),
+                   max.words = 30, title.size = 1.5, title.bg.colors = NULL,
+                   fixed.asp = TRUE, title.colors = &quot;skyblue&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-3.png" width="672" /></p>
+<pre class="r"><code>TidyBook %&gt;%
+  group_by(chapter) %&gt;% 
+  mutate(word_count = 1:n(),
+         index = word_count %/% 500 + 1) %&gt;% 
+  inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
+  count(chapter, index = index , sentiment) %&gt;%
+  ungroup() %&gt;%
+  spread(sentiment, n, fill = 0) %&gt;%
+  mutate(sentiment = positive - negative,
+         chapter = factor(chapter, levels = c(1, 2, 3))) %&gt;%
+  ggplot(aes(index, sentiment, fill = chapter)) +
+  geom_bar(alpha = 0.5, stat = &quot;identity&quot;, show.legend = FALSE) +
+  facet_wrap(~ chapter, ncol = 2, scales = &quot;free_x&quot;, 
+             labeller = labeller(chapter = chapter.labs)) +
+  labs(y = &quot;Sentiment&quot;, x = &quot;Index&quot;, title = &quot;Sentiment Analysis of 1984 by Chapter&quot;, 
+       subtitle = &quot;Index = Groups of 500 words&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-4.png" width="672" /></p>
+</div>
+<div id="nrc-analysis" class="section level3">
+<h3>NRC Analysis</h3>
+<pre class="r"><code>nrc_1984 &lt;- tokens1984 %&gt;%
+  right_join(get_sentiments(&quot;nrc&quot;)) %&gt;%
+  filter(!is.na(sentiment)) %&gt;%
+  count(sentiment, sort = TRUE)</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<pre class="r"><code>nrc_1984</code></pre>
+<pre><code>## # A tibble: 10 x 2
+##    sentiment        n
+##    &lt;chr&gt;        &lt;int&gt;
+##  1 negative      6214
+##  2 positive      5632
+##  3 trust         3406
+##  4 fear          3274
+##  5 sadness       2661
+##  6 anticipation  2619
+##  7 anger         2458
+##  8 joy           2026
+##  9 disgust       2013
+## 10 surprise      1350</code></pre>
+<pre class="r"><code>NRCBook &lt;- TidyBook %&gt;%
+  group_by(chapter) %&gt;% 
+  mutate(word_count = 1:n(), 
+         index = word_count %/% 500 + 1) %&gt;% 
+  inner_join(get_sentiments(&quot;nrc&quot;)) %&gt;%
+  filter(!is.na(sentiment)) %&gt;%
+  count(chapter, index = index, sentiment) %&gt;% 
+  ungroup()</code></pre>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<pre class="r"><code>ggplot(NRCBook, aes(n, sentiment, fill = as.factor(chapter))) +
+  geom_bar(stat = &quot;identity&quot;, show.legend = FALSE, alpha = 0.5) +
+  facet_wrap(~ chapter, ncol = 2, labeller = labeller(chapter = chapter.labs), 
+             scales = &quot;free&quot;) +
+  labs(x = &quot;Count&quot;, y = &quot;Sentiment&quot;, title = &quot;NRC Sentiments by Chapter in 1984 by George Owell&quot;) +
+  scale_y_discrete(labels = c(&quot;Anger&quot;, &quot;Anticipation&quot;, &quot;Disgust&quot;, &quot;Fear&quot;, &quot;Joy&quot;,
+                              &quot;Negative&quot;, &quot;Postive&quot;, &quot;Sadness&quot;, &quot;Surprise&quot;, &quot;Trust&quot;))</code></pre>
+<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/nrc%20Analysis-1.png" width="672" /></p>
+</div>
+<div id="afinn-analysis" class="section level3">
+<h3>AFINN Analysis</h3>
+<pre class="r"><code>bookAfinn &lt;- TidyBook %&gt;%
+  group_by(chapter) %&gt;% 
+  inner_join(get_sentiments(&quot;afinn&quot;), by = &quot;word&quot;) %&gt;% 
+  count(chapter, word, value) %&gt;% 
+  mutate(avg.val = sum(value * n) / sum(n)) %&gt;% 
+  ungroup()
+
+ggplot(bookAfinn, aes(value, n, color = as.factor(chapter))) +
+  geom_jitter(show.legend = FALSE, alpha = 0.5) +
+  facet_wrap(~ chapter, ncol = 2, scales = &quot;free&quot;, labeller = labeller(chapter = chapter.labs)) +
+  labs(y = &quot;Word Count&quot;, x = &quot;AFINN Value&quot;, 
+       title = &quot;AFINN Value of Words by Chapter in 1984 by George Orwell&quot;)</code></pre>
+<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/AFINN%20Analysis-1.png" width="672" /></p>
+</div>
+</div>

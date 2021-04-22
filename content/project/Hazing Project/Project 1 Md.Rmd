@@ -1,0 +1,333 @@
+---
+title: "Experimental Survey on Hazing"
+author: "C. Jackson"
+date: "3/24/2021"
+summary: Experimental survey on Hazing.
+linktitle: "Experimental Survey on Hazing"
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  docs:
+    parent: "Factor"
+    weight: 1
+    
+type: docs
+tag:
+ - Hazing Project
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+## Data Prep and Cleaning
+
+```{r Preparation and Cleaning, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(DT)
+library(RColorBrewer)
+library(extrafont)
+library(ggpubr)
+library(likert)
+
+load("HazingSurvey.RData")
+
+
+
+### Clean Data
+
+HazingSurveyData <- HazingSurveyData[-311,]
+HazingSurveyData$AllInitRHazing <- droplevels(HazingSurveyData$AllInitRHazing,
+                                              exlude = "")
+
+HazingSurveyData$Punishment <- as.factor(HazingSurveyData$Punishment)
+
+HazingSurveyData <- HazingSurveyData %>% 
+  mutate(DrinkorPaddle = case_when(Drinking == 1 ~ "Drinking",
+                                   TRUE ~ "Paddling"))
+
+
+levels(HazingSurveyData$Punishment) <- c("I firmly believe they should not\nreceive any punishment.",
+                                        "They should be suspended from the\nuniversity for more than 2 semmesters.",
+                                        "The veteran team members\nshould be removed from the group.",
+                                        "The veteran members should\nreceive anti-hazing training.",
+                                        "They should be expelled\nfrom the university.",
+                                        "They should be suspended from\nthe university for 1-2 semesters.",
+                                        "They should receive a warning to\navoid these actions in the future.")
+
+HazingSurveyData <- HazingSurveyData %>% 
+  mutate(ClassLvl = case_when(ClassLvl == "Senior/Super Senior" ~ as.character("Senior"),
+                              ClassLvl == "Graduate/Professional" ~ as.character("Graduate"),
+                              ClassLvl == "Freshmen" ~ "Freshman",
+                              TRUE ~ as.character(ClassLvl)))
+
+
+HazingSurveyData[,"ClassLvl"] <- ordered(HazingSurveyData[,"ClassLvl"], 
+                                    levels = c("Freshman", "Sophomore", 
+                                    "Junior", "Senior", "Graduate"))
+
+
+### Likert Data ---
+
+Likertdf <- HazingSurveyData[,16:31]
+
+
+colnames(Likertdf) <- c("An action is not hazing if the victim consents.",
+           "Everyone drinks before they turn 21.",
+           "I would recognize hazing if I saw it.",
+           "It is my responsibility to report students I suspect are involved in hazing.",
+           "Hazing is useful for group cohesion.",
+           "Hazing can be fun.",
+           "Hazing is a serious issue which needs to be prevented.",
+           "Hazng is dangerous.",
+           "Hazing should be illegal.",
+           "Most student groups haze their new members.",
+           "My university does not do enough to stop hazing.",
+           "Sometimes hazing is acceptable.",
+           "The definition of hazng is clear.",
+           "There are no benefis to hazing neww group members.",
+           "Underage drinking is not a serious issue.",
+           "All initiations of new group members are hazing.")
+
+Likertdf2 <- likert(Likertdf)
+
+
+
+
+
+
+#### Custom Palettes --
+
+LiPal <- c("#5b0909", "#5f0720", "#5e0f33", "#571b43", "#4c2651", 
+"#453568", "#34457c", "#00558d", "#0071a4", "#008a9e", "#00a07a", "#0fb040")
+
+LiPal2 <- c("#5b0909", "#571b43", "#34457c", "#008a9e", "#0fb040")
+
+LiPal3 <- c("#5b0909", "#5f0720","#571b43", "#34457c", "#00558d","#008a9e","#0fb040")
+
+LiPal4 <- c("#5b0909", "#5f0720","#571b43", "#4c2651", "#34457c", "#00558d","#008a9e","#0fb040")
+
+cuspal <- c("#350e3d", "#484058", "#555a6f", "#0086a2", "#0fb040")
+
+
+
+```
+
+
+## Theme Setup
+
+```{r Theme, message=FALSE, warning=FALSE}
+theme_update(text = element_text(family = "Rockwell", size = 12),
+                         panel.background = element_rect(fill = "#f0ebd8"),
+                         plot.background = element_rect(fill = "#f0ebd8", color = "black"),
+                         plot.title = element_text(face = "bold", size = 15),
+                         plot.title.position = "plot",
+                         panel.grid.major.x = element_blank(),
+                         panel.grid.minor.x = element_blank(),
+                         panel.grid.major.y = element_line(color = "grey70"),
+                         panel.grid.minor.y = element_line(color = "grey70", linetype = "dotted"))
+
+```
+
+
+
+## Sample Characteristics Plots
+
+```{r message=FALSE, warning=FALSE}
+ggplot(HazingSurveyData, aes(Gender, fill = BinRace)) +
+  geom_bar() +
+  scale_fill_manual(values = c("#350e3d", "#0fb040")) +
+  labs(title = "Sample Characteristics: Gender and Race", fill = "Race", 
+       y = NULL, caption = "N = 702\n- 98 respondents identified as racial or ethnic categories other than White alone.\n- 486 respondents were female.") +
+  theme(legend.background = element_blank(),
+        plot.caption.position = "plot",
+        plot.caption = element_text(hjust = 0),
+        plot.margin = margin(1, 1, 1, 1, "cm")) 
+
+
+
+
+ggplot(HazingSurveyData, aes(ClassLvl, fill = fct_rev(ClassLvl))) +
+  geom_bar(show.legend = FALSE) +
+  scale_fill_manual(values = LiPal2) +
+  coord_flip() +
+  labs(title = "Sample Characteristics: Class Level", x = NULL, y = NULL) +
+  geom_text(aes(label = ..count..), stat = "count", hjust = -0.8) +
+  theme(plot.margin = margin(1, 1, 1, 1, "cm"),
+        panel.grid.major.y = element_line(linetype = "dotted")) +
+  ylim(0, 200)
+
+
+ggplot(HazingSurveyData, aes(fct_rev(fct_infreq(Major)), fill = Major)) +
+  geom_bar(show.legend = FALSE) +
+  scale_fill_manual(values = LiPal4) +
+  scale_x_discrete(labels = c("No Major",
+                              "Education",
+                              "Other",
+                              "Social Science",
+                              "Humanities/Arts",
+                              "Business",
+                              "Biology and Health Sciences",
+                              "STEM")) +
+  coord_flip() +
+  labs(title = "Sample Characteristics: Area of Study",
+       x = NULL,
+       y = NULL) +
+  geom_text(aes(label = ..count..), stat = "count", hjust = -1) +
+  theme(plot.margin = margin(1, 1, 1, 1, "cm"),
+        panel.grid.major.y = element_line(linetype = "dotted")) +
+  ylim(0, 200)
+```
+
+## Determination of Guilt and Punishment Plots
+
+```{r Determination of Guilt, message=FALSE, warning=FALSE}
+ggplot(HazingSurveyData, aes(GltyofHazing, fill = GltyofHazing)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -1) +
+  ggtitle("Determination of Guilt") +
+  ylim(0, 700) +
+  scale_fill_manual(values = c("#350e3d", "#555a6f","#0fb040")) +
+  labs(y = NULL, x = "Do you believe they are guilty of hazing?") +
+  theme(plot.margin = margin(1, 1, 1, 1, "cm"))
+
+
+
+ggplot(HazingSurveyData, aes(GltyofHazing, fill = GltyofHazing)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -1) +
+  ggtitle("Determination of Guilt") +
+  ylim(0, 700) +
+  scale_fill_manual(values = c("#350e3d", "#555a6f","#0fb040")) +
+  labs(y = NULL, x = "Do you believe they are guilty of hazing?") +
+  theme(plot.margin = margin(1, 1, 1, 1, "cm")) +
+  facet_wrap(~ Vignette)
+```
+
+
+```{r message=FALSE, warning=FALSE}
+ggplot(HazingSurveyData, aes(fct_infreq(Punishment), fill = Punishment)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", hjust = -1) +
+  labs(x = NULL, y = NULL, title = "What Punishment should they receive?") +
+  coord_flip() +
+  theme(plot.margin = margin(1, 0.5, 1, 0.5, "cm")) +
+  ylim(0, 250) +
+  scale_fill_manual(values = LiPal3)
+
+
+ggplot(HazingSurveyData, aes(fct_infreq(Punishment), fill = Punishment)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", hjust = -1) +
+  labs(x = NULL, y = NULL, title = "What Punishment should they receive?") +
+  coord_flip() +
+  theme(plot.margin = margin(1, 0.5, 1, 0.5, "cm")) +
+  ylim(0, 250) +
+  scale_fill_manual(values = LiPal3) +
+  facet_wrap(~ DrinkorPaddle)
+```
+
+
+## General Views about Hazing Plots
+
+```{r fig.height=6, fig.width=8, message=FALSE, warning=FALSE}
+
+plot(Likertdf2, col = LiPal2) +
+  labs(title = "Students' General Views about Hazing") +
+  theme(legend.position = "top",
+        legend.direction = "horizontal",
+        plot.title.position = "plot",
+        legend.title = element_blank(),
+        legend.justification = c("left", "top"),
+        legend.key.width = unit(0.5, "cm"),
+        legend.key.height = unit(0.5, "cm"),
+        plot.margin = margin(1, 1, 1, 0, "cm"),
+        legend.text = element_text(size = 8),
+        plot.title = element_text(size = 15, hjust = 0.1),
+        legend.background = element_blank(),
+        panel.grid.major.y = element_line(linetype = "dotted")) +
+  guides(fill = guide_legend(label.position = "bottom")) 
+
+likert.heat.plot(Likertdf2, low.color = "purple", high.color = "yellow") +
+  labs(title = "Students' General Views about Hazing") +
+  theme(plot.title.position = "plot",
+        legend.title = element_blank(),
+        legend.justification = c("left", "top"),
+        legend.key.width = unit(1, "cm"),
+        legend.key.height = unit(0.5, "cm"),
+        plot.margin = margin(1, 0.5, 1, 0, "cm"),
+        legend.text = element_text(size = 8),
+        plot.title = element_text(size = 15, hjust = 0.1),
+        legend.background = element_blank(),
+        legend.position = "top",
+        legend.direction = "horizontal") +
+  guides(x = guide_axis(angle = 35)) +
+  scale_x_discrete(labels = c("Strongly Disagree" = "Strongly disagree",
+                              "Somewhat Agree" = "Somewhat disagree",
+                               "Neither Agree nor Disagree" = "Neither",
+                                "Somewhat Agree" = "Somewhat agree",
+                                  "Strongly Agree" = "Strongly agree"))
+
+
+```
+
+## Creating the Hazing Score Variable
+
+### Selecting Appriorate Variables
+```{r Hazing Score Components, message=FALSE, warning=FALSE}
+
+Likertdf3 <- Likertdf[, -c(2,3,4,10,11,13,15)]
+
+colnames(Likertdf3)
+```
+
+### Generating the Score
+
+```{r message=FALSE, warning=FALSE}
+
+i = 1
+while(i < 10){
+  
+  if(i %in% c(1, 2, 3, 7)){
+    
+    levels(Likertdf3[,i]) <- c("2", "1", "0", "-1", "-2")
+  }
+  
+  else{
+  levels(Likertdf3[,i]) <- c("-2", "-1", "0", "1", "2")
+  }
+ 
+   i <- i + 1
+}
+
+
+
+LikertdfScore <- as.data.frame(apply(Likertdf3, 2,as.numeric))
+
+LikertdfScore$HazeScore <- rowSums(cbind(LikertdfScore))
+HazingSurveyData$Score <- LikertdfScore$HazeScore
+
+```
+
+
+### Hazing Score Plot
+
+```{r message=FALSE, warning=FALSE}
+ggplot(HazingSurveyData, aes(Score)) +
+  geom_histogram(fill = "#571b43") +
+  labs(title = "Hazing Score", 
+       subtitle = "Higher scores indicate less possitive views of hazing.",
+       y = NULL,
+       x ="Score")
+```
+
+
+
+
+
