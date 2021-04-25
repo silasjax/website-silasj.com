@@ -9,9 +9,9 @@ output:
     toc: true
 menu:
   docs:
-    parent: "Factor"
-    weight: 1
     
+    parent: "Hazing Experimental Survey Project"
+    weight: 1
 type: docs
 tag:
  - Hazing Project

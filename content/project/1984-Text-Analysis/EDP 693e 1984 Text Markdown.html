@@ -4,13 +4,15 @@ author: "C. Jackson"
 date: "March 16, 2021"
 summary: A Text analysis of 1984 by George Orwell.
 linktitle: "1984 Text Analysis"
+
 output:
   blogdown::html_page:
     toc: true
 menu:
   docs:
-    parent: "Text Analysis"
-    weight: 2
+    parent: "Text Analysis of 1984"
+    weight: 1
+    
     
 type: docs
 tag:
@@ -183,13 +185,13 @@ tidy_tokens_1984 &lt;- tokens1984 %&gt;%
        x = &quot;Word Count&quot;, fill = &quot;Count&quot;) +
   scale_fill_viridis() +
   geom_text(aes(label = n), hjust = -0.15)</code></pre>
-<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>tidy_tokens_1984 %&gt;%
   anti_join(stop_words) %&gt;%
   count(word) %&gt;%
   with(wordcloud(word, n, max.words = 100, scales = c(3, 0.1)))</code></pre>
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
-<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
+<p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
 <pre class="r"><code>bing_1984 &lt;- tidy_tokens_1984 %&gt;%
   inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
   count(sentiment) %&gt;%
@@ -204,7 +206,7 @@ tidy_tokens_1984 &lt;- tokens1984 %&gt;%
                    max.words = 50, title.size = 2.5, title.bg.colors = NULL,
                    fixed.asp = TRUE, title.colors = &quot;skyblue&quot;)</code></pre>
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
-<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20Analysis-1.png" width="672" /></p>
+<p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20Analysis-1.png" width="672" /></p>
 <div id="bing-analysis" class="section level3">
 <h3>Bing Analysis</h3>
 <pre class="r"><code>TidyCh1 %&gt;%
@@ -215,7 +217,7 @@ tidy_tokens_1984 &lt;- tokens1984 %&gt;%
                    max.words = 50, title.size = 1.5, title.bg.colors = NULL,
                    fixed.asp = TRUE, title.colors = &quot;skyblue&quot;)</code></pre>
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
-<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-1.png" width="672" /></p>
+<p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-1.png" width="672" /></p>
 <pre class="r"><code>TidyCh2 %&gt;%
   inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
   count(word, sentiment, sort = TRUE) %&gt;%
@@ -224,7 +226,7 @@ tidy_tokens_1984 &lt;- tokens1984 %&gt;%
                    max.words = 30, title.size = 1.5, title.bg.colors = NULL,
                    fixed.asp = TRUE, title.colors = &quot;skyblue&quot;)</code></pre>
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
-<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-2.png" width="672" /></p>
+<p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-2.png" width="672" /></p>
 <pre class="r"><code>TidyCh3 %&gt;%
   inner_join(get_sentiments(&quot;bing&quot;)) %&gt;%
   count(word, sentiment, sort = TRUE) %&gt;%
@@ -233,7 +235,7 @@ tidy_tokens_1984 &lt;- tokens1984 %&gt;%
                    max.words = 30, title.size = 1.5, title.bg.colors = NULL,
                    fixed.asp = TRUE, title.colors = &quot;skyblue&quot;)</code></pre>
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
-<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-3.png" width="672" /></p>
+<p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-3.png" width="672" /></p>
 <pre class="r"><code>TidyBook %&gt;%
   group_by(chapter) %&gt;% 
   mutate(word_count = 1:n(),
@@ -251,7 +253,7 @@ tidy_tokens_1984 &lt;- tokens1984 %&gt;%
   labs(y = &quot;Sentiment&quot;, x = &quot;Index&quot;, title = &quot;Sentiment Analysis of 1984 by Chapter&quot;, 
        subtitle = &quot;Index = Groups of 500 words&quot;)</code></pre>
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
-<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-4.png" width="672" /></p>
+<p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-4.png" width="672" /></p>
 </div>
 <div id="nrc-analysis" class="section level3">
 <h3>NRC Analysis</h3>
@@ -290,7 +292,7 @@ tidy_tokens_1984 &lt;- tokens1984 %&gt;%
   labs(x = &quot;Count&quot;, y = &quot;Sentiment&quot;, title = &quot;NRC Sentiments by Chapter in 1984 by George Owell&quot;) +
   scale_y_discrete(labels = c(&quot;Anger&quot;, &quot;Anticipation&quot;, &quot;Disgust&quot;, &quot;Fear&quot;, &quot;Joy&quot;,
                               &quot;Negative&quot;, &quot;Postive&quot;, &quot;Sadness&quot;, &quot;Surprise&quot;, &quot;Trust&quot;))</code></pre>
-<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/nrc%20Analysis-1.png" width="672" /></p>
+<p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/nrc%20Analysis-1.png" width="672" /></p>
 </div>
 <div id="afinn-analysis" class="section level3">
 <h3>AFINN Analysis</h3>
@@ -306,6 +308,6 @@ ggplot(bookAfinn, aes(value, n, color = as.factor(chapter))) +
   facet_wrap(~ chapter, ncol = 2, scales = &quot;free&quot;, labeller = labeller(chapter = chapter.labs)) +
   labs(y = &quot;Word Count&quot;, x = &quot;AFINN Value&quot;, 
        title = &quot;AFINN Value of Words by Chapter in 1984 by George Orwell&quot;)</code></pre>
-<p><img src="/project/1984 Text Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/AFINN%20Analysis-1.png" width="672" /></p>
+<p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/AFINN%20Analysis-1.png" width="672" /></p>
 </div>
 </div>

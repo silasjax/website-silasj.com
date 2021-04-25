@@ -1,0 +1,30 @@
+---
+title: Academic Self-Concept Project
+author: 'Silas Jackson'
+date: '2021-04-24'
+summary: A survey of students' academic self-concept, college major, and careerism.
+slug: Academic-Self-Project
+
+linktitle: "Academic Self and Careerism"
+
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  docs:
+    parent: "Academic Self Project"
+    weight: 3
+    
+type: docs
+lastmod: '2021-04-24T23:09:32-04:00'
+featured: no
+
+projects: []
+---
+# Overview
+
+# Survey
+
+# Sample Characteristics
+
+TBA
