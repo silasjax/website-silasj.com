@@ -144,6 +144,13 @@ ggplot(AcadSelfData, aes(Majorgrouped2, fill = Majorgrouped2)) +
   coord_flip()
 
 
+```
+
+
+
+
+
+```{r}
 ggplot(AcadSelfData, aes(GPA, fill = GPA)) +
   geom_bar(show.legend = FALSE) +
   geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5) +
@@ -164,6 +171,9 @@ ggplot(AcadSelfData, aes(GPA2, fill = GPA2)) +
   ylim(0, 425)
 
 ```
+
+
+
 
 ```{r Likert Scale Statements, fig.width = 8, fig.height = 8}
 p <- plot(likert(AcadLikertData), col = sevenColors) +
