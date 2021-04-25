@@ -10,8 +10,8 @@ output:
 menu:
   docs:
     
-    parent: "Hazing Experimental Survey Project"
-    weight: 1
+    parent: "Projects"
+    weight: 3
 type: docs
 tag:
  - Hazing Project

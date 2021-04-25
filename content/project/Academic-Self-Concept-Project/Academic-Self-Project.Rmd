@@ -10,21 +10,220 @@ linktitle: "Academic Self and Careerism"
 output:
   blogdown::html_page:
     toc: true
+
 menu:
   docs:
-    parent: "Academic Self Project"
-    weight: 3
+    parent: "Projects"
+    weight: 1
     
 type: docs
 lastmod: '2021-04-24T23:09:32-04:00'
 featured: no
 
 projects: []
+
 ---
-# Overview
+# **Overview**
 
-# Survey
+## **Background**
 
-# Sample Characteristics
+|   One part of James Daniel Lee’s argument in Which Kids Can "Become" Scientists? Effects of Gender, Self-Concepts, and Perceptions of Scientists is that girls are less likely to pursue science careers because they feel their self-concept(s) are not in line with the expectation of what a scientist is like. This suggests that, at least in part, students tend to pursue careers which they feel are congruent with their self-concept. However, this view does not account for whether college students consider their education a means to pursue their passions and express a part of their “true” self, or as a path to obtaining a lucrative career. Further, research on academic self-concept almost exclusively focuses on achievement as its main indicator or correlate. 
 
-TBA
+|   I argue that achievement is only one aspect of academic self-concept and research on this topic must account for academic gratification. That said, I seek to (1) examine whether students college major is more influenced by careerist goals or self-concepts, (2) explore how others’ perceptions (reflected appraisals) affect their self-concept and overall satisfaction with their major, (3) reveal if students who choose their major based on self-concept are more or less satisfied with their major, and (4) investigate students’ attitudes about their perceptions of their future success as it relates to the conclusions above.
+
+## **Research Questions**
+
+* What is the role of self-concept in students’ choice of college major? 
+* What is the role of reflected appraisals in satisfaction with college major?
+* Are students more likely to choose a major based on self-concept or career outcomes?
+* Are students who choose a major based on self-concept more or less satisfied than those who choose a major on career outcomes?
+* What is the bridge between academic self-concept and general self-concept?
+
+
+## **Methods**
+
+### Survey
+Download the survey [here.](/media/Survey on Academic Self.pdf)
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+load("AcadSelfData.Rdata")
+load("AcadLikertData.Rdata")
+
+
+AcadSelfData$GPA <- plyr::mapvalues(AcadSelfData$GPA, from = "I don't have a GPA (First-semester freshmen)", to = "I don't know.") 
+AcadSelfData$GPA <- plyr::mapvalues(AcadSelfData$GPA, from = "4", to = "4.0")
+
+```
+
+```{r libraries, include = FALSE}
+library(tidyverse)
+library(likert)
+library(ggthemes)
+library(extrafont)
+library(plotly)
+library(viridis)
+```
+
+
+
+
+```{r Theme setup, include = FALSE}
+
+theme_update(text = element_text(family = "Rockwell"),
+        plot.title = element_text(size = 15, face = "bold"),
+        panel.background = element_rect(fill = "white"),
+        panel.grid.minor.y = element_line(linetype = "dotted", color = "grey50"),
+        panel.grid.major.y = element_line(color = "grey90"),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor = element_blank(),
+        plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), units = "cm"))
+
+
+
+threeColors <- c("#5b0909", "#34457c", "#0fb040")
+
+fourColors <- c("#5b0909", "#571b43", "#34457c", "#0fb040")
+
+fiveColors <- c("#5b0909", "#571b43", "#34457c", "#008a9e", "#0fb040")
+
+sevenColors <- c("#5b0909", "#5f0720","#571b43", "#34457c", 
+                 "#00558d","#008a9e","#0fb040")
+
+eightColors <- c("#5b0909", "#5f0720","#571b43", "#4c2651", 
+                 "#34457c", "#00558d","#008a9e","#0fb040")
+
+nineColors <- c("#5b0909", "#5e0f33", "#571b43", "#4c2651", 
+                  "#453568", "#34457c", "#0071a4", "#008a9e", 
+                   "#0fb040")
+
+twelveColors <- c("#5b0909", "#5f0720", "#5e0f33", "#571b43", "#4c2651", 
+                  "#453568", "#34457c", "#00558d", "#0071a4", "#008a9e", 
+                  "#00a07a", "#0fb040")
+
+```
+
+
+
+
+# **Sample Characteristics**
+
+```{r Sample Characteristics}
+ggplot(AcadSelfData, aes(Gender, fill = Gender)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -1)+
+  labs(title = "Sample Characteristics: Gender",
+       y = NULL) +
+  scale_fill_manual(values = threeColors) +
+  ylim(0, 550)
+
+
+ggplot(AcadSelfData, aes(ClassLvl, fill = ClassLvl)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -1) +
+  labs(title = "Sample Characteristics: Class Level",
+       y = NULL,
+       x = "Class Level") +
+  scale_fill_manual(values = fourColors) +
+  ylim(0, 225)
+
+
+ggplot(AcadSelfData, aes(Majorgrouped2, fill = Majorgrouped2)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", hjust = -0.5) +
+  labs(y = NULL,
+       x = NULL,
+       title = "Sample Characteristics: Area of Study",
+       caption = "'Pre-prof.' indicates pre-professional fields such as pre-dental and pre-medical.") +
+  scale_fill_manual(values = sevenColors) +
+  ylim(0, 150) +
+  coord_flip()
+
+
+ggplot(AcadSelfData, aes(GPA, fill = GPA)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5) +
+  labs(title = "Sample Characteristics: GPA",
+       y = NULL) +
+  ylim(0, 200) +
+  scale_fill_manual(values = eightColors)
+
+
+
+ggplot(AcadSelfData, aes(GPA2, fill = GPA2)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5) +
+  labs(title = "Sample Characteristics: GPA",
+       y = NULL,
+       x = "GPA") +
+  scale_fill_manual(values = threeColors) +
+  ylim(0, 425)
+
+```
+
+```{r Likert Scale Statements, fig.width = 8, fig.height = 8}
+p <- plot(likert(AcadLikertData), col = sevenColors) +
+  labs(title = "Level of Agreement Questions") +
+  theme(legend.position = "none",
+        legend.direction = "horizontal",
+        plot.title.position = "plot",
+        legend.title = element_blank(),
+        legend.justification = "left",
+        legend.key.width = unit(0.1, "mm"),
+        legend.key.height = unit(0.35, "cm"),
+        legend.key.size = unit(0.1, "mm"),
+        legend.text = element_text(size = 8),
+        plot.title = element_text(size = 15, hjust = 0.1),
+        legend.background = element_blank(),
+        panel.grid.major.y = element_line(linetype = "dotted")) +
+  guides(fill = guide_legend(label.position = "bottom",
+                             nrow = 1))
+
+ggplotly(p)
+
+```
+
+# **Analysis**
+
+
+
+```{r}
+ggplot(AcadSelfData, aes(CareerImportant, fill = CareerImportant)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "How important was having a high-paying career\nin choosing your current major?",
+       x = NULL,
+       y = NULL) +
+  ylim(0, 325) +
+  scale_fill_viridis(discrete = TRUE,
+                     direction = -1)
+
+ggplot(AcadSelfData, aes(PassionImportant, fill = PassionImportant)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "How important was having a career you are passionate\nabout in choosing your current major?",
+       x = NULL,
+       y = NULL) +
+  ylim(0, 450) +
+  scale_fill_viridis(discrete = TRUE,
+                     direction = -1)
+
+ggplot(AcadSelfData, aes(passion_vs_career, fill = passion_vs_career)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", hjust = -0.5) +
+  labs(title = "What is most important, going to college to get a good\ncareer or to explore your passion?",
+       x = NULL,
+       y = NULL) +
+  coord_flip() +
+  ylim(0, 300)
+
+
+```
+
+
+
+# **References**
