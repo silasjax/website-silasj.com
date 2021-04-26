@@ -4,24 +4,21 @@ author: 'Silas Jackson'
 date: '2021-04-24'
 summary: A survey of students' academic self-concept, college major, and careerism.
 slug: Academic-Self-Project
-
 linktitle: "Academic Self and Careerism"
-
 output:
   blogdown::html_page:
     toc: true
-
 menu:
   docs:
+    
     parent: "Projects"
     weight: 1
-    
 type: docs
+editor_options: 
+  chunk_output_type: console
 lastmod: '2021-04-24T23:09:32-04:00'
 featured: no
-
 projects: []
-
 ---
 # **Overview**
 
@@ -146,6 +143,28 @@ ggplot(AcadSelfData, aes(Majorgrouped2, fill = Majorgrouped2)) +
 
 ```
 
+
+
+```{r}
+k <- ggplot(AcadSelfData, aes(STEMmaj, fill = Majorgrouped2, text = paste("STEM Major?:", STEMmaj,
+                                                                          "<br>Area of Study:", Majorgrouped2))) +
+  geom_bar(position = "dodge") +
+  labs(title = "Do you consider your major a STEM major?",
+       y = NULL,
+       x = NULL,
+       fill = NULL) +
+  scale_fill_viridis(discrete = TRUE) +
+  theme(legend.position = "bottom",
+        legend.direction = "vertical",
+        legend.key.width = unit(3, "cm"),
+        legend.key.height = unit(3, "mm")) +
+  guides(fill = guide_legend(nrow = 1,
+                      label.position = "right"))
+
+
+ggplotly(k,
+         tooltip = c("text", "count"))
+```
 
 
 

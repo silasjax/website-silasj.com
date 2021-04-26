@@ -1,0 +1,18 @@
+---
+title: Hazing Survey App
+author: 'Silas Jackson'
+date: '2021-04-25'
+slug: app1
+categories: []
+tags: []
+subtitle: 'An exmaple of a Shiny App'
+
+lastmod: '2021-04-25T18:57:06-04:00'
+
+runtime: shiny
+---
+```{r, include = false}
+knitr::include_app("https://silasjackson.shinyapps.io/EDP693e_Shiny_Project/", height = "1000px")
+```
+
+

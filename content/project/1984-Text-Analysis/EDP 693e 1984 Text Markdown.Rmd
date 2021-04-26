@@ -8,6 +8,7 @@ linktitle: "1984 Text Analysis"
 output:
   blogdown::html_page:
     toc: true
+    
 menu:
   docs:
     parent: "Projects"
