@@ -73,7 +73,10 @@ Text1984 <- gsub("\\$", "", Text1984)
 
 ## Tidying data
 ```{r Tidy Chapters, include = FALSE}
-gsub("\\$", "", c(Ch1, Ch2, Ch3))
+
+Ch1 <- gsub("\\$", "", Ch1)
+Ch2 <- gsub("\\$", "", Ch2)
+Ch3 <- gsub("\\$", "", Ch3)
 
 Ch1Tokens <- data_frame(text = Ch1) %>%
   unnest_tokens(word, text)
