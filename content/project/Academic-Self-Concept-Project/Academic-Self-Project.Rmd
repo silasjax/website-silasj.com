@@ -15,7 +15,7 @@ menu:
     weight: 1
 type: docs
 editor_options: 
-  chunk_output_type: inline
+  chunk_output_type: console
 lastmod: '2021-04-24T23:09:32-04:00'
 featured: no
 projects: []
@@ -40,29 +40,16 @@ projects: []
 
 ## **Methods**
 
+* Survey undergraduate students on academic self and careerism
+  + Focus on the parts of academic self literature ignores
+
 ### Survey
 Download the survey [here.](/media/Survey on Academic Self.pdf)
 
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, cache = TRUE)
-
-
-load("AcadSelfData.Rdata")
-load("AcadLikertData.Rdata")
-
-
-AcadSelfData$GPA <- plyr::mapvalues(AcadSelfData$GPA, from = "I don't have a GPA (First-semester freshmen)", to = "I don't know.") 
-AcadSelfData$GPA <- plyr::mapvalues(AcadSelfData$GPA, from = "4", to = "4.0")
-
-AcadLikertData2 <- AcadLikertData[, c(1:6, 8:18)]
-cols <- colnames(AcadLikertData2)
-
-
-```
-
-```{r libraries, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, cache = TRUE, error = TRUE)
 library(tidyverse)
 library(likert)
 library(ggthemes)
@@ -81,8 +68,35 @@ library(widgetframe)
 library(htmltools)
 library(htmlwidgets)
 library(htmlTable)
-```
 
+load("AcadSelfData.Rdata")
+load("AcadLikertData.Rdata")
+
+
+AcadSelfData$GPA <- plyr::mapvalues(AcadSelfData$GPA, from = "I don't have a GPA (First-semester freshmen)", to = "I don't know.") 
+AcadSelfData$GPA <- plyr::mapvalues(AcadSelfData$GPA, from = "4", to = "4.0")
+
+AcadLikertData2 <- AcadLikertData[, c(1:6, 8:18)]
+cols <- colnames(AcadLikertData2)
+
+
+
+r <- subset(AcadSelfData, fulfilled != "Not sure")
+
+
+h <- r %>% 
+mutate(full = case_when(fulfilled == "Unfulfilled" |
+                            fulfilled == "Slightly fulfilled" |
+                            fulfilled == "Moderately fulfilled" ~ "Less fulfilled",
+                          TRUE ~ "More fulfilled"),
+         sat = case_when(overall_satisfied == "Extremely Unsatisfied" |
+                         overall_satisfied == "Moderately Unsatisfied" |
+                         overall_satisfied == "Slightly Unsatisfied" |
+                           overall_satisfied == "Neutral" ~ "Less satisfied",
+                         TRUE ~ as.character(overall_satisfied)))
+
+
+```
 
 
 
@@ -231,21 +245,11 @@ p <- plot(likert(AcadLikertData), col = sevenColors) +
                              nrow = 1))
 
 ggplotly(p)
-
 ```
-
-```{r}
-
-round(PairApply(AcadLikertData2, CramerV, symmetric = FALSE), 4) %>% 
-  data.table()
-
-```
-
 
 
 
 # **Analysis**
-
 
 
 ```{r}
@@ -326,12 +330,10 @@ ggline(AcadSelfData, x = "Majorgrouped2", y = "impscore",
        add.params = list(alpha = 0.5)) +
        rotate_x_text(angle = 45)
 
-
-
 ```
 
 
-```{r echo=FALSE}
+```{r, echo=FALSE}
 table1 <- AcadSelfData %>%
   group_by(Majorgrouped2) %>%
   rename("Major?" = "Majorgrouped2") %>% 
@@ -354,8 +356,11 @@ table1
 
 
 
-broom::tidy(kruskal.test(impscore ~ Majorgrouped2, AcadSelfData)) %>%
+t2 <- broom::tidy(kruskal.test(impscore ~ Majorgrouped2, AcadSelfData)) %>%
   data.table::data.table()
+
+
+t2
 
 ```
 
@@ -376,9 +381,16 @@ ggline(AcadSelfData, x = "ImSTEM", y = "impscore",
 
 
 
-AcadSelfData %>%
-  group_by(STEMmaj) %>%
-  rename("STEM?" = "STEMmaj") %>% 
+
+
+```
+
+
+
+```{r, echo=FALSE}
+t3 <- AcadSelfData %>%
+  group_by(ImSTEM) %>%
+  rename("STEM?" = "ImSTEM") %>% 
   summarise(n = n(), 
             mean = round(mean(impscore, na.rm = TRUE), 2), 
             sd = round(sd(impscore, na.rm = TRUE), 2),
@@ -393,12 +405,15 @@ AcadSelfData %>%
             p.value = round((shapiro.test(impscore)$p.value), 2)) %>% 
   data.table::data.table()
 
+t3
 
-
-broom::tidy(kruskal.test(impscore ~ ImSTEM, AcadSelfData)) %>% 
+t4 <- broom::tidy(kruskal.test(impscore ~ ImSTEM, AcadSelfData)) %>% 
   data.table() 
 
+
+t4
 ```
+
 
 
 
@@ -414,6 +429,112 @@ ggplot(AcadSelfData, aes(passion_vs_career, fill = passion_vs_career)) +
   ylim(0, 300) +
   theme(plot.title.position = "plot")
 ```
+
+```{r}
+ggplot(AcadSelfData, aes(passion_vs_career, fill = more_imp)) +
+  geom_bar(position = "dodge") +
+  coord_flip() +
+  labs(x = NULL,
+       y = NULL,
+       fill = "More Important?") +
+  scale_fill_manual(values = threeColors)
+
+
+ggplot(AcadSelfData, aes(passion_vs_career, impscore)) +
+  geom_boxplot() +
+  coord_flip() +
+  labs(x = NULL,
+       y = NULL,
+       fill = "More Important?")
+
+
+```
+
+
+```{r, echo=FALSE}
+v1 <- cramerV(AcadSelfData$more_imp, AcadSelfData$passion_vs_career)
+v1
+
+v2 <- cramerV(AcadSelfData$PassionImportant, AcadSelfData$passion_vs_career)
+v2
+
+v3 <- cramerV(AcadSelfData$CareerImportant, AcadSelfData$passion_vs_career)
+v3
+```
+
+
+
+
+```{r}
+ggplot(AcadSelfData, aes(fulfilled, fill = fulfilled)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "How fulfilled do you feel in your major?",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 300)
+
+
+ggplot(AcadSelfData, aes(overall_satisfied, fill = overall_satisfied)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "Overall, How satisfied or unsatisfied are you\nwith your college academic experience?",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 350)
+```
+
+
+
+
+```{r}
+ggplot(AcadSelfData, aes(fulfilled, fill = overall_satisfied)) +
+  geom_bar(position = "dodge") +
+  labs(fill = "Overall satisfaction?",
+       title = "Overall Satisfaction and Fulfillment",
+       x = "How fulfilled do you feel in your major?",
+       y = NULL) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.75))
+```
+
+```{r, echo=FALSE}
+f1 <- broom::tidy(chisq.test(r$fulfilled, r$overall_satisfied)) %>% 
+  data.table()
+
+f1
+```
+
+
+```{r, echo=FALSE}
+ll <- h %>% 
+  group_by(full, sat) %>% 
+  count() %>% 
+  data.table()
+
+ll
+```
+
+
+```{r, echo=FALSE}
+
+g2 <- cramerV(h$full, h$sat) 
+g2
+
+g3 <- broom::tidy(chisq.test(h$full, h$sat)) %>% 
+  data.table()
+g3
+
+g4 <- broom::tidy(polr(as.factor(sat) ~ as.factor(full), h)) %>% 
+  data.table()
+g4
+
+```
+
+
 
 
 

@@ -26,3 +26,5 @@ qqplotr
 htmlwidgets
 widgetframe
 htmltools
+data.table
+htmlTable
