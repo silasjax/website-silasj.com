@@ -39,234 +39,27 @@ editor_options:
 
 <div id="data-prep-and-cleaning" class="section level2">
 <h2>Data Prep and Cleaning</h2>
-<pre class="r"><code>library(tidyverse)
-library(DT)
-library(RColorBrewer)
-library(extrafont)
-library(ggpubr)
-library(likert)
-
-load(&quot;HazingSurvey.RData&quot;)
-
-
-
-### Clean Data
-
-HazingSurveyData &lt;- HazingSurveyData[-311,]
-HazingSurveyData$AllInitRHazing &lt;- droplevels(HazingSurveyData$AllInitRHazing,
-                                              exlude = &quot;&quot;)
-
-HazingSurveyData$Punishment &lt;- as.factor(HazingSurveyData$Punishment)
-
-HazingSurveyData &lt;- HazingSurveyData %&gt;% 
-  mutate(DrinkorPaddle = case_when(Drinking == 1 ~ &quot;Drinking&quot;,
-                                   TRUE ~ &quot;Paddling&quot;))
-
-
-levels(HazingSurveyData$Punishment) &lt;- c(&quot;I firmly believe they should not\nreceive any punishment.&quot;,
-                                        &quot;They should be suspended from the\nuniversity for more than 2 semmesters.&quot;,
-                                        &quot;The veteran team members\nshould be removed from the group.&quot;,
-                                        &quot;The veteran members should\nreceive anti-hazing training.&quot;,
-                                        &quot;They should be expelled\nfrom the university.&quot;,
-                                        &quot;They should be suspended from\nthe university for 1-2 semesters.&quot;,
-                                        &quot;They should receive a warning to\navoid these actions in the future.&quot;)
-
-HazingSurveyData &lt;- HazingSurveyData %&gt;% 
-  mutate(ClassLvl = case_when(ClassLvl == &quot;Senior/Super Senior&quot; ~ as.character(&quot;Senior&quot;),
-                              ClassLvl == &quot;Graduate/Professional&quot; ~ as.character(&quot;Graduate&quot;),
-                              ClassLvl == &quot;Freshmen&quot; ~ &quot;Freshman&quot;,
-                              TRUE ~ as.character(ClassLvl)))
-
-
-HazingSurveyData[,&quot;ClassLvl&quot;] &lt;- ordered(HazingSurveyData[,&quot;ClassLvl&quot;], 
-                                    levels = c(&quot;Freshman&quot;, &quot;Sophomore&quot;, 
-                                    &quot;Junior&quot;, &quot;Senior&quot;, &quot;Graduate&quot;))
-
-
-### Likert Data ---
-
-Likertdf &lt;- HazingSurveyData[,16:31]
-
-
-colnames(Likertdf) &lt;- c(&quot;An action is not hazing if the victim consents.&quot;,
-           &quot;Everyone drinks before they turn 21.&quot;,
-           &quot;I would recognize hazing if I saw it.&quot;,
-           &quot;It is my responsibility to report students I suspect are involved in hazing.&quot;,
-           &quot;Hazing is useful for group cohesion.&quot;,
-           &quot;Hazing can be fun.&quot;,
-           &quot;Hazing is a serious issue which needs to be prevented.&quot;,
-           &quot;Hazng is dangerous.&quot;,
-           &quot;Hazing should be illegal.&quot;,
-           &quot;Most student groups haze their new members.&quot;,
-           &quot;My university does not do enough to stop hazing.&quot;,
-           &quot;Sometimes hazing is acceptable.&quot;,
-           &quot;The definition of hazng is clear.&quot;,
-           &quot;There are no benefis to hazing neww group members.&quot;,
-           &quot;Underage drinking is not a serious issue.&quot;,
-           &quot;All initiations of new group members are hazing.&quot;)
-
-Likertdf2 &lt;- likert(Likertdf)
-
-
-
-
-
-
-#### Custom Palettes --
-
-LiPal &lt;- c(&quot;#5b0909&quot;, &quot;#5f0720&quot;, &quot;#5e0f33&quot;, &quot;#571b43&quot;, &quot;#4c2651&quot;, 
-&quot;#453568&quot;, &quot;#34457c&quot;, &quot;#00558d&quot;, &quot;#0071a4&quot;, &quot;#008a9e&quot;, &quot;#00a07a&quot;, &quot;#0fb040&quot;)
-
-LiPal2 &lt;- c(&quot;#5b0909&quot;, &quot;#571b43&quot;, &quot;#34457c&quot;, &quot;#008a9e&quot;, &quot;#0fb040&quot;)
-
-LiPal3 &lt;- c(&quot;#5b0909&quot;, &quot;#5f0720&quot;,&quot;#571b43&quot;, &quot;#34457c&quot;, &quot;#00558d&quot;,&quot;#008a9e&quot;,&quot;#0fb040&quot;)
-
-LiPal4 &lt;- c(&quot;#5b0909&quot;, &quot;#5f0720&quot;,&quot;#571b43&quot;, &quot;#4c2651&quot;, &quot;#34457c&quot;, &quot;#00558d&quot;,&quot;#008a9e&quot;,&quot;#0fb040&quot;)
-
-cuspal &lt;- c(&quot;#350e3d&quot;, &quot;#484058&quot;, &quot;#555a6f&quot;, &quot;#0086a2&quot;, &quot;#0fb040&quot;)</code></pre>
 </div>
 <div id="theme-setup" class="section level2">
 <h2>Theme Setup</h2>
-<pre class="r"><code>theme_update(text = element_text(family = &quot;Rockwell&quot;, size = 12),
-                         panel.background = element_rect(fill = &quot;#f0ebd8&quot;),
-                         plot.background = element_rect(fill = &quot;#f0ebd8&quot;, color = &quot;black&quot;),
-                         plot.title = element_text(face = &quot;bold&quot;, size = 15),
-                         plot.title.position = &quot;plot&quot;,
-                         panel.grid.major.x = element_blank(),
-                         panel.grid.minor.x = element_blank(),
-                         panel.grid.major.y = element_line(color = &quot;grey70&quot;),
-                         panel.grid.minor.y = element_line(color = &quot;grey70&quot;, linetype = &quot;dotted&quot;))</code></pre>
 </div>
 <div id="sample-characteristics-plots" class="section level2">
 <h2>Sample Characteristics Plots</h2>
-<pre class="r"><code>ggplot(HazingSurveyData, aes(Gender, fill = BinRace)) +
-  geom_bar() +
-  scale_fill_manual(values = c(&quot;#350e3d&quot;, &quot;#0fb040&quot;)) +
-  labs(title = &quot;Sample Characteristics: Gender and Race&quot;, fill = &quot;Race&quot;, 
-       y = NULL, caption = &quot;N = 702\n- 98 respondents identified as racial or ethnic categories other than White alone.\n- 486 respondents were female.&quot;) +
-  theme(legend.background = element_blank(),
-        plot.caption.position = &quot;plot&quot;,
-        plot.caption = element_text(hjust = 0),
-        plot.margin = margin(1, 1, 1, 1, &quot;cm&quot;)) </code></pre>
-<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<pre class="r"><code>ggplot(HazingSurveyData, aes(ClassLvl, fill = fct_rev(ClassLvl))) +
-  geom_bar(show.legend = FALSE) +
-  scale_fill_manual(values = LiPal2) +
-  coord_flip() +
-  labs(title = &quot;Sample Characteristics: Class Level&quot;, x = NULL, y = NULL) +
-  geom_text(aes(label = ..count..), stat = &quot;count&quot;, hjust = -0.8) +
-  theme(plot.margin = margin(1, 1, 1, 1, &quot;cm&quot;),
-        panel.grid.major.y = element_line(linetype = &quot;dotted&quot;)) +
-  ylim(0, 200)</code></pre>
-<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
-<pre class="r"><code>ggplot(HazingSurveyData, aes(fct_rev(fct_infreq(Major)), fill = Major)) +
-  geom_bar(show.legend = FALSE) +
-  scale_fill_manual(values = LiPal4) +
-  scale_x_discrete(labels = c(&quot;No Major&quot;,
-                              &quot;Education&quot;,
-                              &quot;Other&quot;,
-                              &quot;Social Science&quot;,
-                              &quot;Humanities/Arts&quot;,
-                              &quot;Business&quot;,
-                              &quot;Biology and Health Sciences&quot;,
-                              &quot;STEM&quot;)) +
-  coord_flip() +
-  labs(title = &quot;Sample Characteristics: Area of Study&quot;,
-       x = NULL,
-       y = NULL) +
-  geom_text(aes(label = ..count..), stat = &quot;count&quot;, hjust = -1) +
-  theme(plot.margin = margin(1, 1, 1, 1, &quot;cm&quot;),
-        panel.grid.major.y = element_line(linetype = &quot;dotted&quot;)) +
-  ylim(0, 200)</code></pre>
-<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
+<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-1.png" width="672" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-2.png" width="672" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
 </div>
 <div id="determination-of-guilt-and-punishment-plots" class="section level2">
 <h2>Determination of Guilt and Punishment Plots</h2>
-<pre class="r"><code>ggplot(HazingSurveyData, aes(GltyofHazing, fill = GltyofHazing)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = &quot;count&quot;, vjust = -1) +
-  ggtitle(&quot;Determination of Guilt&quot;) +
-  ylim(0, 700) +
-  scale_fill_manual(values = c(&quot;#350e3d&quot;, &quot;#555a6f&quot;,&quot;#0fb040&quot;)) +
-  labs(y = NULL, x = &quot;Do you believe they are guilty of hazing?&quot;) +
-  theme(plot.margin = margin(1, 1, 1, 1, &quot;cm&quot;))</code></pre>
-<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-1.png" width="672" /></p>
-<pre class="r"><code>ggplot(HazingSurveyData, aes(GltyofHazing, fill = GltyofHazing)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = &quot;count&quot;, vjust = -1) +
-  ggtitle(&quot;Determination of Guilt&quot;) +
-  ylim(0, 700) +
-  scale_fill_manual(values = c(&quot;#350e3d&quot;, &quot;#555a6f&quot;,&quot;#0fb040&quot;)) +
-  labs(y = NULL, x = &quot;Do you believe they are guilty of hazing?&quot;) +
-  theme(plot.margin = margin(1, 1, 1, 1, &quot;cm&quot;)) +
-  facet_wrap(~ Vignette)</code></pre>
-<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-2.png" width="672" /></p>
-<pre class="r"><code>ggplot(HazingSurveyData, aes(fct_infreq(Punishment), fill = Punishment)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = &quot;count&quot;, hjust = -1) +
-  labs(x = NULL, y = NULL, title = &quot;What Punishment should they receive?&quot;) +
-  coord_flip() +
-  theme(plot.margin = margin(1, 0.5, 1, 0.5, &quot;cm&quot;)) +
-  ylim(0, 250) +
-  scale_fill_manual(values = LiPal3)</code></pre>
-<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<pre class="r"><code>ggplot(HazingSurveyData, aes(fct_infreq(Punishment), fill = Punishment)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = &quot;count&quot;, hjust = -1) +
-  labs(x = NULL, y = NULL, title = &quot;What Punishment should they receive?&quot;) +
-  coord_flip() +
-  theme(plot.margin = margin(1, 0.5, 1, 0.5, &quot;cm&quot;)) +
-  ylim(0, 250) +
-  scale_fill_manual(values = LiPal3) +
-  facet_wrap(~ DrinkorPaddle)</code></pre>
-<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
+<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-1.png" width="672" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-2.png" width="672" /></p>
+<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-1.png" width="672" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
 </div>
 <div id="general-views-about-hazing-plots" class="section level2">
 <h2>General Views about Hazing Plots</h2>
-<pre class="r"><code>plot(Likertdf2, col = LiPal2) +
-  labs(title = &quot;Students&#39; General Views about Hazing&quot;) +
-  theme(legend.position = &quot;top&quot;,
-        legend.direction = &quot;horizontal&quot;,
-        plot.title.position = &quot;plot&quot;,
-        legend.title = element_blank(),
-        legend.justification = c(&quot;left&quot;, &quot;top&quot;),
-        legend.key.width = unit(0.5, &quot;cm&quot;),
-        legend.key.height = unit(0.5, &quot;cm&quot;),
-        plot.margin = margin(1, 1, 1, 0, &quot;cm&quot;),
-        legend.text = element_text(size = 8),
-        plot.title = element_text(size = 15, hjust = 0.1),
-        legend.background = element_blank(),
-        panel.grid.major.y = element_line(linetype = &quot;dotted&quot;)) +
-  guides(fill = guide_legend(label.position = &quot;bottom&quot;)) </code></pre>
-<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
-<pre class="r"><code>likert.heat.plot(Likertdf2, low.color = &quot;purple&quot;, high.color = &quot;yellow&quot;) +
-  labs(title = &quot;Students&#39; General Views about Hazing&quot;) +
-  theme(plot.title.position = &quot;plot&quot;,
-        legend.title = element_blank(),
-        legend.justification = c(&quot;left&quot;, &quot;top&quot;),
-        legend.key.width = unit(1, &quot;cm&quot;),
-        legend.key.height = unit(0.5, &quot;cm&quot;),
-        plot.margin = margin(1, 0.5, 1, 0, &quot;cm&quot;),
-        legend.text = element_text(size = 8),
-        plot.title = element_text(size = 15, hjust = 0.1),
-        legend.background = element_blank(),
-        legend.position = &quot;top&quot;,
-        legend.direction = &quot;horizontal&quot;) +
-  guides(x = guide_axis(angle = 35)) +
-  scale_x_discrete(labels = c(&quot;Strongly Disagree&quot; = &quot;Strongly disagree&quot;,
-                              &quot;Somewhat Agree&quot; = &quot;Somewhat disagree&quot;,
-                               &quot;Neither Agree nor Disagree&quot; = &quot;Neither&quot;,
-                                &quot;Somewhat Agree&quot; = &quot;Somewhat agree&quot;,
-                                  &quot;Strongly Agree&quot; = &quot;Strongly agree&quot;))</code></pre>
-<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-3-2.png" width="768" /></p>
+<p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-3-1.png" width="768" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-3-2.png" width="768" /></p>
 </div>
 <div id="creating-the-hazing-score-variable" class="section level2">
 <h2>Creating the Hazing Score Variable</h2>
 <div id="selecting-appriorate-variables" class="section level3">
 <h3>Selecting Appriorate Variables</h3>
-<pre class="r"><code>Likertdf3 &lt;- Likertdf[, -c(2,3,4,10,11,13,15)]
-
-colnames(Likertdf3)</code></pre>
 <pre><code>## [1] &quot;An action is not hazing if the victim consents.&quot;       
 ## [2] &quot;Hazing is useful for group cohesion.&quot;                  
 ## [3] &quot;Hazing can be fun.&quot;                                    
@@ -279,36 +72,9 @@ colnames(Likertdf3)</code></pre>
 </div>
 <div id="generating-the-score" class="section level3">
 <h3>Generating the Score</h3>
-<pre class="r"><code>i = 1
-while(i &lt; 10){
-  
-  if(i %in% c(1, 2, 3, 7)){
-    
-    levels(Likertdf3[,i]) &lt;- c(&quot;2&quot;, &quot;1&quot;, &quot;0&quot;, &quot;-1&quot;, &quot;-2&quot;)
-  }
-  
-  else{
-  levels(Likertdf3[,i]) &lt;- c(&quot;-2&quot;, &quot;-1&quot;, &quot;0&quot;, &quot;1&quot;, &quot;2&quot;)
-  }
- 
-   i &lt;- i + 1
-}
-
-
-
-LikertdfScore &lt;- as.data.frame(apply(Likertdf3, 2,as.numeric))
-
-LikertdfScore$HazeScore &lt;- rowSums(cbind(LikertdfScore))
-HazingSurveyData$Score &lt;- LikertdfScore$HazeScore</code></pre>
 </div>
 <div id="hazing-score-plot" class="section level3">
 <h3>Hazing Score Plot</h3>
-<pre class="r"><code>ggplot(HazingSurveyData, aes(Score)) +
-  geom_histogram(fill = &quot;#571b43&quot;) +
-  labs(title = &quot;Hazing Score&quot;, 
-       subtitle = &quot;Higher scores indicate less possitive views of hazing.&quot;,
-       y = NULL,
-       x =&quot;Score&quot;)</code></pre>
 <p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 </div>
 </div>

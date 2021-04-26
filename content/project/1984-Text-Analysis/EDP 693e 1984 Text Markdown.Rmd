@@ -23,14 +23,10 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-
-
-
-
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
-```{r loaded libraries, message = FALSE, warning = FALSE}
+```{r loaded libraries, include = FALSE}
 
 library(SnowballC)
 library(tm)
@@ -47,6 +43,7 @@ library(glue)
 library(viridis)
 library(reshape2)
 library(readr)
+library(DT)
 
 chapter.labs <- c("Chapter 1", "Chapter 2", "Chapter 3")
 names(chapter.labs) <- c(1, 2, 3)
@@ -122,22 +119,26 @@ tidy_tokens_1984 <- tokens1984 %>%
 
 TidyCh1 %>% 
   count(word, sort = TRUE) %>%
-  head()
+  head() %>% 
+  datatable()
 
 
 TidyCh2 %>% 
   count(word, sort = TRUE) %>% 
-  head()
+  head() %>% 
+  datatable()
 
 
 TidyCh3 %>% 
   count(word, sort = TRUE) %>% 
-  head()
+  head() %>% 
+  datatable()
 
 
 tidy_tokens_1984 %>%
   count(word, sort = TRUE) %>%
-  head()
+  head() %>% 
+  datatable()
 
 
 ```
@@ -256,7 +257,7 @@ nrc_1984 <- tokens1984 %>%
   filter(!is.na(sentiment)) %>%
   count(sentiment, sort = TRUE)
 
-nrc_1984
+datatable(nrc_1984)
 
 
 NRCBook <- TidyBook %>%

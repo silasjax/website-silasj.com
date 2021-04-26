@@ -8,9 +8,9 @@ linktitle: "Academic Self and Careerism"
 output:
   blogdown::html_page:
     toc: true
+    
 menu:
   docs:
-    
     parent: "Projects"
     weight: 1
 type: docs
@@ -24,9 +24,10 @@ projects: []
 
 ## **Background**
 
-|   One part of James Daniel Lee’s argument in Which Kids Can "Become" Scientists? Effects of Gender, Self-Concepts, and Perceptions of Scientists is that girls are less likely to pursue science careers because they feel their self-concept(s) are not in line with the expectation of what a scientist is like. This suggests that, at least in part, students tend to pursue careers which they feel are congruent with their self-concept. However, this view does not account for whether college students consider their education a means to pursue their passions and express a part of their “true” self, or as a path to obtaining a lucrative career. Further, research on academic self-concept almost exclusively focuses on achievement as its main indicator or correlate. 
+  One part of James Daniel Lee’s argument in Which Kids Can "Become" Scientists? Effects of Gender, Self-Concepts, and Perceptions of Scientists is that girls are less likely to pursue science careers because they feel their self-concept(s) are not in line with the expectation of what a scientist is like. This suggests that, at least in part, students tend to pursue careers which they feel are congruent with their self-concept. However, this view does not account for whether college students consider their education a means to pursue their passions and express a part of their “true” self, or as a path to obtaining a lucrative career. Further, research on academic self-concept almost exclusively focuses on achievement as its main indicator or correlate. 
 
-|   I argue that achievement is only one aspect of academic self-concept and research on this topic must account for academic gratification. That said, I seek to (1) examine whether students college major is more influenced by careerist goals or self-concepts, (2) explore how others’ perceptions (reflected appraisals) affect their self-concept and overall satisfaction with their major, (3) reveal if students who choose their major based on self-concept are more or less satisfied with their major, and (4) investigate students’ attitudes about their perceptions of their future success as it relates to the conclusions above.
+
+  I argue that achievement is only one aspect of academic self-concept and research on this topic must account for academic gratification. That said, I seek to (1) examine whether students college major is more influenced by careerist goals or self-concepts, (2) explore how others’ perceptions (reflected appraisals) affect their self-concept and overall satisfaction with their major, (3) reveal if students who choose their major based on self-concept are more or less satisfied with their major, and (4) investigate students’ attitudes about their perceptions of their future success as it relates to the conclusions above.
 
 ## **Research Questions**
 
@@ -45,7 +46,7 @@ Download the survey [here.](/media/Survey on Academic Self.pdf)
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 
 load("AcadSelfData.Rdata")
@@ -73,6 +74,7 @@ library(viridis)
 
 theme_update(text = element_text(family = "Rockwell"),
         plot.title = element_text(size = 15, face = "bold"),
+        plot.title.position = "plot",
         panel.background = element_rect(fill = "white"),
         panel.grid.minor.y = element_line(linetype = "dotted", color = "grey50"),
         panel.grid.major.y = element_line(color = "grey90"),
@@ -109,7 +111,7 @@ twelveColors <- c("#5b0909", "#5f0720", "#5e0f33", "#571b43", "#4c2651",
 
 # **Sample Characteristics**
 
-```{r Sample Characteristics}
+```{r Sample Characteristics, message=FALSE, warning=FALSE}
 ggplot(AcadSelfData, aes(Gender, fill = Gender)) +
   geom_bar(show.legend = FALSE) +
   geom_text(aes(label = ..count..), stat = "count", vjust = -1)+
@@ -244,15 +246,97 @@ ggplot(AcadSelfData, aes(PassionImportant, fill = PassionImportant)) +
 ggplot(AcadSelfData, aes(passion_vs_career, fill = passion_vs_career)) +
   geom_bar(show.legend = FALSE) +
   geom_text(aes(label = ..count..), stat = "count", hjust = -0.5) +
-  labs(title = "What is most important, going to college to get a good\ncareer or to explore your passion?",
+  labs(title = "What is most important, going to ollege to\nget a good career or to explore your passion?",
        x = NULL,
        y = NULL) +
   coord_flip() +
-  ylim(0, 300)
+  ylim(0, 300) +
+  theme(plot.title.position = "plot")
 
 
 ```
 
 
 
+
+```{r}
+ggplot(AcadSelfData, aes(true_self, fill = true_self)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "My major is a reflection of my true self.",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 275)
+
+
+
+ggplot(AcadSelfData, aes(fulfilled, fill = fulfilled)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "How fulfilled do you feel in your major?",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 300)
+
+
+
+ggplot(AcadSelfData, aes(fit_in, fill = fit_in)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "I feel like I fit in easily with other students in my major.",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 225)
+
+
+
+ggplot(AcadSelfData, aes(overall_satisfied, fill = overall_satisfied)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "Overall, How satisfied or unsatisfied are you\nwith your college academic experience?",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 350)
+
+
+
+
+ggplot(AcadSelfData, aes(rewarding, fill = rewarding)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "Being a student is a rewarding experience.",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 225)
+
+
+
+
+ggplot(AcadSelfData, aes(money_issue, fill = money_issue)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  labs(title = "If money were not an issue, I would have chosen a different major.",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 275)
+
+
+```
+
+
 # **References**
+
+
+
