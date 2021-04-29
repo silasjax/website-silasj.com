@@ -19,6 +19,7 @@ editor_options:
 lastmod: '2021-04-24T23:09:32-04:00'
 featured: no
 projects: []
+shiny: true
 ---
 # **Overview**
 
@@ -49,7 +50,7 @@ Download the survey [here.](/media/Survey on Academic Self.pdf)
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, cache = TRUE, error = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning = TRUE, cache = FALSE, error = TRUE)
 library(tidyverse)
 library(likert)
 library(ggthemes)
@@ -68,6 +69,8 @@ library(widgetframe)
 library(htmltools)
 library(htmlwidgets)
 library(htmlTable)
+library(knitr)
+library(DT)
 
 load("AcadSelfData.Rdata")
 load("AcadLikertData.Rdata")
@@ -79,6 +82,42 @@ AcadSelfData$GPA <- plyr::mapvalues(AcadSelfData$GPA, from = "4", to = "4.0")
 AcadLikertData2 <- AcadLikertData[, c(1:6, 8:18)]
 cols <- colnames(AcadLikertData2)
 
+
+more_imp <- AcadSelfData[,c(16:17) ]
+
+
+for(i in 1:ncol(more_imp)){
+  
+  levels(more_imp[, i]) <- c("1", "2", "3", "4", "5")
+  
+}
+
+
+more_imp <- as.data.frame(apply(more_imp, 2,as.numeric))
+
+
+
+more_imp <- more_imp %>% 
+  mutate(impscore = case_when(PassionImportant > CareerImportant ~ "Passion",
+                              CareerImportant > PassionImportant ~ "Career",
+                              CareerImportant == PassionImportant ~ "Equal"))
+
+more_imp <- more_imp %>% 
+  mutate(v = PassionImportant - CareerImportant)
+
+
+AcadSelfData$more_imp <- more_imp$impscore
+AcadSelfData$impscore <- more_imp$v
+
+
+
+
+
+AcadSelfData <- AcadSelfData %>% 
+  mutate(ImSTEM = case_when(STEMmaj == "Yes" ~ "Yes",
+                            STEMmaj == "Maybe/Unsure" ~ "Maybe/Unsure",
+                            STEMmaj == "No" ~ "No",
+                            TRUE ~ "No"))
 
 
 r <- subset(AcadSelfData, fulfilled != "Not sure")
@@ -281,41 +320,7 @@ ggplot(AcadSelfData, aes(PassionImportant, fill = PassionImportant)) +
 
 
 
-```{r}
 
-more_imp <- AcadSelfData[,c(16:17) ]
-
-
-for(i in 1:ncol(more_imp)){
-  
-  levels(more_imp[, i]) <- c("1", "2", "3", "4", "5")
-  
-}
-
-
-more_imp <- as.data.frame(apply(more_imp, 2,as.numeric))
-
-
-
-more_imp <- more_imp %>% 
-  mutate(impscore = case_when(PassionImportant > CareerImportant ~ "Passion",
-                              CareerImportant > PassionImportant ~ "Career",
-                              CareerImportant == PassionImportant ~ "Equal"))
-
-more_imp <- more_imp %>% 
-  mutate(v = PassionImportant - CareerImportant)
-
-
-AcadSelfData$more_imp <- more_imp$impscore
-AcadSelfData$impscore <- more_imp$v
-
-AcadSelfData <- AcadSelfData %>% 
-  mutate(ImSTEM = case_when(STEMmaj == "Yes" ~ "Yes",
-                            STEMmaj == "Maybe/Unsure" ~ "Maybe/Unsure",
-                            STEMmaj == "No" ~ "No",
-                            TRUE ~ "No"))
-
-```
 
 
 ```{r}
@@ -333,7 +338,7 @@ ggline(AcadSelfData, x = "Majorgrouped2", y = "impscore",
 ```
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, cache =  FALSE}
 table1 <- AcadSelfData %>%
   group_by(Majorgrouped2) %>%
   rename("Major?" = "Majorgrouped2") %>% 
@@ -348,21 +353,20 @@ table1 <- AcadSelfData %>%
             max = max(impscore, na.rm = TRUE),
             IQR = IQR(impscore, na.rm = TRUE),
             W.Stat = round((shapiro.test(impscore)$statistic), 4),
-            p.value = round((shapiro.test(impscore)$p.value), 2)) %>% 
-      data.table::data.table()
+            p.value = round((shapiro.test(impscore)$p.value), 2)) 
 
 
-table1
+kable(table1)
 
 
-
-t2 <- broom::tidy(kruskal.test(impscore ~ Majorgrouped2, AcadSelfData)) %>%
-  data.table::data.table()
+t2 <- broom::tidy(kruskal.test(impscore ~ Majorgrouped2, AcadSelfData)) 
 
 
-t2
+kable(t2)
+
 
 ```
+
 
 
 ```{r}
@@ -380,15 +384,12 @@ ggline(AcadSelfData, x = "ImSTEM", y = "impscore",
 
 
 
-
-
-
 ```
 
 
 
-```{r, echo=FALSE}
-t3 <- AcadSelfData %>%
+```{r, echo=FALSE, cache = FALSE}
+dt5 <- AcadSelfData %>%
   group_by(ImSTEM) %>%
   rename("STEM?" = "ImSTEM") %>% 
   summarise(n = n(), 
@@ -402,16 +403,15 @@ t3 <- AcadSelfData %>%
             max = max(impscore, na.rm = TRUE),
             IQR = IQR(impscore, na.rm = TRUE),
             W.Stat = round((shapiro.test(impscore)$statistic), 4),
-            p.value = round((shapiro.test(impscore)$p.value), 2)) %>% 
-  data.table::data.table()
+            p.value = round((shapiro.test(impscore)$p.value), 2)) 
 
-t3
-
-t4 <- broom::tidy(kruskal.test(impscore ~ ImSTEM, AcadSelfData)) %>% 
-  data.table() 
+kable(dt5)
 
 
-t4
+
+ug <- broom::tidy(kruskal.test(impscore ~ ImSTEM, AcadSelfData))
+
+kable(ug)
 ```
 
 
@@ -430,6 +430,9 @@ ggplot(AcadSelfData, aes(passion_vs_career, fill = passion_vs_career)) +
   theme(plot.title.position = "plot")
 ```
 
+
+
+
 ```{r}
 ggplot(AcadSelfData, aes(passion_vs_career, fill = more_imp)) +
   geom_bar(position = "dodge") +
@@ -447,19 +450,18 @@ ggplot(AcadSelfData, aes(passion_vs_career, impscore)) +
        y = NULL,
        fill = "More Important?")
 
-
 ```
 
 
 ```{r, echo=FALSE}
-v1 <- cramerV(AcadSelfData$more_imp, AcadSelfData$passion_vs_career)
-v1
+v1 <- cramerV(AcadSelfData$more_imp, AcadSelfData$passion_vs_career) 
+kable(v1)
 
 v2 <- cramerV(AcadSelfData$PassionImportant, AcadSelfData$passion_vs_career)
-v2
+kable(v2)
 
 v3 <- cramerV(AcadSelfData$CareerImportant, AcadSelfData$passion_vs_career)
-v3
+kable(v3)
 ```
 
 
@@ -501,36 +503,35 @@ ggplot(AcadSelfData, aes(fulfilled, fill = overall_satisfied)) +
   theme(axis.text.x = element_text(angle = 45, vjust = 0.75))
 ```
 
-```{r, echo=FALSE}
-f1 <- broom::tidy(chisq.test(r$fulfilled, r$overall_satisfied)) %>% 
-  data.table()
+```{r, echo=FALSE, cache=FALSE}
+f1 <- broom::tidy(chisq.test(r$fulfilled, r$overall_satisfied))
 
-f1
+kable(f1)
 ```
 
 
-```{r, echo=FALSE}
-ll <- h %>% 
+```{r, echo=FALSE, cache = FALSE}
+fr2 <- h %>% 
   group_by(full, sat) %>% 
-  count() %>% 
-  data.table()
+  count() 
 
-ll
+kable(fr2)
+
+
 ```
 
 
 ```{r, echo=FALSE}
 
 g2 <- cramerV(h$full, h$sat) 
-g2
+kable(g2)
 
-g3 <- broom::tidy(chisq.test(h$full, h$sat)) %>% 
-  data.table()
-g3
+g3 <- broom::tidy(chisq.test(h$full, h$sat)) 
+kable(g3)
 
-g4 <- broom::tidy(polr(as.factor(sat) ~ as.factor(full), h)) %>% 
-  data.table()
-g4
+g4 <- broom::tidy(polr(as.factor(sat) ~ as.factor(full), h)) 
+
+kable(g4)
 
 ```
 

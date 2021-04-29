@@ -20,7 +20,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.show = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning = TRUE, message = TRUE, fig.show = TRUE)
 ```
 
 
@@ -28,93 +28,58 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.show =
 
 ## Data Prep and Cleaning
 
-```{r Preparation and Cleaning, include=FALSE}
+```{r Preparation and Cleaning}
 library(tidyverse)
 library(DT)
 library(RColorBrewer)
 library(extrafont)
 library(ggpubr)
 library(likert)
+library(broom)
+library(gmodels)
+library(car)
+library(DescTools)
+library(qqplotr)
 
-load("HazingSurvey.RData")
+load("HazingSurveyData.RData")
+load("HazeSurveyLikert1.RData")
+load("HazeScoreLikert.RData")
+
+likertList <- colnames(Likertdf)
+
+hazescoreList <- colnames(Likertdf3)
+
+
+for(i in 1: ncol(Likertdf)){
+  levels(Likertdf[,i]) <- c("Strongly disagree",
+                            "Somewhat disagree",
+                            "Neutral",
+                            "Somewhat agree",
+                            "Strongly agree")
+}
 
 
 
-### Clean Data
 
-HazingSurveyData <- HazingSurveyData[-311,]
-HazingSurveyData$AllInitRHazing <- droplevels(HazingSurveyData$AllInitRHazing,
-                                              exlude = "")
+HazingSurveyData$Rprt2Pol <- ordered(HazingSurveyData$Rprt2Pol, levels = c("No", "Maybe", "Yes"))
 
-HazingSurveyData$Punishment <- as.factor(HazingSurveyData$Punishment)
+
+
 
 HazingSurveyData <- HazingSurveyData %>% 
-  mutate(DrinkorPaddle = case_when(Drinking == 1 ~ "Drinking",
-                                   TRUE ~ "Paddling"))
+  mutate(BinGlty = case_when(GltyofHazing == "Yes" ~ "Yes",
+                             TRUE ~ "No/Unsure"))
 
 
-levels(HazingSurveyData$Punishment) <- c("I firmly believe they should not\nreceive any punishment.",
-                                        "They should be suspended from the\nuniversity for more than 2 semmesters.",
-                                        "The veteran team members\nshould be removed from the group.",
-                                        "The veteran members should\nreceive anti-hazing training.",
-                                        "They should be expelled\nfrom the university.",
-                                        "They should be suspended from\nthe university for 1-2 semesters.",
-                                        "They should receive a warning to\navoid these actions in the future.")
-
-HazingSurveyData <- HazingSurveyData %>% 
-  mutate(ClassLvl = case_when(ClassLvl == "Senior/Super Senior" ~ as.character("Senior"),
-                              ClassLvl == "Graduate/Professional" ~ as.character("Graduate"),
-                              ClassLvl == "Freshmen" ~ "Freshman",
-                              TRUE ~ as.character(ClassLvl)))
-
-
-HazingSurveyData[,"ClassLvl"] <- ordered(HazingSurveyData[,"ClassLvl"], 
-                                    levels = c("Freshman", "Sophomore", 
-                                    "Junior", "Senior", "Graduate"))
-
-
-### Likert Data ---
-
-Likertdf <- HazingSurveyData[,16:31]
-
-
-colnames(Likertdf) <- c("An action is not hazing if the victim consents.",
-           "Everyone drinks before they turn 21.",
-           "I would recognize hazing if I saw it.",
-           "It is my responsibility to report students I suspect are involved in hazing.",
-           "Hazing is useful for group cohesion.",
-           "Hazing can be fun.",
-           "Hazing is a serious issue which needs to be prevented.",
-           "Hazng is dangerous.",
-           "Hazing should be illegal.",
-           "Most student groups haze their new members.",
-           "My university does not do enough to stop hazing.",
-           "Sometimes hazing is acceptable.",
-           "The definition of hazng is clear.",
-           "There are no benefis to hazing neww group members.",
-           "Underage drinking is not a serious issue.",
-           "All initiations of new group members are hazing.")
-
-Likertdf2 <- likert(Likertdf)
-
-
-
-
-
-
-#### Custom Palettes --
-
-LiPal <- c("#5b0909", "#5f0720", "#5e0f33", "#571b43", "#4c2651", 
-"#453568", "#34457c", "#00558d", "#0071a4", "#008a9e", "#00a07a", "#0fb040")
-
-LiPal2 <- c("#5b0909", "#571b43", "#34457c", "#008a9e", "#0fb040")
-
-LiPal3 <- c("#5b0909", "#5f0720","#571b43", "#34457c", "#00558d","#008a9e","#0fb040")
-
-LiPal4 <- c("#5b0909", "#5f0720","#571b43", "#4c2651", "#34457c", "#00558d","#008a9e","#0fb040")
-
-cuspal <- c("#350e3d", "#484058", "#555a6f", "#0086a2", "#0fb040")
-
+###   PALETTES    ###
+twelveColors <- c("#5b0909", "#5f0720", "#5e0f33", "#571b43", "#4c2651", 
+                  "#453568", "#34457c", "#00558d", "#0071a4", "#008a9e", 
+                  "#00a07a", "#0fb040")
+fiveColors <- c("#5b0909", "#571b43", "#34457c", "#008a9e", "#0fb040")
+sevenColors <- c("#5b0909", "#5f0720","#571b43", "#34457c", 
+                 "#00558d","#008a9e","#0fb040")
+eightColors <- c("#5b0909", "#5f0720","#571b43", "#4c2651", 
+                 "#34457c", "#00558d","#008a9e","#0fb040")
 
 
 ```
@@ -122,7 +87,7 @@ cuspal <- c("#350e3d", "#484058", "#555a6f", "#0086a2", "#0fb040")
 
 ## Theme Setup
 
-```{r Theme, message=FALSE, warning=FALSE}
+```{r Theme}
 theme_update(text = element_text(family = "Rockwell", size = 12),
                          panel.background = element_rect(fill = "#f0ebd8"),
                          plot.background = element_rect(fill = "#f0ebd8", color = "black"),
@@ -139,7 +104,7 @@ theme_update(text = element_text(family = "Rockwell", size = 12),
 
 ## Sample Characteristics Plots
 
-```{r message=FALSE, warning=FALSE}
+```{r}
 ggplot(HazingSurveyData, aes(Gender, fill = BinRace)) +
   geom_bar() +
   scale_fill_manual(values = c("#350e3d", "#0fb040")) +
@@ -155,7 +120,7 @@ ggplot(HazingSurveyData, aes(Gender, fill = BinRace)) +
 
 ggplot(HazingSurveyData, aes(ClassLvl, fill = fct_rev(ClassLvl))) +
   geom_bar(show.legend = FALSE) +
-  scale_fill_manual(values = LiPal2) +
+  scale_fill_manual(values = fiveColors) +
   coord_flip() +
   labs(title = "Sample Characteristics: Class Level", x = NULL, y = NULL) +
   geom_text(aes(label = ..count..), stat = "count", hjust = -0.8) +
@@ -166,7 +131,7 @@ ggplot(HazingSurveyData, aes(ClassLvl, fill = fct_rev(ClassLvl))) +
 
 ggplot(HazingSurveyData, aes(fct_rev(fct_infreq(Major)), fill = Major)) +
   geom_bar(show.legend = FALSE) +
-  scale_fill_manual(values = LiPal4) +
+  scale_fill_manual(values = eightColors) +
   scale_x_discrete(labels = c("No Major",
                               "Education",
                               "Other",
@@ -187,7 +152,7 @@ ggplot(HazingSurveyData, aes(fct_rev(fct_infreq(Major)), fill = Major)) +
 
 ## Determination of Guilt and Punishment Plots
 
-```{r Determination of Guilt, message=FALSE, warning=FALSE}
+```{r Determination of Guilt}
 ggplot(HazingSurveyData, aes(GltyofHazing, fill = GltyofHazing)) +
   geom_bar(show.legend = FALSE) +
   geom_text(aes(label = ..count..), stat = "count", vjust = -1) +
@@ -211,7 +176,7 @@ ggplot(HazingSurveyData, aes(GltyofHazing, fill = GltyofHazing)) +
 ```
 
 
-```{r message=FALSE, warning=FALSE}
+```{r}
 ggplot(HazingSurveyData, aes(fct_infreq(Punishment), fill = Punishment)) +
   geom_bar(show.legend = FALSE) +
   geom_text(aes(label = ..count..), stat = "count", hjust = -1) +
@@ -219,7 +184,7 @@ ggplot(HazingSurveyData, aes(fct_infreq(Punishment), fill = Punishment)) +
   coord_flip() +
   theme(plot.margin = margin(1, 0.5, 1, 0.5, "cm")) +
   ylim(0, 250) +
-  scale_fill_manual(values = LiPal3)
+  scale_fill_manual(values = sevenColors)
 
 
 ggplot(HazingSurveyData, aes(fct_infreq(Punishment), fill = Punishment)) +
@@ -229,16 +194,16 @@ ggplot(HazingSurveyData, aes(fct_infreq(Punishment), fill = Punishment)) +
   coord_flip() +
   theme(plot.margin = margin(1, 0.5, 1, 0.5, "cm")) +
   ylim(0, 250) +
-  scale_fill_manual(values = LiPal3) +
+  scale_fill_manual(values = sevenColors) +
   facet_wrap(~ DrinkorPaddle)
 ```
 
 
 ## General Views about Hazing Plots
 
-```{r fig.height=8, fig.width=8, message=FALSE, warning=FALSE}
+```{r Likerts, fig.height=8, fig.width=8, message=FALSE, warning=FALSE}
 
-plot(Likertdf2, col = LiPal2) +
+plot(likert(Likertdf), col = fiveColors) +
   labs(title = "Students' General Views about Hazing") +
   theme(legend.position = "top",
         legend.direction = "horizontal",
@@ -254,7 +219,7 @@ plot(Likertdf2, col = LiPal2) +
         panel.grid.major.y = element_line(linetype = "dotted")) +
   guides(fill = guide_legend(label.position = "bottom")) 
 
-likert.heat.plot(Likertdf2, low.color = "purple", high.color = "yellow") +
+likert.heat.plot(likert(Likertdf), low.color = "purple", high.color = "yellow") +
   labs(title = "Students' General Views about Hazing") +
   theme(plot.title.position = "plot",
         legend.title = element_blank(),
@@ -267,20 +232,28 @@ likert.heat.plot(Likertdf2, low.color = "purple", high.color = "yellow") +
         legend.background = element_blank(),
         legend.position = "top",
         legend.direction = "horizontal") +
-  guides(x = guide_axis(angle = 35)) +
-  scale_x_discrete(labels = c("Strongly Disagree" = "Strongly disagree",
-                              "Somewhat Agree" = "Somewhat disagree",
-                               "Neither Agree nor Disagree" = "Neither",
-                                "Somewhat Agree" = "Somewhat agree",
-                                  "Strongly Agree" = "Strongly agree"))
+  guides(x = guide_axis(angle = 35))
 
 
 ```
 
 ## Creating the Hazing Score Variable
 
+  The hazing score is a numeric representation of how positively or negatively a participant views hazing in general. The score can range from -18 to 18 and higher values indicate less positive views of hazing. The score was generated using 9 of the 15 Likert scale level of agreement items included in the survey.
+
+* All initiations of new group members are hazing.
+* An action is not hazing if the victim consents.
+* Hazing is useful for group cohesion
+* Hazing can be fun.
+* Hazing is a serious issue which needs to be prevented.
+* Hazing is dangerous
+* Hazing should be illegal.
+* Sometimes hazing is acceptable.
+* There are no benefits to hazing new group members.
+
+
 ### Selecting Appriorate Variables
-```{r Hazing Score Components, message=FALSE, warning=FALSE}
+```{r Hazing Score Components}
 
 Likertdf3 <- Likertdf[, -c(2,3,4,10,11,13,15)]
 
@@ -289,7 +262,7 @@ colnames(Likertdf3)
 
 ### Generating the Score
 
-```{r message=FALSE, warning=FALSE}
+```{r}
 
 i = 1
 while(i < 10){
@@ -318,7 +291,7 @@ HazingSurveyData$Score <- LikertdfScore$HazeScore
 
 ### Hazing Score Plot
 
-```{r message=FALSE, warning=FALSE}
+```{r}
 ggplot(HazingSurveyData, aes(Score)) +
   geom_histogram(fill = "#571b43") +
   labs(title = "Hazing Score", 
@@ -329,5 +302,111 @@ ggplot(HazingSurveyData, aes(Score)) +
 
 
 
+### Analysis
+
+```{r}
+
+ggline(HazingSurveyData, x = "BinGlty", y = "Score", 
+    add = c("mean_se", "jitter"), 
+    order = c("No/Unsure", "Yes"),
+    ylab = "Hazing Score",
+    xlab = "",
+    title = "Do you believe they are guilty?",
+    point.color = "red",
+    point.size = 1,
+    color = "black",
+    add.params = list(alpha = 0.5))
+
+      ggline(HazingSurveyData, x = "Gender", y = "Score", 
+             add = c("mean_se", "jitter"), 
+             order = c("Male", "Female"),
+             ylab = "Hazing Score",
+             xlab = "",
+             title = "Hazing Score by Gender",
+             point.color = "red",
+             point.size = 1,
+             color = "black",
+             add.params = list(alpha = 0.5))
+
+      
+      HazingSurveyData %>% 
+        group_by(BinGlty) %>%
+        rename("Guilty?" = "BinGlty") %>% 
+        summarise(n = n(), 
+                  mean = mean(Score, na.rm = TRUE), 
+                  sd = sd(Score, na.rm = TRUE),
+                  stderr = sd/sqrt(n),
+                  LCL = mean - qt(1 - (0.05 / 2), n - 1) * stderr,
+                  UCL = mean + qt(1 - (0.05 / 2), n - 1) * stderr,
+                  median = median(Score, na.rm = TRUE),
+                  IQR = IQR(Score, na.rm = TRUE),
+                  LCLmed = MedianCI(Score, na.rm=TRUE)[2],
+                  UCLmed = MedianCI(Score, na.rm=TRUE)[3],
+                  `W Stat` = shapiro.test(Score)$statistic,
+                  p.value = shapiro.test(Score)$p.value) %>% 
+        datatable(options = list(dom = 't')) %>% 
+        formatRound(columns = c("W Stat", "p.value",
+                                "mean", "sd",
+                                "stderr", "LCL", "UCL"), digits = 4)  
+      
+   
+      
+      HazingSurveyData %>%
+        group_by(Gender) %>% 
+        summarise(n = n(), 
+                  mean = mean(Score, na.rm = TRUE), 
+                  sd = sd(Score, na.rm = TRUE),
+                  stderr = sd/sqrt(n),
+                  LCL = mean - qt(1 - (0.05 / 2), n - 1) * stderr,
+                  UCL = mean + qt(1 - (0.05 / 2), n - 1) * stderr,
+                  median = median(Score, na.rm = TRUE),
+                  IQR = IQR(Score, na.rm = TRUE),
+                  LCLmed = MedianCI(Score, na.rm=TRUE)[2],
+                  UCLmed = MedianCI(Score, na.rm=TRUE)[3],
+                  `W Stat` = shapiro.test(Score)$statistic,
+                  p.value = shapiro.test(Score)$p.value) %>% 
+        datatable(options = list(dom = 't')) %>% 
+        formatRound(columns = c("W Stat", "p.value",
+                                "mean", "sd",
+                                "stderr", "LCL", "UCL"), digits = 4)   
+      
+  
+      ggplot(HazingSurveyData, aes(sample = Score, fill = BinGlty)) +
+        stat_qq_band(alpha=0.5, conf=0.95, qtype=1, bandType = "boot") +
+        stat_qq_line(identity = TRUE) +
+        stat_qq_point(col = "black") +
+        facet_wrap(~ BinGlty, scales = "free") +
+        labs(x = "Theoretical Quantiles", y = "Sample Quantiles") +
+        theme(legend.position = "none") +
+        scale_fill_manual(values = c("#5b0909", "#0fb040"))
+      
+
+      
+      ggplot(HazingSurveyData, aes(sample = Score, fill = Gender)) +
+        stat_qq_band(alpha=0.5, conf=0.95, qtype=1, bandType = "boot") +
+        stat_qq_line(identity = TRUE) +
+        stat_qq_point(col = "black") +
+        facet_wrap(~ Gender, scales = "free") +
+        labs(x = "Theoretical Quantiles", y = "Sample Quantiles") +
+        theme(legend.position = "none") +
+        scale_fill_manual(values = c("#5b0909", "#0fb040"))
+      
+
+  
+
+      tidy(wilcox.test(Score ~ BinGlty, HazingSurveyData, na.rm = TRUE, 
+                       paired = FALSE, exact = FALSE, conf.int = TRUE)) %>% 
+        datatable(options = list(dom = 't')) %>% 
+        formatRound(columns = c("estimate", "p.value",
+                                "conf.low", "conf.high"), digits = 4)
+  
+      
+      tidy(wilcox.test(Score ~ Gender, HazingSurveyData, na.rm = TRUE, 
+                       paired = FALSE, exact = FALSE, conf.int = TRUE)) %>% 
+        datatable(options = list(dom = 't')) %>% 
+        formatRound(columns = c("estimate", "p.value",
+                                "conf.low", "conf.high"), digits = 4)
+      
+```
 
 
