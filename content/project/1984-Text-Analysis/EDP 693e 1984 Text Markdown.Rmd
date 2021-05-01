@@ -20,6 +20,7 @@ tag:
   - Orwell
 editor_options: 
   chunk_output_type: console
+shiny: true
 ---
 
 ```{r setup, include=FALSE}
@@ -44,6 +45,7 @@ library(viridis)
 library(reshape2)
 library(readr)
 library(DT)
+library(knitr)
 
 chapter.labs <- c("Chapter 1", "Chapter 2", "Chapter 3")
 names(chapter.labs) <- c(1, 2, 3)
@@ -123,25 +125,25 @@ tidy_tokens_1984 <- tokens1984 %>%
 TidyCh1 %>% 
   count(word, sort = TRUE) %>%
   head() %>% 
-  datatable()
+  kable()
 
 
 TidyCh2 %>% 
   count(word, sort = TRUE) %>% 
   head() %>% 
-  datatable()
+  kable()
 
 
 TidyCh3 %>% 
   count(word, sort = TRUE) %>% 
   head() %>% 
-  datatable()
+  kable()
 
 
 tidy_tokens_1984 %>%
   count(word, sort = TRUE) %>%
   head() %>% 
-  datatable()
+  kable()
 
 
 ```
@@ -260,7 +262,7 @@ nrc_1984 <- tokens1984 %>%
   filter(!is.na(sentiment)) %>%
   count(sentiment, sort = TRUE)
 
-datatable(nrc_1984)
+kable(nrc_1984)
 
 
 NRCBook <- TidyBook %>%

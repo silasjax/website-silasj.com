@@ -20,18 +20,10 @@ tag:
   - Orwell
 editor_options: 
   chunk_output_type: console
+shiny: true
 ---
 
 <script src="EDP 693e 1984 Text Markdown_files/header-attrs/header-attrs.js"></script>
-<script src="EDP 693e 1984 Text Markdown_files/htmlwidgets/htmlwidgets.js"></script>
-<script src="EDP 693e 1984 Text Markdown_files/jquery/jquery.min.js"></script>
-<link href="EDP 693e 1984 Text Markdown_files/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
-<script src="EDP 693e 1984 Text Markdown_files/datatables-binding/datatables.js"></script>
-<link href="EDP 693e 1984 Text Markdown_files/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="EDP 693e 1984 Text Markdown_files/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="EDP 693e 1984 Text Markdown_files/dt-core/js/jquery.dataTables.min.js"></script>
-<link href="EDP 693e 1984 Text Markdown_files/crosstalk/css/crosstalk.css" rel="stylesheet" />
-<script src="EDP 693e 1984 Text Markdown_files/crosstalk/js/crosstalk.min.js"></script>
 
 <div id="TOC">
 <ul>
@@ -58,14 +50,142 @@ editor_options:
 </div>
 <div id="exploring-most-used-words" class="section level2">
 <h2>Exploring Most used Words</h2>
-<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],["winston","party","time","moment","people","brother"],[172,98,64,53,49,46]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>word<\/th>\n      <th>n<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":2},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
-<div id="htmlwidget-2" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],["winston","party","time","war","julia","moment"],[141,126,85,83,69,55]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>word<\/th>\n      <th>n<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":2},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
-<div id="htmlwidget-3" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],["winston","o'brien","pain","party","eyes","moment"],[141,119,55,52,49,48]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>word<\/th>\n      <th>n<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":2},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
-<div id="htmlwidget-4" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],["winston","party","time","o'brien","moment","war"],[454,276,197,178,156,124]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>word<\/th>\n      <th>n<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":2},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<table>
+<thead>
+<tr class="header">
+<th align="left">word</th>
+<th align="right">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">winston</td>
+<td align="right">172</td>
+</tr>
+<tr class="even">
+<td align="left">party</td>
+<td align="right">98</td>
+</tr>
+<tr class="odd">
+<td align="left">time</td>
+<td align="right">64</td>
+</tr>
+<tr class="even">
+<td align="left">moment</td>
+<td align="right">53</td>
+</tr>
+<tr class="odd">
+<td align="left">people</td>
+<td align="right">49</td>
+</tr>
+<tr class="even">
+<td align="left">brother</td>
+<td align="right">46</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="left">word</th>
+<th align="right">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">winston</td>
+<td align="right">141</td>
+</tr>
+<tr class="even">
+<td align="left">party</td>
+<td align="right">126</td>
+</tr>
+<tr class="odd">
+<td align="left">time</td>
+<td align="right">85</td>
+</tr>
+<tr class="even">
+<td align="left">war</td>
+<td align="right">83</td>
+</tr>
+<tr class="odd">
+<td align="left">julia</td>
+<td align="right">69</td>
+</tr>
+<tr class="even">
+<td align="left">moment</td>
+<td align="right">55</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="left">word</th>
+<th align="right">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">winston</td>
+<td align="right">141</td>
+</tr>
+<tr class="even">
+<td align="left">o’brien</td>
+<td align="right">119</td>
+</tr>
+<tr class="odd">
+<td align="left">pain</td>
+<td align="right">55</td>
+</tr>
+<tr class="even">
+<td align="left">party</td>
+<td align="right">52</td>
+</tr>
+<tr class="odd">
+<td align="left">eyes</td>
+<td align="right">49</td>
+</tr>
+<tr class="even">
+<td align="left">moment</td>
+<td align="right">48</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="left">word</th>
+<th align="right">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">winston</td>
+<td align="right">454</td>
+</tr>
+<tr class="even">
+<td align="left">party</td>
+<td align="right">276</td>
+</tr>
+<tr class="odd">
+<td align="left">time</td>
+<td align="right">197</td>
+</tr>
+<tr class="even">
+<td align="left">o’brien</td>
+<td align="right">178</td>
+</tr>
+<tr class="odd">
+<td align="left">moment</td>
+<td align="right">156</td>
+</tr>
+<tr class="even">
+<td align="left">war</td>
+<td align="right">124</td>
+</tr>
+</tbody>
+</table>
 <p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-1.png" width="672" /><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
 <p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20Analysis-1.png" width="672" /></p>
 <div id="bing-analysis" class="section level3">
@@ -74,19 +194,56 @@ editor_options:
 </div>
 <div id="nrc-analysis" class="section level3">
 <h3>NRC Analysis</h3>
-<pre><code>## # A tibble: 10 x 2
-##    sentiment        n
-##    &lt;chr&gt;        &lt;int&gt;
-##  1 negative      6214
-##  2 positive      5632
-##  3 trust         3406
-##  4 fear          3274
-##  5 sadness       2661
-##  6 anticipation  2619
-##  7 anger         2458
-##  8 joy           2026
-##  9 disgust       2013
-## 10 surprise      1350</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">sentiment</th>
+<th align="right">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">negative</td>
+<td align="right">6214</td>
+</tr>
+<tr class="even">
+<td align="left">positive</td>
+<td align="right">5632</td>
+</tr>
+<tr class="odd">
+<td align="left">trust</td>
+<td align="right">3406</td>
+</tr>
+<tr class="even">
+<td align="left">fear</td>
+<td align="right">3274</td>
+</tr>
+<tr class="odd">
+<td align="left">sadness</td>
+<td align="right">2661</td>
+</tr>
+<tr class="even">
+<td align="left">anticipation</td>
+<td align="right">2619</td>
+</tr>
+<tr class="odd">
+<td align="left">anger</td>
+<td align="right">2458</td>
+</tr>
+<tr class="even">
+<td align="left">joy</td>
+<td align="right">2026</td>
+</tr>
+<tr class="odd">
+<td align="left">disgust</td>
+<td align="right">2013</td>
+</tr>
+<tr class="even">
+<td align="left">surprise</td>
+<td align="right">1350</td>
+</tr>
+</tbody>
+</table>
 <p><img src="/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/nrc%20Analysis-1.png" width="672" /></p>
 </div>
 <div id="afinn-analysis" class="section level3">

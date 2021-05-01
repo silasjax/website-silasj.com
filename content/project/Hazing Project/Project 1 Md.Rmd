@@ -17,6 +17,7 @@ tag:
  - Hazing Project
 editor_options: 
   chunk_output_type: console
+shiny: true
 ---
 
 ```{r setup, include=FALSE}
@@ -28,7 +29,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = TRUE, message = TRUE, fig.show = T
 
 ## Data Prep and Cleaning
 
-```{r Preparation and Cleaning}
+```{r Preparation and Cleaning, include =  FALSE}
 library(tidyverse)
 library(DT)
 library(RColorBrewer)
@@ -40,6 +41,7 @@ library(gmodels)
 library(car)
 library(DescTools)
 library(qqplotr)
+library(knitr)
 
 load("HazingSurveyData.RData")
 load("HazeSurveyLikert1.RData")
@@ -87,7 +89,7 @@ eightColors <- c("#5b0909", "#5f0720","#571b43", "#4c2651",
 
 ## Theme Setup
 
-```{r Theme}
+```{r Theme, include = FALSE}
 theme_update(text = element_text(family = "Rockwell", size = 12),
                          panel.background = element_rect(fill = "#f0ebd8"),
                          plot.background = element_rect(fill = "#f0ebd8", color = "black"),
@@ -329,7 +331,7 @@ ggline(HazingSurveyData, x = "BinGlty", y = "Score",
              add.params = list(alpha = 0.5))
 
       
-      HazingSurveyData %>% 
+hg <- HazingSurveyData %>% 
         group_by(BinGlty) %>%
         rename("Guilty?" = "BinGlty") %>% 
         summarise(n = n(), 
@@ -343,15 +345,12 @@ ggline(HazingSurveyData, x = "BinGlty", y = "Score",
                   LCLmed = MedianCI(Score, na.rm=TRUE)[2],
                   UCLmed = MedianCI(Score, na.rm=TRUE)[3],
                   `W Stat` = shapiro.test(Score)$statistic,
-                  p.value = shapiro.test(Score)$p.value) %>% 
-        datatable(options = list(dom = 't')) %>% 
-        formatRound(columns = c("W Stat", "p.value",
-                                "mean", "sd",
-                                "stderr", "LCL", "UCL"), digits = 4)  
-      
+                  p.value = shapiro.test(Score)$p.value)
+
+kable(hg)
    
       
-      HazingSurveyData %>%
+hg1 <- HazingSurveyData %>%
         group_by(Gender) %>% 
         summarise(n = n(), 
                   mean = mean(Score, na.rm = TRUE), 
@@ -364,11 +363,9 @@ ggline(HazingSurveyData, x = "BinGlty", y = "Score",
                   LCLmed = MedianCI(Score, na.rm=TRUE)[2],
                   UCLmed = MedianCI(Score, na.rm=TRUE)[3],
                   `W Stat` = shapiro.test(Score)$statistic,
-                  p.value = shapiro.test(Score)$p.value) %>% 
-        datatable(options = list(dom = 't')) %>% 
-        formatRound(columns = c("W Stat", "p.value",
-                                "mean", "sd",
-                                "stderr", "LCL", "UCL"), digits = 4)   
+                  p.value = shapiro.test(Score)$p.value) 
+
+kable(hg1)
       
   
       ggplot(HazingSurveyData, aes(sample = Score, fill = BinGlty)) +
@@ -394,19 +391,14 @@ ggline(HazingSurveyData, x = "BinGlty", y = "Score",
 
   
 
-      tidy(wilcox.test(Score ~ BinGlty, HazingSurveyData, na.rm = TRUE, 
-                       paired = FALSE, exact = FALSE, conf.int = TRUE)) %>% 
-        datatable(options = list(dom = 't')) %>% 
-        formatRound(columns = c("estimate", "p.value",
-                                "conf.low", "conf.high"), digits = 4)
-  
+hg2 <- tidy(wilcox.test(Score ~ BinGlty, HazingSurveyData, na.rm = TRUE, 
+                       paired = FALSE, exact = FALSE, conf.int = TRUE)) 
+ 
+kable(hg2) 
       
-      tidy(wilcox.test(Score ~ Gender, HazingSurveyData, na.rm = TRUE, 
-                       paired = FALSE, exact = FALSE, conf.int = TRUE)) %>% 
-        datatable(options = list(dom = 't')) %>% 
-        formatRound(columns = c("estimate", "p.value",
-                                "conf.low", "conf.high"), digits = 4)
-      
+hg3 <- tidy(wilcox.test(Score ~ Gender, HazingSurveyData, na.rm = TRUE, 
+                       paired = FALSE, exact = FALSE, conf.int = TRUE)) 
+kable(hg3)      
 ```
 
 
