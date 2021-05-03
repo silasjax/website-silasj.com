@@ -75,6 +75,29 @@ theme_update(text = element_text(family = "Rockwell", color = "white"),
         legend.background = element_rect(fill = "#353635"),
         plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), units = "cm"))
 
+
+threeColors <- c("#5b0909", "#34457c", "#0fb040")
+
+fourColors <- c("#5b0909", "#571b43", "#34457c", "#0fb040")
+
+fiveColors <- c("#5b0909", "#571b43", "#34457c", "#008a9e", "#0fb040")
+
+sevenColors <- c("#5b0909", "#5f0720","#571b43", "#34457c", 
+                 "#00558d","#008a9e","#0fb040")
+
+eightColors <- c("#5b0909", "#5f0720","#571b43", "#4c2651", 
+                 "#34457c", "#00558d","#008a9e","#0fb040")
+
+nineColors <- c("#5b0909", "#5e0f33", "#571b43", "#4c2651", 
+                  "#453568", "#34457c", "#0071a4", "#008a9e", 
+                   "#0fb040")
+
+twelveColors <- c("#5b0909", "#5f0720", "#5e0f33", "#571b43", "#4c2651", 
+                  "#453568", "#34457c", "#00558d", "#0071a4", "#008a9e", 
+                  "#00a07a", "#0fb040")
+
+
+gtx <- "white"
 ```
 
 

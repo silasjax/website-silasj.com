@@ -136,7 +136,7 @@ mutate(full = case_when(fulfilled == "Unfulfilled" |
 
 ```{r Theme setup, include = FALSE}
 
-theme_update(text = element_text(family = "Rockwell", color = "white"),
+mytheme <- theme(text = element_text(family = "Rockwell", color = "white"),
         plot.title = element_text(size = 15, face = "bold"),
         plot.title.position = "plot",
         axis.text.x = element_text(color = "white"),
@@ -150,6 +150,8 @@ theme_update(text = element_text(family = "Rockwell", color = "white"),
         panel.grid.major = element_blank(),
         legend.background = element_rect(fill = "#353635"),
         plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), units = "cm"))
+
+theme_set(mytheme)
 
 threeColors <- c("#5b0909", "#34457c", "#0fb040")
 
@@ -171,6 +173,8 @@ twelveColors <- c("#5b0909", "#5f0720", "#5e0f33", "#571b43", "#4c2651",
                   "#453568", "#34457c", "#00558d", "#0071a4", "#008a9e", 
                   "#00a07a", "#0fb040")
 
+
+gtx <- "white"
 ```
 
 
@@ -181,7 +185,7 @@ twelveColors <- c("#5b0909", "#5f0720", "#5e0f33", "#571b43", "#4c2651",
 ```{r Sample Characteristics}
 ggplot(AcadSelfData, aes(Gender, fill = Gender)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -1)+
+  geom_text(aes(label = ..count..), stat = "count", vjust = -1, color = gtx)+
   labs(title = "Sample Characteristics: Gender",
        y = NULL) +
   scale_fill_manual(values = threeColors) +
@@ -190,7 +194,7 @@ ggplot(AcadSelfData, aes(Gender, fill = Gender)) +
 
 ggplot(AcadSelfData, aes(ClassLvl, fill = ClassLvl)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -1) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -1, color = gtx) +
   labs(title = "Sample Characteristics: Class Level",
        y = NULL,
        x = "Class Level") +
@@ -200,7 +204,7 @@ ggplot(AcadSelfData, aes(ClassLvl, fill = ClassLvl)) +
 
 ggplot(AcadSelfData, aes(Majorgrouped2, fill = Majorgrouped2)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", hjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", hjust = -0.5, color = gtx) +
   labs(y = NULL,
        x = NULL,
        title = "Sample Characteristics: Area of Study",
@@ -241,7 +245,7 @@ ggplotly(k,
 ```{r}
 ggplot(AcadSelfData, aes(GPA, fill = GPA)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5, color = gtx) +
   labs(title = "Sample Characteristics: GPA",
        y = NULL) +
   ylim(0, 200) +
@@ -251,7 +255,7 @@ ggplot(AcadSelfData, aes(GPA, fill = GPA)) +
 
 ggplot(AcadSelfData, aes(GPA2, fill = GPA2)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5, color = gtx) +
   labs(title = "Sample Characteristics: GPA",
        y = NULL,
        x = "GPA") +
@@ -292,7 +296,7 @@ ggplotly(p)
 ```{r}
 ggplot(AcadSelfData, aes(CareerImportant, fill = CareerImportant)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "How important was having a high-paying career\nin choosing your current major?",
        x = NULL,
        y = NULL) +
@@ -302,7 +306,7 @@ ggplot(AcadSelfData, aes(CareerImportant, fill = CareerImportant)) +
 
 ggplot(AcadSelfData, aes(PassionImportant, fill = PassionImportant)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "How important was having a career you are passionate\nabout in choosing your current major?",
        x = NULL,
        y = NULL) +
@@ -330,7 +334,8 @@ ggline(AcadSelfData, x = "Majorgrouped2", y = "impscore",
        point.color = "red",
        point.size = 1,
        color = "black",
-       add.params = list(alpha = 0.5)) +
+       add.params = list(alpha = 0.5),
+       ggtheme = mytheme) +
        rotate_x_text(angle = 45)
 
 ```
@@ -378,7 +383,8 @@ ggline(AcadSelfData, x = "ImSTEM", y = "impscore",
        point.color = "red",
        point.size = 1,
        color = "black",
-       add.params = list(alpha = 0.5))
+       add.params = list(alpha = 0.5),
+       ggtheme = mytheme)
 
 
 
@@ -419,7 +425,7 @@ kable(ug)
 ```{r}
 ggplot(AcadSelfData, aes(passion_vs_career, fill = passion_vs_career)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", hjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", hjust = -0.5, color = gtx) +
   labs(title = "What is most important, going to ollege to\nget a good career or to explore your passion?",
        x = NULL,
        y = NULL) +
@@ -442,7 +448,7 @@ ggplot(AcadSelfData, aes(passion_vs_career, fill = more_imp)) +
 
 
 ggplot(AcadSelfData, aes(passion_vs_career, impscore)) +
-  geom_boxplot() +
+  geom_boxplot(color = "black", fill = "white") +
   coord_flip() +
   labs(x = NULL,
        y = NULL,
@@ -468,7 +474,7 @@ kable(v3)
 ```{r}
 ggplot(AcadSelfData, aes(fulfilled, fill = fulfilled)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "How fulfilled do you feel in your major?",
        x = NULL,
        y = NULL) +
@@ -479,7 +485,7 @@ ggplot(AcadSelfData, aes(fulfilled, fill = fulfilled)) +
 
 ggplot(AcadSelfData, aes(overall_satisfied, fill = overall_satisfied)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "Overall, How satisfied or unsatisfied are you\nwith your college academic experience?",
        x = NULL,
        y = NULL) +
@@ -543,7 +549,7 @@ kable(g4)
 ```{r}
 ggplot(AcadSelfData, aes(true_self, fill = true_self)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "My major is a reflection of my true self.",
        x = NULL,
        y = NULL) +
@@ -555,7 +561,7 @@ ggplot(AcadSelfData, aes(true_self, fill = true_self)) +
 
 ggplot(AcadSelfData, aes(fulfilled, fill = fulfilled)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "How fulfilled do you feel in your major?",
        x = NULL,
        y = NULL) +
@@ -567,7 +573,7 @@ ggplot(AcadSelfData, aes(fulfilled, fill = fulfilled)) +
 
 ggplot(AcadSelfData, aes(fit_in, fill = fit_in)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "I feel like I fit in easily with other students in my major.",
        x = NULL,
        y = NULL) +
@@ -579,7 +585,7 @@ ggplot(AcadSelfData, aes(fit_in, fill = fit_in)) +
 
 ggplot(AcadSelfData, aes(overall_satisfied, fill = overall_satisfied)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "Overall, How satisfied or unsatisfied are you\nwith your college academic experience?",
        x = NULL,
        y = NULL) +
@@ -592,7 +598,7 @@ ggplot(AcadSelfData, aes(overall_satisfied, fill = overall_satisfied)) +
 
 ggplot(AcadSelfData, aes(rewarding, fill = rewarding)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "Being a student is a rewarding experience.",
        x = NULL,
        y = NULL) +
@@ -605,7 +611,7 @@ ggplot(AcadSelfData, aes(rewarding, fill = rewarding)) +
 
 ggplot(AcadSelfData, aes(money_issue, fill = money_issue)) +
   geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
   labs(title = "If money were not an issue, I would have chosen a different major.",
        x = NULL,
        y = NULL) +

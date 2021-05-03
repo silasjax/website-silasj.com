@@ -1,6 +1,6 @@
 ---
 title: "Experimental Survey on Hazing"
-author: "C. Jackson"
+author: "Silas Jackson"
 date: "3/24/2021"
 summary: Experimental survey on Hazing.
 linktitle: "Experimental Survey on Hazing"
@@ -16,7 +16,7 @@ type: docs
 tag:
  - Hazing Project
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 shiny: true
 ---
 
@@ -24,38 +24,52 @@ shiny: true
 
 <div id="TOC">
 <ul>
-<li><a href="#data-prep-and-cleaning">Data Prep and Cleaning</a></li>
-<li><a href="#theme-setup">Theme Setup</a></li>
-<li><a href="#sample-characteristics-plots">Sample Characteristics Plots</a></li>
-<li><a href="#determination-of-guilt-and-punishment-plots">Determination of Guilt and Punishment Plots</a></li>
-<li><a href="#general-views-about-hazing-plots">General Views about Hazing Plots</a></li>
+<li><a href="#overview"><strong>Overview</strong></a>
+<ul>
+<li><a href="#background"><strong>Background</strong></a></li>
+<li><a href="#research-questions"><strong>Research Questions</strong></a></li>
+<li><a href="#methods"><strong>Methods</strong></a>
+<ul>
+<li><a href="#survey">Survey</a></li>
+</ul></li>
+<li><a href="#sample-characteristics">Sample Characteristics</a></li>
+<li><a href="#determination-of-guilt-and-punishment">Determination of Guilt and Punishment</a></li>
+<li><a href="#general-views-about-hazing">General Views about Hazing</a></li>
 <li><a href="#creating-the-hazing-score-variable">Creating the Hazing Score Variable</a>
 <ul>
-<li><a href="#selecting-appriorate-variables">Selecting Appriorate Variables</a></li>
-<li><a href="#generating-the-score">Generating the Score</a></li>
-<li><a href="#hazing-score-plot">Hazing Score Plot</a></li>
+<li><a href="#hazing-score">Hazing Score</a></li>
 <li><a href="#analysis">Analysis</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
 
-<div id="data-prep-and-cleaning" class="section level2">
-<h2>Data Prep and Cleaning</h2>
+<div id="overview" class="section level1">
+<h1><strong>Overview</strong></h1>
+<div id="background" class="section level2">
+<h2><strong>Background</strong></h2>
 </div>
-<div id="theme-setup" class="section level2">
-<h2>Theme Setup</h2>
+<div id="research-questions" class="section level2">
+<h2><strong>Research Questions</strong></h2>
 </div>
-<div id="sample-characteristics-plots" class="section level2">
-<h2>Sample Characteristics Plots</h2>
+<div id="methods" class="section level2">
+<h2><strong>Methods</strong></h2>
+<div id="survey" class="section level3">
+<h3>Survey</h3>
+<p>Download the survey <a href="/media/Experimental%20Hazing%20Survey%20Using%20Vignettes.pdf">here.</a></p>
+</div>
+</div>
+<div id="sample-characteristics" class="section level2">
+<h2>Sample Characteristics</h2>
 <p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-1.png" width="672" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-2.png" width="672" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
 </div>
-<div id="determination-of-guilt-and-punishment-plots" class="section level2">
-<h2>Determination of Guilt and Punishment Plots</h2>
+<div id="determination-of-guilt-and-punishment" class="section level2">
+<h2>Determination of Guilt and Punishment</h2>
 <p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-1.png" width="672" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-2.png" width="672" /></p>
 <p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-1.png" width="672" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
 </div>
-<div id="general-views-about-hazing-plots" class="section level2">
-<h2>General Views about Hazing Plots</h2>
+<div id="general-views-about-hazing" class="section level2">
+<h2>General Views about Hazing</h2>
 <p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/Likerts-1.png" width="768" /><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/Likerts-2.png" width="768" /></p>
 </div>
 <div id="creating-the-hazing-score-variable" class="section level2">
@@ -72,8 +86,6 @@ shiny: true
 <li>Sometimes hazing is acceptable.</li>
 <li>There are no benefits to hazing new group members.</li>
 </ul>
-<div id="selecting-appriorate-variables" class="section level3">
-<h3>Selecting Appriorate Variables</h3>
 <pre><code>## [1] &quot;An action is not hazing if the victim consents.&quot;       
 ## [2] &quot;Hazing is useful for group cohesion.&quot;                  
 ## [3] &quot;Hazing can be fun.&quot;                                    
@@ -83,13 +95,8 @@ shiny: true
 ## [7] &quot;Sometimes hazing is acceptable.&quot;                       
 ## [8] &quot;There are no benefis to hazing neww group members.&quot;    
 ## [9] &quot;All initiations of new group members are hazing.&quot;</code></pre>
-</div>
-<div id="generating-the-score" class="section level3">
-<h3>Generating the Score</h3>
-</div>
-<div id="hazing-score-plot" class="section level3">
-<h3>Hazing Score Plot</h3>
-<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<div id="hazing-score" class="section level3">
+<h3>Hazing Score</h3>
 <p><img src="/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 </div>
 <div id="analysis" class="section level3">
@@ -279,5 +286,6 @@ shiny: true
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </div>
