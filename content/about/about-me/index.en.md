@@ -17,4 +17,4 @@ Following my undergraduate studies, I completed three years of graduate coursewo
 
 When I'm not tinkering around in RStudio, I enjoy weightlifting, karaoke, and spending time with my cat, Bagel.
 
-{{< figure src="bagel.JPG" width="250" height="375" caption="Bagel Jackson." >}}
+{{< figure src="bagel.JPG" width="250" height="375" caption="Bagel Jackson" >}}

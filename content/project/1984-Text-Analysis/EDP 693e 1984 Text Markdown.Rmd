@@ -24,11 +24,10 @@ shiny: true
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = TRUE, message = FALSE)
 ```
 
 ```{r loaded libraries, include = FALSE}
-
 library(SnowballC)
 library(tm)
 library(tidyverse)
@@ -44,8 +43,10 @@ library(glue)
 library(viridis)
 library(reshape2)
 library(readr)
-library(DT)
 library(knitr)
+library(ggthemes)
+library(extrafont)
+
 
 chapter.labs <- c("Chapter 1", "Chapter 2", "Chapter 3")
 names(chapter.labs) <- c(1, 2, 3)
@@ -53,6 +54,12 @@ names(chapter.labs) <- c(1, 2, 3)
 get_sentiments("bing")
 get_sentiments("nrc")
 get_sentiments("afinn")
+
+
+
+
+
+
 
 ```
 
@@ -80,11 +87,11 @@ Ch1 <- gsub("\\$", "", Ch1)
 Ch2 <- gsub("\\$", "", Ch2)
 Ch3 <- gsub("\\$", "", Ch3)
 
-Ch1Tokens <- data_frame(text = Ch1) %>%
+Ch1Tokens <- data.frame(text = Ch1) %>%
   unnest_tokens(word, text)
-Ch2Tokens <- data_frame(text = Ch2) %>%
+Ch2Tokens <- data.frame(text = Ch2) %>%
   unnest_tokens(word, text)
-Ch3Tokens <- data_frame(text = Ch3) %>%
+Ch3Tokens <- data.frame(text = Ch3) %>%
   unnest_tokens(word, text)
 
 
@@ -160,7 +167,6 @@ tidy_tokens_1984 %>%
   mutate(word = reorder(word, n)) %>%
   ggplot(aes(n, word, fill=n)) +
   geom_col() +
-  theme_minimal() +
   labs(y = NULL, title = "Words Used more than 100 Times",
        x = "Word Count", fill = "Count") +
   scale_fill_viridis() +
@@ -170,7 +176,7 @@ tidy_tokens_1984 %>%
 tidy_tokens_1984 %>%
   anti_join(stop_words) %>%
   count(word) %>%
-  with(wordcloud(word, n, max.words = 100, scales = c(3, 0.1)))
+  with(wordcloud(word, n, max.words = 100, scale = c(3, 0.1)))
 
 ```
 
@@ -194,9 +200,9 @@ tidy_tokens_1984 %>%
   inner_join(get_sentiments("bing")) %>%
   count(word, sentiment, sort = TRUE) %>%
   acast(word ~ sentiment, value.var = "n", fill = 0) %>%
-  comparison.cloud(scale = c(5, 0.5), colors = c("grey20", "coral"),
-                   max.words = 50, title.size = 2.5, title.bg.colors = NULL,
-                   fixed.asp = TRUE, title.colors = "skyblue")
+  comparison.cloud(scale = c(2.5, 0.5), colors = c("grey20", "coral"),
+                   max.words = 30, title.size = 2.5, title.bg.colors = NA,
+                   title.colors = "skyblue")
 
 
 ```
@@ -208,24 +214,24 @@ TidyCh1 %>%
   count(word, sentiment, sort = TRUE) %>%
   acast(word ~ sentiment, value.var = "n", fill = 0) %>%
   comparison.cloud(scale = c(3, 0.1), colors = c("grey20", "coral"),
-                   max.words = 50, title.size = 1.5, title.bg.colors = NULL,
-                   fixed.asp = TRUE, title.colors = "skyblue")
+                   max.words = 50, title.size = 1.5, title.bg.colors = NA,
+                   title.colors = "skyblue")
 
 TidyCh2 %>%
   inner_join(get_sentiments("bing")) %>%
   count(word, sentiment, sort = TRUE) %>%
   acast(word ~ sentiment, value.var = "n", fill = 0) %>%
   comparison.cloud(scale = c(3, 0.1), colors = c("grey20", "coral"),
-                   max.words = 30, title.size = 1.5, title.bg.colors = NULL,
-                   fixed.asp = TRUE, title.colors = "skyblue")
+                   max.words = 30, title.size = 1.5, title.bg.colors = NA,
+                   title.colors = "skyblue")
 
 TidyCh3 %>%
   inner_join(get_sentiments("bing")) %>%
   count(word, sentiment, sort = TRUE) %>%
   acast(word ~ sentiment, value.var = "n", fill = 0) %>%
   comparison.cloud(scale = c(3, 0.1), colors = c("grey20", "coral"),
-                   max.words = 30, title.size = 1.5, title.bg.colors = NULL,
-                   fixed.asp = TRUE, title.colors = "skyblue")
+                   max.words = 30, title.size = 1.5, title.bg.colors = NA,
+                   title.colors = "skyblue")
 
 
 

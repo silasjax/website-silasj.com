@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts | Silas Jackson</title>
+    <link>https://www.silasj.com/about/</link>
+      <atom:link href="https://www.silasj.com/about/index.xml" rel="self" type="application/rss+xml" />
+    <description>Abouts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.silasj.com/media/icon_hu79ef4ba8ba0357260ae705468dd50191_71466_512x512_fill_lanczos_center_2.png</url>
+      <title>Abouts</title>
+      <link>https://www.silasj.com/about/</link>
+    </image>
+    
+    <item>
+      <title>About me</title>
+      <link>https://www.silasj.com/about/about-me/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.silasj.com/about/about-me/</guid>
+      <description>&lt;p&gt;Hello!&lt;/p&gt;
+&lt;p&gt;My name is Silas. I am an aspiring data analyst and R enthusiast. I am from McKeesport, PA which is located in the suburbs or Pittsburgh. I attended Slippery Rock University of Pennsylvania from 2014 through 2018. Having a wide range of interests and not yet discovering a love for quantitative analysis, I graduated with a bachelor&amp;rsquo;s of science in interdisciplinary studies with minors in philosophy and writing.&lt;/p&gt;
+&lt;p&gt;Following my undergraduate studies, I completed three years of graduate coursework at West Virginia University in sociology and statistics. At WVU, I discovered a knack for statistical analysis and sought to strengthen those skills by taking courses in areas such as experimental design, survey methods, and data visualization.&lt;/p&gt;
+&lt;p&gt;When I&amp;rsquo;m not tinkering around in RStudio, I enjoy weightlifting, karaoke, and spending time with my cat, Bagel.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-bagel-jackson&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Bagel Jackson&#34; srcset=&#34;
+               /about/about-me/bagel_hua6a338df1f831ccdde5c8131397b9d0d_2355413_810699e078e456fd017b7e8358f7d3d8.JPG 400w,
+               /about/about-me/bagel_hua6a338df1f831ccdde5c8131397b9d0d_2355413_175ddfdf5463a5f6ce9521fa31cd4841.JPG 760w,
+               /about/about-me/bagel_hua6a338df1f831ccdde5c8131397b9d0d_2355413_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://www.silasj.com/about/about-me/bagel_hua6a338df1f831ccdde5c8131397b9d0d_2355413_810699e078e456fd017b7e8358f7d3d8.JPG&#34;
+               width=&#34;250&#34;
+               height=&#34;375&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Bagel Jackson
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -15,11 +15,7 @@ main:
   - name: About Me
     url: "/about/about-me/"
     weight: 40
-    
-  #- name: Shiny Apps (Coming Soon!)
-    #url: "/shinyapps"
-    #weight: 50
-    
+  
   - name: Contact
     url: '#contact'
     weight: 70

@@ -15,7 +15,7 @@ menu:
     weight: 1
 type: docs
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 lastmod: '2021-04-24T23:09:32-04:00'
 featured: no
 projects: []
@@ -53,24 +53,19 @@ Download the survey [here.](/media/Survey on Academic Self.pdf)
 knitr::opts_chunk$set(echo = FALSE, warning = TRUE, cache = FALSE, error = TRUE)
 library(tidyverse)
 library(likert)
-library(ggthemes)
 library(extrafont)
 library(plotly)
 library(viridis)
 library(ggpubr)
-library(data.table)
 library(rcompanion)
 library(DescTools)
 library(summarytools)
 library(ordinal)
 library(MASS)
 library(qqplotr)
-library(widgetframe)
-library(htmltools)
-library(htmlwidgets)
-library(htmlTable)
 library(knitr)
-library(DT)
+library(patchwork)
+library(ggthemes)
 
 load("AcadSelfData.Rdata")
 load("AcadLikertData.Rdata")
@@ -141,17 +136,20 @@ mutate(full = case_when(fulfilled == "Unfulfilled" |
 
 ```{r Theme setup, include = FALSE}
 
-theme_update(text = element_text(family = "Rockwell"),
+theme_update(text = element_text(family = "Rockwell", color = "white"),
         plot.title = element_text(size = 15, face = "bold"),
         plot.title.position = "plot",
-        panel.background = element_rect(fill = "white"),
-        panel.grid.minor.y = element_line(linetype = "dotted", color = "grey50"),
-        panel.grid.major.y = element_line(color = "grey90"),
+        axis.text.x = element_text(color = "white"),
+        axis.text.y = element_text(color = "white"),
+        panel.background = element_rect(fill = "#353635", color = "#353635"),
+        plot.background = element_rect(fill = "#353635", color = "#353635"),
+        panel.grid.minor.y = element_line(linetype = "dotted", color = "grey90"),
+        panel.grid.major.y = element_line(color = "grey70"),
         panel.grid.major.x = element_blank(),
         panel.grid.minor = element_blank(),
+        panel.grid.major = element_blank(),
+        legend.background = element_rect(fill = "#353635"),
         plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), units = "cm"))
-
-
 
 threeColors <- c("#5b0909", "#34457c", "#0fb040")
 
@@ -180,7 +178,7 @@ twelveColors <- c("#5b0909", "#5f0720", "#5e0f33", "#571b43", "#4c2651",
 
 # **Sample Characteristics**
 
-```{r Sample Characteristics, message=FALSE, warning=FALSE}
+```{r Sample Characteristics}
 ggplot(AcadSelfData, aes(Gender, fill = Gender)) +
   geom_bar(show.legend = FALSE) +
   geom_text(aes(label = ..count..), stat = "count", vjust = -1)+
@@ -616,7 +614,12 @@ ggplot(AcadSelfData, aes(money_issue, fill = money_issue)) +
   ylim(0, 275)
 
 
+
+
 ```
+
+
+
 
 ## **Limitations**
 

@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Silas Jackson</title>
+    <link>https://www.silasj.com/</link>
+      <atom:link href="https://www.silasj.com/index.xml" rel="self" type="application/rss+xml" />
+    <description>Silas Jackson</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.silasj.com/media/icon_hu79ef4ba8ba0357260ae705468dd50191_71466_512x512_fill_lanczos_center_2.png</url>
+      <title>Silas Jackson</title>
+      <link>https://www.silasj.com/</link>
+    </image>
+    
+    <item>
+      <title>Academic Self-Concept Project</title>
+      <link>https://www.silasj.com/project/academic-self-concept-project/academic-self-project/</link>
+      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.silasj.com/project/academic-self-concept-project/academic-self-project/</guid>
+      <description>
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://www.silasj.com/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://www.silasj.com/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#background&#34;&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#research-questions&#34;&gt;&lt;strong&gt;Research Questions&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#methods&#34;&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#survey&#34;&gt;Survey&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sample-characteristics&#34;&gt;&lt;strong&gt;Sample Characteristics&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#analysis&#34;&gt;&lt;strong&gt;Analysis&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#limitations&#34;&gt;&lt;strong&gt;Limitations&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#references&#34;&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;overview&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/h1&gt;
+&lt;div id=&#34;background&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;One part of James Daniel Lee’s argument in Which Kids Can “Become” Scientists? Effects of Gender, Self-Concepts, and Perceptions of Scientists is that girls are less likely to pursue science careers because they feel their self-concept(s) are not in line with the expectation of what a scientist is like. This suggests that, at least in part, students tend to pursue careers which they feel are congruent with their self-concept. However, this view does not account for whether college students consider their education a means to pursue their passions and express a part of their “true” self, or as a path to obtaining a lucrative career. Further, research on academic self-concept almost exclusively focuses on achievement as its main indicator or correlate.&lt;/p&gt;
+&lt;p&gt;I argue that achievement is only one aspect of academic self-concept and research on this topic must account for academic gratification. That said, I seek to (1) examine whether students college major is more influenced by careerist goals or self-concepts, (2) explore how others’ perceptions (reflected appraisals) affect their self-concept and overall satisfaction with their major, (3) reveal if students who choose their major based on self-concept are more or less satisfied with their major, and (4) investigate students’ attitudes about their perceptions of their future success as it relates to the conclusions above.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;research-questions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Research Questions&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What is the role of self-concept in students’ choice of college major?&lt;/li&gt;
+&lt;li&gt;What is the role of reflected appraisals in satisfaction with college major?&lt;/li&gt;
+&lt;li&gt;Are students more likely to choose a major based on self-concept or career outcomes?&lt;/li&gt;
+&lt;li&gt;Are students who choose a major based on self-concept more or less satisfied than those who choose a major on career outcomes?&lt;/li&gt;
+&lt;li&gt;What is the bridge between academic self-concept and general self-concept?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;methods&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Survey undergraduate students on academic self and careerism
+&lt;ul&gt;
+&lt;li&gt;Focus on the parts of academic self literature ignores&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;survey&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Survey&lt;/h3&gt;
+&lt;p&gt;Download the survey &lt;a href=&#34;https://www.silasj.com/media/Survey%20on%20Academic%20Self.pdf&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sample-characteristics&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;strong&gt;Sample Characteristics&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/Sample%20Characteristics-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/Sample%20Characteristics-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/Sample%20Characteristics-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;plotly html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;data&#34;:[{&#34;orientation&#34;:&#34;v&#34;,&#34;width&#34;:[0.18,0.128571428571429,0.128571428571429,0.128571428571429],&#34;base&#34;:[0,0,0,0],&#34;x&#34;:[0.64,1.61428571428571,2.61428571428571,3.61428571428571],&#34;y&#34;:[1,4,48,3],&#34;text&#34;:[&#34;count:   1&lt;br /&gt;STEM Major?: I don&#39;t know what \&#34;STEM\&#34; means. &lt;br&gt;Area of Study: Arts/Humanities&#34;,&#34;count:   4&lt;br /&gt;STEM Major?: Maybe/Unsure &lt;br&gt;Area of Study: Arts/Humanities&#34;,&#34;count:  48&lt;br /&gt;STEM Major?: No &lt;br&gt;Area of Study: Arts/Humanities&#34;,&#34;count:   3&lt;br /&gt;STEM Major?: Yes &lt;br&gt;Area of Study: Arts/Humanities&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(68,1,84,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Arts/Humanities&#34;,&#34;legendgroup&#34;:&#34;Arts/Humanities&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;v&#34;,&#34;width&#34;:[0.128571428571429,0.128571428571429,0.128571428571429],&#34;base&#34;:[0,0,0],&#34;x&#34;:[1.74285714285714,2.74285714285714,3.74285714285714],&#34;y&#34;:[8,1,83],&#34;text&#34;:[&#34;count:   8&lt;br /&gt;STEM Major?: Maybe/Unsure &lt;br&gt;Area of Study: Biology/Life Sciences&#34;,&#34;count:   1&lt;br /&gt;STEM Major?: No &lt;br&gt;Area of Study: Biology/Life Sciences&#34;,&#34;count:  83&lt;br /&gt;STEM Major?: Yes &lt;br&gt;Area of Study: Biology/Life Sciences&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(68,58,131,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Biology/Life Sciences&#34;,&#34;legendgroup&#34;:&#34;Biology/Life Sciences&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;v&#34;,&#34;width&#34;:[0.18,0.128571428571429,0.128571428571429,0.128571428571429],&#34;base&#34;:[0,0,0,0],&#34;x&#34;:[0.82,1.87142857142857,2.87142857142857,3.87142857142857],&#34;y&#34;:[3,12,48,6],&#34;text&#34;:[&#34;count:   3&lt;br /&gt;STEM Major?: I don&#39;t know what \&#34;STEM\&#34; means. &lt;br&gt;Area of Study: Business&#34;,&#34;count:  12&lt;br /&gt;STEM Major?: Maybe/Unsure &lt;br&gt;Area of Study: Business&#34;,&#34;count:  48&lt;br /&gt;STEM Major?: No &lt;br&gt;Area of Study: Business&#34;,&#34;count:   6&lt;br /&gt;STEM Major?: Yes &lt;br&gt;Area of Study: Business&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(49,104,142,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Business&#34;,&#34;legendgroup&#34;:&#34;Business&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;v&#34;,&#34;width&#34;:[0.18,0.128571428571429,0.128571428571429,0.128571428571429],&#34;base&#34;:[0,0,0,0],&#34;x&#34;:[1,2,3,4],&#34;y&#34;:[2,28,24,54],&#34;text&#34;:[&#34;count:   2&lt;br /&gt;STEM Major?: I don&#39;t know what \&#34;STEM\&#34; means. &lt;br&gt;Area of Study: Health/pre-prof. fields&#34;,&#34;count:  28&lt;br /&gt;STEM Major?: Maybe/Unsure &lt;br&gt;Area of Study: Health/pre-prof. fields&#34;,&#34;count:  24&lt;br /&gt;STEM Major?: No &lt;br&gt;Area of Study: Health/pre-prof. fields&#34;,&#34;count:  54&lt;br /&gt;STEM Major?: Yes &lt;br&gt;Area of Study: Health/pre-prof. fields&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(33,144,140,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Health/pre-prof. fields&#34;,&#34;legendgroup&#34;:&#34;Health/pre-prof. fields&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;v&#34;,&#34;width&#34;:[0.18,0.128571428571429,0.128571428571429,0.128571428571428],&#34;base&#34;:[0,0,0,0],&#34;x&#34;:[1.18,2.12857142857143,3.12857142857143,4.12857142857143],&#34;y&#34;:[5,22,86,9],&#34;text&#34;:[&#34;count:   5&lt;br /&gt;STEM Major?: I don&#39;t know what \&#34;STEM\&#34; means. &lt;br&gt;Area of Study: Other&#34;,&#34;count:  22&lt;br /&gt;STEM Major?: Maybe/Unsure &lt;br&gt;Area of Study: Other&#34;,&#34;count:  86&lt;br /&gt;STEM Major?: No &lt;br&gt;Area of Study: Other&#34;,&#34;count:   9&lt;br /&gt;STEM Major?: Yes &lt;br&gt;Area of Study: Other&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(53,183,121,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Other&#34;,&#34;legendgroup&#34;:&#34;Other&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;v&#34;,&#34;width&#34;:[0.18,0.128571428571429,0.128571428571429,0.128571428571428],&#34;base&#34;:[0,0,0,0],&#34;x&#34;:[1.36,2.25714285714286,3.25714285714286,4.25714285714286],&#34;y&#34;:[3,20,56,12],&#34;text&#34;:[&#34;count:   3&lt;br /&gt;STEM Major?: I don&#39;t know what \&#34;STEM\&#34; means. &lt;br&gt;Area of Study: Social Science&#34;,&#34;count:  20&lt;br /&gt;STEM Major?: Maybe/Unsure &lt;br&gt;Area of Study: Social Science&#34;,&#34;count:  56&lt;br /&gt;STEM Major?: No &lt;br&gt;Area of Study: Social Science&#34;,&#34;count:  12&lt;br /&gt;STEM Major?: Yes &lt;br&gt;Area of Study: Social Science&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(143,215,68,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Social Science&#34;,&#34;legendgroup&#34;:&#34;Social Science&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;v&#34;,&#34;width&#34;:[0.128571428571429,0.128571428571429,0.128571428571428],&#34;base&#34;:[0,0,0],&#34;x&#34;:[2.38571428571429,3.38571428571429,4.38571428571429],&#34;y&#34;:[2,1,116],&#34;text&#34;:[&#34;count:   2&lt;br /&gt;STEM Major?: Maybe/Unsure &lt;br&gt;Area of Study: STEM&#34;,&#34;count:   1&lt;br /&gt;STEM Major?: No &lt;br&gt;Area of Study: STEM&#34;,&#34;count: 116&lt;br /&gt;STEM Major?: Yes &lt;br&gt;Area of Study: STEM&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(253,231,37,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;STEM&#34;,&#34;legendgroup&#34;:&#34;STEM&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null}],&#34;layout&#34;:{&#34;margin&#34;:{&#34;t&#34;:54.8229179945284,&#34;r&#34;:18.8976377952756,&#34;b&#34;:34.2401035487002,&#34;l&#34;:40.0848524071477},&#34;plot_bgcolor&#34;:&#34;rgba(53,54,53,1)&#34;,&#34;paper_bgcolor&#34;:&#34;rgba(53,54,53,1)&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:14.6118721461187},&#34;title&#34;:{&#34;text&#34;:&#34;&lt;b&gt; Do you consider your major a STEM major? &lt;\/b&gt;&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:19.9252801992528},&#34;x&#34;:0,&#34;xref&#34;:&#34;paper&#34;},&#34;xaxis&#34;:{&#34;domain&#34;:[0,1],&#34;automargin&#34;:true,&#34;type&#34;:&#34;linear&#34;,&#34;autorange&#34;:false,&#34;range&#34;:[0.4,4.6],&#34;tickmode&#34;:&#34;array&#34;,&#34;ticktext&#34;:[&#34;I don&#39;t know what \&#34;STEM\&#34; means.&#34;,&#34;Maybe/Unsure&#34;,&#34;No&#34;,&#34;Yes&#34;],&#34;tickvals&#34;:[1,2,3,4],&#34;categoryorder&#34;:&#34;array&#34;,&#34;categoryarray&#34;:[&#34;I don&#39;t know what \&#34;STEM\&#34; means.&#34;,&#34;Maybe/Unsure&#34;,&#34;No&#34;,&#34;Yes&#34;],&#34;nticks&#34;:null,&#34;ticks&#34;:&#34;outside&#34;,&#34;tickcolor&#34;:&#34;rgba(51,51,51,1)&#34;,&#34;ticklen&#34;:3.65296803652968,&#34;tickwidth&#34;:0.66417600664176,&#34;showticklabels&#34;:true,&#34;tickfont&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:11.689497716895},&#34;tickangle&#34;:-0,&#34;showline&#34;:false,&#34;linecolor&#34;:null,&#34;linewidth&#34;:0,&#34;showgrid&#34;:false,&#34;gridcolor&#34;:null,&#34;gridwidth&#34;:0,&#34;zeroline&#34;:false,&#34;anchor&#34;:&#34;y&#34;,&#34;title&#34;:{&#34;text&#34;:&#34;&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:14.6118721461187}},&#34;hoverformat&#34;:&#34;.2f&#34;},&#34;yaxis&#34;:{&#34;domain&#34;:[0,1],&#34;automargin&#34;:true,&#34;type&#34;:&#34;linear&#34;,&#34;autorange&#34;:false,&#34;range&#34;:[-5.8,121.8],&#34;tickmode&#34;:&#34;array&#34;,&#34;ticktext&#34;:[&#34;0&#34;,&#34;30&#34;,&#34;60&#34;,&#34;90&#34;,&#34;120&#34;],&#34;tickvals&#34;:[0,30,60,90,120],&#34;categoryorder&#34;:&#34;array&#34;,&#34;categoryarray&#34;:[&#34;0&#34;,&#34;30&#34;,&#34;60&#34;,&#34;90&#34;,&#34;120&#34;],&#34;nticks&#34;:null,&#34;ticks&#34;:&#34;outside&#34;,&#34;tickcolor&#34;:&#34;rgba(51,51,51,1)&#34;,&#34;ticklen&#34;:3.65296803652968,&#34;tickwidth&#34;:0.66417600664176,&#34;showticklabels&#34;:true,&#34;tickfont&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:11.689497716895},&#34;tickangle&#34;:-0,&#34;showline&#34;:false,&#34;linecolor&#34;:null,&#34;linewidth&#34;:0,&#34;showgrid&#34;:true,&#34;gridcolor&#34;:&#34;rgba(179,179,179,1)&#34;,&#34;gridwidth&#34;:0.66417600664176,&#34;zeroline&#34;:false,&#34;anchor&#34;:&#34;x&#34;,&#34;title&#34;:{&#34;text&#34;:&#34;&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:14.6118721461187}},&#34;hoverformat&#34;:&#34;.2f&#34;},&#34;shapes&#34;:[{&#34;type&#34;:&#34;rect&#34;,&#34;fillcolor&#34;:null,&#34;line&#34;:{&#34;color&#34;:null,&#34;width&#34;:0,&#34;linetype&#34;:[]},&#34;yref&#34;:&#34;paper&#34;,&#34;xref&#34;:&#34;paper&#34;,&#34;x0&#34;:0,&#34;x1&#34;:1,&#34;y0&#34;:0,&#34;y1&#34;:1}],&#34;showlegend&#34;:true,&#34;legend&#34;:{&#34;bgcolor&#34;:&#34;rgba(53,54,53,1)&#34;,&#34;bordercolor&#34;:&#34;transparent&#34;,&#34;borderwidth&#34;:1.88976377952756,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:11.689497716895},&#34;y&#34;:1},&#34;hovermode&#34;:&#34;closest&#34;,&#34;barmode&#34;:&#34;relative&#34;},&#34;config&#34;:{&#34;doubleClick&#34;:&#34;reset&#34;,&#34;showSendToCloud&#34;:false},&#34;source&#34;:&#34;A&#34;,&#34;attrs&#34;:{&#34;4ca41b7d7e95&#34;:{&#34;x&#34;:{},&#34;fill&#34;:{},&#34;text&#34;:{},&#34;type&#34;:&#34;bar&#34;}},&#34;cur_data&#34;:&#34;4ca41b7d7e95&#34;,&#34;visdat&#34;:{&#34;4ca41b7d7e95&#34;:[&#34;function (y) &#34;,&#34;x&#34;]},&#34;highlight&#34;:{&#34;on&#34;:&#34;plotly_click&#34;,&#34;persistent&#34;:false,&#34;dynamic&#34;:false,&#34;selectize&#34;:false,&#34;opacityDim&#34;:0.2,&#34;selected&#34;:{&#34;opacity&#34;:1},&#34;debounce&#34;:0},&#34;shinyEvents&#34;:[&#34;plotly_hover&#34;,&#34;plotly_click&#34;,&#34;plotly_selected&#34;,&#34;plotly_relayout&#34;,&#34;plotly_brushed&#34;,&#34;plotly_brushing&#34;,&#34;plotly_clickannotation&#34;,&#34;plotly_doubleclick&#34;,&#34;plotly_deselect&#34;,&#34;plotly_afterplot&#34;,&#34;plotly_sunburstclick&#34;],&#34;base_url&#34;:&#34;https://plot.ly&#34;},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-2-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;htmlwidget-2&#34; style=&#34;width:768px;height:768px;&#34; class=&#34;plotly html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-2&#34;&gt;{&#34;x&#34;:{&#34;data&#34;:[{&#34;x&#34;:[0,0],&#34;y&#34;:[0.4,18.6],&#34;text&#34;:&#34;yintercept: 0&#34;,&#34;type&#34;:&#34;scatter&#34;,&#34;mode&#34;:&#34;lines&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;dash&#34;:&#34;solid&#34;},&#34;hoveron&#34;:&#34;points&#34;,&#34;showlegend&#34;:false,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;h&#34;,&#34;width&#34;:[0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.9],&#34;base&#34;:[-26.7113095238095,-21.9494047619048,-68.6755952380952,-35.4166666666667,-7.8125,-13.6904761904762,-42.2619047619048,-33.1845238095238,-13.0208333333333,-4.46428571428571,-59.9702380952381,-5.6547619047619,-12.202380952381,-35.4910714285714,-2.45535714285714,-11.0119047619048,-66.7410714285714],&#34;x&#34;:[3.125,4.01785714285714,20.0892857142857,7.14285714285714,1.04166666666667,1.93452380952381,10.2678571428571,3.72023809523809,0.744047619047619,0.446428571428571,11.6071428571429,0.595238095238095,1.04166666666667,5.20833333333334,0.148809523809524,0.595238095238095,15.7738095238095],&#34;y&#34;:[8,9,1,6,14,12,4,7,10,16,3,15,11,5,18,13,2],&#34;text&#34;:[&#34;variable: Strongly disagree&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value:  3.1250000&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value:  4.0178571&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value: 20.0892857&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value:  7.1428571&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value:  1.0416667&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value:  1.9345238&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value: 10.2678571&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value:  3.7202381&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value:  0.7440476&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value:  0.4464286&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value: 11.6071429&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value:  0.5952381&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value:  1.0416667&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value:  5.2083333&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value:  0.1488095&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value:  0.5952381&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;variable: Strongly disagree&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value: 15.7738095&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(91,9,9,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Strongly disagree&#34;,&#34;legendgroup&#34;:&#34;Strongly disagree&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;h&#34;,&#34;width&#34;:[0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.9],&#34;base&#34;:[-23.5863095238095,-17.9315476190476,-48.5863095238095,-28.2738095238095,-6.77083333333333,-11.7559523809524,-31.9940476190476,-29.4642857142857,-12.2767857142857,-4.01785714285714,-48.3630952380952,-3.27380952380952,-5.05952380952381,-11.1607142857143,-30.2827380952381,-2.30654761904762,-10.4166666666667,-50.9672619047619],&#34;x&#34;:[8.7797619047619,5.20833333333333,35.7142857142857,11.9047619047619,1.93452380952381,4.76190476190476,17.8571428571429,12.9464285714286,3.125,1.19047619047619,28.5714285714286,0.595238095238095,1.33928571428571,2.97619047619047,10.7142857142857,0.297619047619048,1.63690476190476,29.0178571428571],&#34;y&#34;:[8,9,1,6,14,12,4,7,10,16,3,17,15,11,5,18,13,2],&#34;text&#34;:[&#34;variable: Disagree&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value:  8.7797619&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value:  5.2083333&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value: 35.7142857&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value: 11.9047619&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value:  1.9345238&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value:  4.7619048&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;variable: Disagree&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value: 17.8571429&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value: 12.9464286&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value:  3.1250000&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value:  1.1904762&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value: 28.5714286&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value:  0.5952381&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value:  1.3392857&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value:  2.9761905&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value: 10.7142857&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value:  0.2976190&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value:  1.6369048&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;variable: Disagree&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value: 29.0178571&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(95,7,32,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Disagree&#34;,&#34;legendgroup&#34;:&#34;Disagree&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;h&#34;,&#34;width&#34;:[0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.9],&#34;base&#34;:[-14.8065476190476,-12.7232142857143,-12.8720238095238,-16.3690476190476,-4.83630952380952,-6.99404761904762,-14.1369047619048,-16.5178571428571,-9.15178571428572,-2.82738095238095,-19.7916666666667,-2.67857142857143,-3.72023809523809,-8.18452380952381,-19.5684523809524,-2.00892857142857,-8.77976190476191,-21.9494047619048],&#34;x&#34;:[9.52380952380952,8.18452380952381,7.14285714285714,11.1607142857143,2.5297619047619,4.76190476190476,8.18452380952381,12.797619047619,4.01785714285714,1.33928571428571,12.6488095238095,1.33928571428571,2.08333333333333,3.86904761904762,13.6904761904762,0.892857142857143,4.61309523809524,17.4107142857143],&#34;y&#34;:[8,9,1,6,14,12,4,7,10,16,3,17,15,11,5,18,13,2],&#34;text&#34;:[&#34;variable: Somewhat disagree&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value:  9.5238095&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value:  8.1845238&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value:  7.1428571&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value: 11.1607143&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value:  2.5297619&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value:  4.7619048&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value:  8.1845238&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value: 12.7976190&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value:  4.0178571&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value:  1.3392857&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value: 12.6488095&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value:  1.3392857&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value:  2.0833333&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value:  3.8690476&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value: 13.6904762&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value:  0.8928571&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value:  4.6130952&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;variable: Somewhat disagree&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value: 17.4107143&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(87,27,67,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Somewhat disagree&#34;,&#34;legendgroup&#34;:&#34;Somewhat disagree&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;h&#34;,&#34;width&#34;:[0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.9],&#34;base&#34;:[-5.28273809523809,-4.53869047619048,-5.72916666666667,-5.20833333333333,-2.30654761904762,-2.23214285714286,-5.95238095238095,-3.7202380952381,-5.13392857142857,-1.48809523809524,-7.14285714285714,-1.33928571428571,-1.63690476190476,-4.31547619047619,-5.87797619047619,-1.11607142857143,-4.16666666666667,-4.53869047619048],&#34;x&#34;:[5.28273809523809,4.53869047619048,5.72916666666667,5.20833333333333,2.30654761904762,2.23214285714286,5.95238095238095,3.7202380952381,5.13392857142857,1.48809523809524,7.14285714285714,1.33928571428571,1.63690476190476,4.31547619047619,5.87797619047619,1.11607142857143,4.16666666666667,4.53869047619048],&#34;y&#34;:[8,9,1,6,14,12,4,7,10,16,3,17,15,11,5,18,13,2],&#34;text&#34;:[&#34;variable: Neutral&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value:  5.2827381&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value:  4.5386905&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value:  5.7291667&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value:  5.2083333&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value:  2.3065476&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value:  2.2321429&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value:  5.9523810&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value:  3.7202381&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value:  5.1339286&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value:  1.4880952&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value:  7.1428571&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value:  1.3392857&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value:  1.6369048&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value:  4.3154762&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value:  5.8779762&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value:  1.1160714&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value:  4.1666667&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value:  4.5386905&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(52,69,124,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Neutral&#34;,&#34;legendgroup&#34;:&#34;Neutral&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;h&#34;,&#34;width&#34;:[0.9,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999],&#34;base&#34;:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],&#34;x&#34;:[4.53869047619048,4.16666666666667,1.11607142857143,5.87797619047619,4.31547619047619,1.63690476190476,1.33928571428571,7.14285714285714,1.48809523809524,5.13392857142857,3.7202380952381,5.95238095238095,2.23214285714286,2.30654761904762,5.20833333333333,5.72916666666667,4.53869047619048,5.28273809523809],&#34;y&#34;:[2,13,18,5,11,15,17,3,16,10,7,4,12,14,6,1,9,8],&#34;text&#34;:[&#34;variable: Neutral&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value:  4.538690&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value:  4.166667&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value:  1.116071&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value:  5.877976&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value:  4.315476&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value:  1.636905&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value:  1.339286&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value:  7.142857&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value:  1.488095&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value:  5.133929&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value:  3.720238&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value:  5.952381&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value:  2.232143&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value:  2.306548&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value:  5.208333&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value:  5.729167&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value:  4.538690&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;variable: Neutral&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value:  5.282738&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(52,69,124,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Neutral&#34;,&#34;legendgroup&#34;:&#34;Neutral&#34;,&#34;showlegend&#34;:false,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;h&#34;,&#34;width&#34;:[0.9,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999],&#34;base&#34;:[4.53869047619048,4.16666666666667,1.11607142857143,5.87797619047619,4.31547619047619,1.63690476190476,1.33928571428571,7.14285714285714,1.48809523809524,5.13392857142857,3.7202380952381,5.95238095238095,2.23214285714286,2.30654761904762,5.20833333333333,5.72916666666667,4.53869047619048,5.28273809523809],&#34;x&#34;:[20.0892857142857,21.577380952381,13.5416666666667,26.6369047619048,22.4702380952381,15.4761904761905,11.9047619047619,16.0714285714286,14.1369047619048,18.3035714285714,26.6369047619048,22.4702380952381,20.3869047619048,18.1547619047619,22.172619047619,9.9702380952381,25.8928571428571,24.702380952381],&#34;y&#34;:[2,13,18,5,11,15,17,3,16,10,7,4,12,14,6,1,9,8],&#34;text&#34;:[&#34;variable: Somewhat agree&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value: 20.089286&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value: 21.577381&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value: 13.541667&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value: 26.636905&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value: 22.470238&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value: 15.476190&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value: 11.904762&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value: 16.071429&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value: 14.136905&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value: 18.303571&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value: 26.636905&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value: 22.470238&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value: 20.386905&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value: 18.154762&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value: 22.172619&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value:  9.970238&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value: 25.892857&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;variable: Somewhat agree&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value: 24.702381&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(0,85,141,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Somewhat agree&#34;,&#34;legendgroup&#34;:&#34;Somewhat agree&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;h&#34;,&#34;width&#34;:[0.9,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999],&#34;base&#34;:[24.6279761904762,25.7440476190476,14.6577380952381,32.514880952381,26.7857142857143,17.1130952380952,13.2440476190476,23.2142857142857,15.625,23.4375,30.3571428571429,28.422619047619,22.6190476190476,20.4613095238095,27.3809523809524,15.6994047619048,30.4315476190476,29.985119047619],&#34;x&#34;:[5.95238095238095,30.8035714285714,38.8392857142857,14.8809523809524,36.3095238095238,37.5,41.0714285714286,10.8630952380952,43.452380952381,36.3095238095238,18.452380952381,16.3690476190476,34.8214285714286,39.1369047619048,21.7261904761905,6.39880952380952,31.3988095238095,29.4642857142857],&#34;y&#34;:[2,13,18,5,11,15,17,3,16,10,7,4,12,14,6,1,9,8],&#34;text&#34;:[&#34;variable: Agree&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value:  5.952381&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value: 30.803571&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value: 38.839286&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value: 14.880952&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value: 36.309524&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value: 37.500000&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value: 41.071429&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value: 10.863095&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value: 43.452381&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value: 36.309524&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value: 18.452381&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value: 16.369048&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value: 34.821429&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;variable: Agree&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value: 39.136905&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value: 21.726190&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value:  6.398810&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value: 31.398810&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;variable: Agree&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value: 29.464286&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(0,138,158,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Agree&#34;,&#34;legendgroup&#34;:&#34;Agree&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;orientation&#34;:&#34;h&#34;,&#34;width&#34;:[0.9,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999,0.9,0.9,0.899999999999999,0.899999999999999],&#34;base&#34;:[30.5803571428571,56.5476190476191,53.4970238095238,47.3958333333333,63.0952380952381,54.6130952380952,54.3154761904762,34.077380952381,59.077380952381,59.7470238095238,48.8095238095238,44.7916666666667,57.4404761904762,59.5982142857143,49.1071428571429,22.0982142857143,61.8303571428571,59.4494047619048],&#34;x&#34;:[2.67857142857143,32.4404761904762,44.047619047619,17.1130952380952,24.702380952381,39.7321428571428,42.4107142857143,5.95238095238095,36.4583333333333,27.2321428571428,18.0059523809524,12.9464285714286,28.8690476190476,32.5892857142857,15.4761904761905,9.22619047619048,16.2202380952381,13.8392857142857],&#34;y&#34;:[2,13,18,5,11,15,17,3,16,10,7,4,12,14,6,1,9,8],&#34;text&#34;:[&#34;variable: Strongly agree&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value:  2.678571&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value: 32.440476&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value: 44.047619&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value: 17.113095&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value: 24.702381&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value: 39.732143&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value: 42.410714&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value:  5.952381&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value: 36.458333&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value: 27.232143&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value: 18.005952&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value: 12.946429&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value: 28.869048&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value: 32.589286&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value: 15.476190&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value:  9.226190&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value: 16.220238&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;variable: Strongly agree&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value: 13.839286&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;],&#34;type&#34;:&#34;bar&#34;,&#34;marker&#34;:{&#34;autocolorscale&#34;:false,&#34;color&#34;:&#34;rgba(15,176,64,1)&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;transparent&#34;}},&#34;name&#34;:&#34;Strongly agree&#34;,&#34;legendgroup&#34;:&#34;Strongly agree&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;x&#34;:[-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100],&#34;y&#34;:[18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1],&#34;text&#34;:[&#34;1%&#34;,&#34;2%&#34;,&#34;3%&#34;,&#34;4%&#34;,&#34;6%&#34;,&#34;7%&#34;,&#34;11%&#34;,&#34;8%&#34;,&#34;8%&#34;,&#34;17%&#34;,&#34;21%&#34;,&#34;29%&#34;,&#34;30%&#34;,&#34;30%&#34;,&#34;36%&#34;,&#34;53%&#34;,&#34;62%&#34;,&#34;63%&#34;],&#34;hovertext&#34;:[&#34;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 1%&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 2%&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 3%&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 4%&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 6%&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 7%&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 11%&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value: -100&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 8%&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 8%&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 17%&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 21%&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;,&#34;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 29%&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 30%&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 30%&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 36%&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 53%&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 62%&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;,&#34;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;paste0(round(low), \&#34;%\&#34;): 63%&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value: -100&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;],&#34;textfont&#34;:{&#34;size&#34;:11.3385826771654,&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;},&#34;type&#34;:&#34;scatter&#34;,&#34;mode&#34;:&#34;text&#34;,&#34;hoveron&#34;:&#34;points&#34;,&#34;showlegend&#34;:false,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;x&#34;:[100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100],&#34;y&#34;:[18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1],&#34;text&#34;:[&#34;96%&#34;,&#34;95%&#34;,&#34;94%&#34;,&#34;93%&#34;,&#34;90%&#34;,&#34;85%&#34;,&#34;84%&#34;,&#34;83%&#34;,&#34;82%&#34;,&#34;74%&#34;,&#34;68%&#34;,&#34;63%&#34;,&#34;59%&#34;,&#34;59%&#34;,&#34;52%&#34;,&#34;33%&#34;,&#34;29%&#34;,&#34;26%&#34;],&#34;hovertext&#34;:[&#34;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 96%&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 95%&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 94%&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 93%&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 90%&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 85%&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 84%&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value: 100&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 83%&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 82%&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 74%&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 68%&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;,&#34;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 63%&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 59%&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 59%&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 52%&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 33%&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 29%&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;,&#34;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;paste0(round(high), \&#34;%\&#34;): 26%&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value: 100&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;],&#34;textfont&#34;:{&#34;size&#34;:11.3385826771654,&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;},&#34;type&#34;:&#34;scatter&#34;,&#34;mode&#34;:&#34;text&#34;,&#34;hoveron&#34;:&#34;points&#34;,&#34;showlegend&#34;:false,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;x&#34;:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],&#34;y&#34;:[18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1],&#34;text&#34;:[&#34;2%&#34;,&#34;3%&#34;,&#34;3%&#34;,&#34;3%&#34;,&#34;5%&#34;,&#34;8%&#34;,&#34;4%&#34;,&#34;9%&#34;,&#34;10%&#34;,&#34;9%&#34;,&#34;11%&#34;,&#34;7%&#34;,&#34;10%&#34;,&#34;12%&#34;,&#34;12%&#34;,&#34;14%&#34;,&#34;9%&#34;,&#34;11%&#34;],&#34;hovertext&#34;:[&#34;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 2%&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: Colleges should prepare students&lt;br /&gt;to get a good career.&lt;br /&gt;&#34;,&#34;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 3%&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: Others would say I am a good student.&lt;br /&gt;&#34;,&#34;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 3%&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: I have a fairly clear sense of my academic goals.&lt;br /&gt;&#34;,&#34;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 3%&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: Students should go to college to explore&lt;br /&gt;topics they are passionate about.&lt;br /&gt;&#34;,&#34;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 5%&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: I am passionate about what I learn&lt;br /&gt;in my major courses.&lt;br /&gt;&#34;,&#34;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 8%&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: Colleges should develop students into&lt;br /&gt;well-rounded individuals.&lt;br /&gt;&#34;,&#34;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 4%&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&lt;br /&gt;value: 0&lt;br /&gt;Item: I have a fairly clear sense of my career goals.&#34;,&#34;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 9%&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: Students should go to college to learn&lt;br /&gt;the skills to get a good career.&lt;br /&gt;&#34;,&#34;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 10%&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: In general, STEM majors are more&lt;br /&gt;difficult than other majors.&lt;br /&gt;&#34;,&#34;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 9%&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: Being a student is a rewarding experience.&lt;br /&gt;&#34;,&#34;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 11%&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: I feel like I fit in easily with&lt;br /&gt;other students in my major.&lt;br /&gt;&#34;,&#34;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 7%&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: I struggle to have the motivation&lt;br /&gt;to complete my assignments.&lt;br /&gt;&#34;,&#34;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 10%&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: At times, I feel like I am a failure.&lt;br /&gt;&#34;,&#34;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 12%&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: General education requirements&lt;br /&gt;are a waste of time.&lt;br /&gt;&#34;,&#34;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 12%&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: I felt pressured to go to college.&lt;br /&gt;&#34;,&#34;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 14%&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: Other people tend to look down on my major.&lt;br /&gt;&#34;,&#34;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 9%&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: I struggle to understand the&lt;br /&gt;content in my major courses.&lt;br /&gt;&#34;,&#34;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;paste0(round(neutral), \&#34;%\&#34;): 11%&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&lt;br /&gt;value: 0&lt;br /&gt;Item: If money were not an issue, I would&lt;br /&gt;have chosen a different major.&lt;br /&gt;&#34;],&#34;textfont&#34;:{&#34;size&#34;:11.3385826771654,&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;},&#34;type&#34;:&#34;scatter&#34;,&#34;mode&#34;:&#34;text&#34;,&#34;hoveron&#34;:&#34;points&#34;,&#34;showlegend&#34;:false,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null}],&#34;layout&#34;:{&#34;margin&#34;:{&#34;t&#34;:54.8229179945284,&#34;r&#34;:18.8976377952756,&#34;b&#34;:48.851975694819,&#34;l&#34;:308.943299895732},&#34;plot_bgcolor&#34;:&#34;transparent&#34;,&#34;paper_bgcolor&#34;:&#34;rgba(53,54,53,1)&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:14.6118721461187},&#34;title&#34;:{&#34;text&#34;:&#34;&lt;b&gt; Level of Agreement Questions &lt;\/b&gt;&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:19.9252801992528},&#34;x&#34;:0.1,&#34;xref&#34;:&#34;paper&#34;},&#34;xaxis&#34;:{&#34;domain&#34;:[0,1],&#34;automargin&#34;:true,&#34;type&#34;:&#34;linear&#34;,&#34;autorange&#34;:false,&#34;range&#34;:[-115.5,115.5],&#34;tickmode&#34;:&#34;array&#34;,&#34;ticktext&#34;:[100,50,0,50,100],&#34;tickvals&#34;:[-100,-50,0,50,100],&#34;categoryorder&#34;:&#34;array&#34;,&#34;categoryarray&#34;:[100,50,0,50,100],&#34;nticks&#34;:null,&#34;ticks&#34;:&#34;&#34;,&#34;tickcolor&#34;:null,&#34;ticklen&#34;:3.65296803652968,&#34;tickwidth&#34;:0,&#34;showticklabels&#34;:true,&#34;tickfont&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:11.689497716895},&#34;tickangle&#34;:-0,&#34;showline&#34;:false,&#34;linecolor&#34;:null,&#34;linewidth&#34;:0,&#34;showgrid&#34;:false,&#34;gridcolor&#34;:null,&#34;gridwidth&#34;:0,&#34;zeroline&#34;:false,&#34;anchor&#34;:&#34;y&#34;,&#34;title&#34;:{&#34;text&#34;:&#34;Percentage&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:14.6118721461187}},&#34;hoverformat&#34;:&#34;.2f&#34;},&#34;yaxis&#34;:{&#34;domain&#34;:[0,1],&#34;automargin&#34;:true,&#34;type&#34;:&#34;linear&#34;,&#34;autorange&#34;:false,&#34;range&#34;:[0.4,18.6],&#34;tickmode&#34;:&#34;array&#34;,&#34;ticktext&#34;:[&#34;I struggle to understand the content in my major&lt;br /&gt;courses.&#34;,&#34;Colleges should develop students into&lt;br /&gt;well-rounded individuals.&#34;,&#34;Colleges should prepare students to get a good&lt;br /&gt;career.&#34;,&#34;General education requirements are a waste of&lt;br /&gt;time.&#34;,&#34;Students should go to college to learn the skills&lt;br /&gt;to get a good career.&#34;,&#34;Students should go to college to explore topics&lt;br /&gt;they are passionate about.&#34;,&#34;Others would say I am a good student.&#34;,&#34;Other people tend to look down on my major.&#34;,&#34;I have a fairly clear sense of my academic goals.&#34;,&#34;In general, STEM majors are more difficult than&lt;br /&gt;other majors.&#34;,&#34;I struggle to have the motivation to complete my&lt;br /&gt;assignments.&#34;,&#34;I felt pressured to go to college.&#34;,&#34;I have a fairly clear sense of my career goals.&#34;,&#34;I am passionate about what I learn in my major&lt;br /&gt;courses.&#34;,&#34;At times, I feel like I am a failure.&#34;,&#34;If money were not an issue, I would have chosen a&lt;br /&gt;different major.&#34;,&#34;Being a student is a rewarding experience.&#34;,&#34;I feel like I fit in easily with other students&lt;br /&gt;in my major.&#34;],&#34;tickvals&#34;:[2,13,18,5,11,15,17,3,16,10,7,4,12,14,6,1,9,8],&#34;categoryorder&#34;:&#34;array&#34;,&#34;categoryarray&#34;:[&#34;I struggle to understand the content in my major&lt;br /&gt;courses.&#34;,&#34;Colleges should develop students into&lt;br /&gt;well-rounded individuals.&#34;,&#34;Colleges should prepare students to get a good&lt;br /&gt;career.&#34;,&#34;General education requirements are a waste of&lt;br /&gt;time.&#34;,&#34;Students should go to college to learn the skills&lt;br /&gt;to get a good career.&#34;,&#34;Students should go to college to explore topics&lt;br /&gt;they are passionate about.&#34;,&#34;Others would say I am a good student.&#34;,&#34;Other people tend to look down on my major.&#34;,&#34;I have a fairly clear sense of my academic goals.&#34;,&#34;In general, STEM majors are more difficult than&lt;br /&gt;other majors.&#34;,&#34;I struggle to have the motivation to complete my&lt;br /&gt;assignments.&#34;,&#34;I felt pressured to go to college.&#34;,&#34;I have a fairly clear sense of my career goals.&#34;,&#34;I am passionate about what I learn in my major&lt;br /&gt;courses.&#34;,&#34;At times, I feel like I am a failure.&#34;,&#34;If money were not an issue, I would have chosen a&lt;br /&gt;different major.&#34;,&#34;Being a student is a rewarding experience.&#34;,&#34;I feel like I fit in easily with other students&lt;br /&gt;in my major.&#34;],&#34;nticks&#34;:null,&#34;ticks&#34;:&#34;&#34;,&#34;tickcolor&#34;:null,&#34;ticklen&#34;:3.65296803652968,&#34;tickwidth&#34;:0,&#34;showticklabels&#34;:true,&#34;tickfont&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:11.689497716895},&#34;tickangle&#34;:-0,&#34;showline&#34;:false,&#34;linecolor&#34;:null,&#34;linewidth&#34;:0,&#34;showgrid&#34;:true,&#34;gridcolor&#34;:&#34;rgba(179,179,179,1)&#34;,&#34;gridwidth&#34;:0.66417600664176,&#34;zeroline&#34;:false,&#34;anchor&#34;:&#34;x&#34;,&#34;title&#34;:{&#34;text&#34;:&#34;&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:14.6118721461187}},&#34;hoverformat&#34;:&#34;.2f&#34;},&#34;shapes&#34;:[{&#34;type&#34;:&#34;rect&#34;,&#34;fillcolor&#34;:null,&#34;line&#34;:{&#34;color&#34;:null,&#34;width&#34;:0,&#34;linetype&#34;:[]},&#34;yref&#34;:&#34;paper&#34;,&#34;xref&#34;:&#34;paper&#34;,&#34;x0&#34;:0,&#34;x1&#34;:1,&#34;y0&#34;:0,&#34;y1&#34;:1}],&#34;showlegend&#34;:false,&#34;legend&#34;:{&#34;bgcolor&#34;:null,&#34;bordercolor&#34;:null,&#34;borderwidth&#34;:0,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;family&#34;:&#34;Rockwell&#34;,&#34;size&#34;:10.6268161062682}},&#34;hovermode&#34;:&#34;closest&#34;,&#34;barmode&#34;:&#34;relative&#34;},&#34;config&#34;:{&#34;doubleClick&#34;:&#34;reset&#34;,&#34;showSendToCloud&#34;:false},&#34;source&#34;:&#34;A&#34;,&#34;attrs&#34;:{&#34;4ca437e43d7c&#34;:{&#34;yintercept&#34;:{},&#34;type&#34;:&#34;scatter&#34;},&#34;4ca442f61595&#34;:{&#34;fill&#34;:{},&#34;x&#34;:{},&#34;y&#34;:{}},&#34;4ca4707b1fea&#34;:{&#34;fill&#34;:{},&#34;x&#34;:{},&#34;y&#34;:{}},&#34;4ca443db446c&#34;:{&#34;x&#34;:{},&#34;label&#34;:{},&#34;x.1&#34;:{},&#34;y&#34;:{}},&#34;4ca45db92f3c&#34;:{&#34;x&#34;:{},&#34;label&#34;:{},&#34;x.1&#34;:{},&#34;y&#34;:{}},&#34;4ca416963750&#34;:{&#34;x&#34;:{},&#34;label&#34;:{},&#34;x.1&#34;:{},&#34;y&#34;:{}}},&#34;cur_data&#34;:&#34;4ca437e43d7c&#34;,&#34;visdat&#34;:{&#34;4ca437e43d7c&#34;:[&#34;function (y) &#34;,&#34;x&#34;],&#34;4ca442f61595&#34;:[&#34;function (y) &#34;,&#34;x&#34;],&#34;4ca4707b1fea&#34;:[&#34;function (y) &#34;,&#34;x&#34;],&#34;4ca443db446c&#34;:[&#34;function (y) &#34;,&#34;x&#34;],&#34;4ca45db92f3c&#34;:[&#34;function (y) &#34;,&#34;x&#34;],&#34;4ca416963750&#34;:[&#34;function (y) &#34;,&#34;x&#34;]},&#34;highlight&#34;:{&#34;on&#34;:&#34;plotly_click&#34;,&#34;persistent&#34;:false,&#34;dynamic&#34;:false,&#34;selectize&#34;:false,&#34;opacityDim&#34;:0.2,&#34;selected&#34;:{&#34;opacity&#34;:1},&#34;debounce&#34;:0},&#34;shinyEvents&#34;:[&#34;plotly_hover&#34;,&#34;plotly_click&#34;,&#34;plotly_selected&#34;,&#34;plotly_relayout&#34;,&#34;plotly_brushed&#34;,&#34;plotly_brushing&#34;,&#34;plotly_clickannotation&#34;,&#34;plotly_doubleclick&#34;,&#34;plotly_deselect&#34;,&#34;plotly_afterplot&#34;,&#34;plotly_sunburstclick&#34;],&#34;base_url&#34;:&#34;https://plot.ly&#34;},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;/div&gt;
+&lt;div id=&#34;analysis&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;strong&gt;Analysis&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Major?&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;mean&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;sd&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;stderr&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;LCL&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;UCL&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;median&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;min&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;max&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;IQR&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;W.Stat&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Arts/Humanities&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;56&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.09&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.20&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.77&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.41&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.00&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.8983&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Biology/Life Sciences&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;92&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.40&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.12&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.64&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.00&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9151&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Business&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;69&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.26&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.36&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-0.06&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.58&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.00&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9111&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Health/pre-prof. fields&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;108&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.08&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.98&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.38&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.00&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9184&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Other&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;122&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.79&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.23&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.57&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.01&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.75&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9175&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Social Science&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;91&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.55&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.12&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.31&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.79&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.00&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9320&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;STEM&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;119&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.87&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.49&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.14&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.59&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.00&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9362&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;right&#34;&gt;statistic&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;method&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;83.07665&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Kruskal-Wallis rank sum test&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;STEM?&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;mean&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;sd&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;stderr&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;LCL&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;UCL&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;median&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;min&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;max&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;IQR&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;W.Stat&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Maybe/Unsure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;96&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.27&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.14&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.12&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.03&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.51&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9200&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;278&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.46&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.36&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.08&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.30&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.62&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9382&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Yes&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;283&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.37&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.08&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.99&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.31&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9266&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;right&#34;&gt;statistic&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;method&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;5.83066&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.0541861&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Kruskal-Wallis rank sum test&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-9-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;x&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Cramer V&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.2753&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;x&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Cramer V&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.1692&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;x&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Cramer V&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.2047&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-11-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in chisq.test(r$fulfilled, r$overall_satisfied): Chi-squared
+## approximation may be incorrect&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;right&#34;&gt;statistic&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;method&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;305.6472&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;24&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Pearson’s Chi-squared test&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;full&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;sat&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Less fulfilled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Extremely Satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Less fulfilled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Less satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;101&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Less fulfilled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Moderately Satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;117&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Less fulfilled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Slightly Satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;59&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;More fulfilled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Extremely Satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;90&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;More fulfilled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Less satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;More fulfilled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Moderately Satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;193&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;More fulfilled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Slightly Satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;41&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;x&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Cramer V&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.4386&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;right&#34;&gt;statistic&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;method&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;122.9483&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Pearson’s Chi-squared test&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Re-fitting to get Hessian&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;term&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;estimate&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;std.error&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;statistic&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;coef.type&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;as.factor(full)More fulfilled&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-0.3760647&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.1478358&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-2.543799&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;coefficient&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Extremely Satisfied|Less satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-1.9096138&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.1367454&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-13.964735&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;scale&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Less satisfied|Moderately Satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-0.7809734&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.1147056&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-6.808505&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;scale&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Moderately Satisfied|Slightly Satisfied&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.4836493&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.1334414&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11.118355&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;scale&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-16-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Academic-Self-Concept-Project/Academic-Self-Project_files/figure-html/unnamed-chunk-16-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;limitations&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Limitations&lt;/strong&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://www.silasj.com/about/about-me/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.silasj.com/about/about-me/</guid>
+      <description>&lt;p&gt;Hello!&lt;/p&gt;
+&lt;p&gt;My name is Silas. I am an aspiring data analyst and R enthusiast. I am from McKeesport, PA which is located in the suburbs or Pittsburgh. I attended Slippery Rock University of Pennsylvania from 2014 through 2018. Having a wide range of interests and not yet discovering a love for quantitative analysis, I graduated with a bachelor&amp;rsquo;s of science in interdisciplinary studies with minors in philosophy and writing.&lt;/p&gt;
+&lt;p&gt;Following my undergraduate studies, I completed three years of graduate coursework at West Virginia University in sociology and statistics. At WVU, I discovered a knack for statistical analysis and sought to strengthen those skills by taking courses in areas such as experimental design, survey methods, and data visualization.&lt;/p&gt;
+&lt;p&gt;When I&amp;rsquo;m not tinkering around in RStudio, I enjoy weightlifting, karaoke, and spending time with my cat, Bagel.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-bagel-jackson&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Bagel Jackson&#34; srcset=&#34;
+               /about/about-me/bagel_hua6a338df1f831ccdde5c8131397b9d0d_2355413_810699e078e456fd017b7e8358f7d3d8.JPG 400w,
+               /about/about-me/bagel_hua6a338df1f831ccdde5c8131397b9d0d_2355413_175ddfdf5463a5f6ce9521fa31cd4841.JPG 760w,
+               /about/about-me/bagel_hua6a338df1f831ccdde5c8131397b9d0d_2355413_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://www.silasj.com/about/about-me/bagel_hua6a338df1f831ccdde5c8131397b9d0d_2355413_810699e078e456fd017b7e8358f7d3d8.JPG&#34;
+               width=&#34;250&#34;
+               height=&#34;375&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Bagel Jackson
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://www.silasj.com/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.silasj.com/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+Three
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/media/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.silasj.com/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.silasj.com/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>1984 Text Analysis</title>
+      <link>https://www.silasj.com/project/1984-text-analysis/edp-693e-1984-text-markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.silasj.com/project/1984-text-analysis/edp-693e-1984-text-markdown/</guid>
+      <description>
+&lt;script src=&#34;EDP 693e 1984 Text Markdown_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#importing-the-text-by-chapter&#34;&gt;Importing the text by Chapter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#importing-the-whole-text&#34;&gt;Importing the whole text&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tidying-data&#34;&gt;Tidying data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#exploring-most-used-words&#34;&gt;Exploring Most used Words&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#bing-analysis&#34;&gt;Bing Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#nrc-analysis&#34;&gt;NRC Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#afinn-analysis&#34;&gt;AFINN Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;importing-the-text-by-chapter&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Importing the text by Chapter&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;importing-the-whole-text&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Importing the whole text&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tidying-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tidying data&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exploring-most-used-words&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exploring Most used Words&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;word&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;winston&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;172&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;party&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;98&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;time&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;moment&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;53&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;people&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;brother&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;word&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;winston&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;141&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;party&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;126&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;time&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;85&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;war&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;83&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;julia&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;moment&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;55&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;word&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;winston&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;141&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;o’brien&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;119&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;pain&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;55&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;party&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;52&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;eyes&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;moment&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;48&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;word&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;winston&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;454&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;party&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;276&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;time&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;197&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;o’brien&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;moment&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;156&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;war&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;124&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20Analysis-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;bing-analysis&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bing Analysis&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-3.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;nrc-analysis&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;NRC Analysis&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;sentiment&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;negative&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6214&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;positive&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5632&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;trust&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3406&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;fear&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3274&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;sadness&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2661&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;anticipation&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2619&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;anger&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2458&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;joy&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2026&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;disgust&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2013&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;surprise&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1350&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/nrc%20Analysis-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;afinn-analysis&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;AFINN Analysis&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database
+
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/AFINN%20Analysis-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Experimental Survey on Hazing</title>
+      <link>https://www.silasj.com/project/hazing-project/project-1-md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.silasj.com/project/hazing-project/project-1-md/</guid>
+      <description>
+&lt;script src=&#34;Project 1 Md_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#data-prep-and-cleaning&#34;&gt;Data Prep and Cleaning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#theme-setup&#34;&gt;Theme Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sample-characteristics-plots&#34;&gt;Sample Characteristics Plots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#determination-of-guilt-and-punishment-plots&#34;&gt;Determination of Guilt and Punishment Plots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#general-views-about-hazing-plots&#34;&gt;General Views about Hazing Plots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#creating-the-hazing-score-variable&#34;&gt;Creating the Hazing Score Variable&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#selecting-appriorate-variables&#34;&gt;Selecting Appriorate Variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#generating-the-score&#34;&gt;Generating the Score&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#hazing-score-plot&#34;&gt;Hazing Score Plot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#analysis&#34;&gt;Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;data-prep-and-cleaning&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Data Prep and Cleaning&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;theme-setup&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Theme Setup&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sample-characteristics-plots&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Sample Characteristics Plots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;determination-of-guilt-and-punishment-plots&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Determination of Guilt and Punishment Plots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;general-views-about-hazing-plots&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;General Views about Hazing Plots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/Likerts-1.png&#34; width=&#34;768&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/Likerts-2.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;creating-the-hazing-score-variable&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Creating the Hazing Score Variable&lt;/h2&gt;
+&lt;p&gt;The hazing score is a numeric representation of how positively or negatively a participant views hazing in general. The score can range from -18 to 18 and higher values indicate less positive views of hazing. The score was generated using 9 of the 15 Likert scale level of agreement items included in the survey.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;All initiations of new group members are hazing.&lt;/li&gt;
+&lt;li&gt;An action is not hazing if the victim consents.&lt;/li&gt;
+&lt;li&gt;Hazing is useful for group cohesion&lt;/li&gt;
+&lt;li&gt;Hazing can be fun.&lt;/li&gt;
+&lt;li&gt;Hazing is a serious issue which needs to be prevented.&lt;/li&gt;
+&lt;li&gt;Hazing is dangerous&lt;/li&gt;
+&lt;li&gt;Hazing should be illegal.&lt;/li&gt;
+&lt;li&gt;Sometimes hazing is acceptable.&lt;/li&gt;
+&lt;li&gt;There are no benefits to hazing new group members.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;selecting-appriorate-variables&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Selecting Appriorate Variables&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;An action is not hazing if the victim consents.&amp;quot;       
+## [2] &amp;quot;Hazing is useful for group cohesion.&amp;quot;                  
+## [3] &amp;quot;Hazing can be fun.&amp;quot;                                    
+## [4] &amp;quot;Hazing is a serious issue which needs to be prevented.&amp;quot;
+## [5] &amp;quot;Hazng is dangerous.&amp;quot;                                   
+## [6] &amp;quot;Hazing should be illegal.&amp;quot;                             
+## [7] &amp;quot;Sometimes hazing is acceptable.&amp;quot;                       
+## [8] &amp;quot;There are no benefis to hazing neww group members.&amp;quot;    
+## [9] &amp;quot;All initiations of new group members are hazing.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;generating-the-score&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Generating the Score&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;hazing-score-plot&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Hazing Score Plot&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;analysis&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Analysis&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-5-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;table style=&#34;width:100%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;3%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;8%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;10%&#34; /&gt;
+&lt;col width=&#34;8%&#34; /&gt;
+&lt;col width=&#34;6%&#34; /&gt;
+&lt;col width=&#34;4%&#34; /&gt;
+&lt;col width=&#34;6%&#34; /&gt;
+&lt;col width=&#34;6%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Guilty?&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;mean&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;sd&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;stderr&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;LCL&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;UCL&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;median&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;IQR&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;LCLmed&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;UCLmed&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;W Stat&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;No/Unsure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;87&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9310345&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8.093628&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.8677280&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-0.7939517&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.656021&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;13.5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9630041&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.0137775&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Yes&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;615&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8.8699187&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.847073&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.2357767&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8.4068921&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9.332945&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9089050&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.0000000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Gender&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;mean&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;sd&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;stderr&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;LCL&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;UCL&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;median&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;IQR&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;LCLmed&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;UCLmed&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;W Stat&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Female&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;486&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9.100823&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.619931&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.2549253&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8.599929&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9.601717&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9100816&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Male&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.152778&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8.005800&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.5447257&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.079091&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.226464&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.9344956&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-5-3.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-5-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;7%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;45%&#34; /&gt;
+&lt;col width=&#34;10%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;right&#34;&gt;estimate&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;statistic&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;conf.low&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;conf.high&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;method&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;alternative&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;-7.999952&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11363&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-9.999998&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-5.99999&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Wilcoxon rank sum test with continuity correction&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;two.sided&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;8%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;7%&#34; /&gt;
+&lt;col width=&#34;8%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;46%&#34; /&gt;
+&lt;col width=&#34;11%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;right&#34;&gt;estimate&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;statistic&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;conf.low&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;conf.high&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;method&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;alternative&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;3.000048&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;67582&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.000049&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.000004&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Wilcoxon rank sum test with continuity correction&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;two.sided&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

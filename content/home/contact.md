@@ -20,4 +20,10 @@ content:
   
 design:
   columns: '2'
+  background:
+    gradient_end: '#08DA30'
+    gradient_start: '#5A3D93'
+    text_color_light: true
+advanced:
+  css_class: fullscreen
 ---
