@@ -56,12 +56,27 @@ get_sentiments("nrc")
 get_sentiments("afinn")
 
 
+```
 
 
-
-
+```{r Theme, include = FALSE}
+theme_update(text = element_text(family = "Rockwell", color = "white"),
+        plot.title = element_text(size = 15, face = "bold"),
+        plot.title.position = "plot",
+        axis.text.x = element_text(color = "white"),
+        axis.text.y = element_text(color = "white"),
+        panel.background = element_rect(fill = "#353635", color = "#353635"),
+        plot.background = element_rect(fill = "#353635", color = "#353635"),
+        panel.grid.minor.y = element_line(linetype = "dotted", color = "grey90"),
+        panel.grid.major.y = element_line(color = "grey70"),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_blank(),
+        legend.background = element_rect(fill = "#353635"),
+        plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), units = "cm"))
 
 ```
+
 
 ## Importing the text by Chapter
 ```{r By Chapter}
@@ -116,7 +131,7 @@ TidyBook <- rbind(TidyCh1, TidyCh2,TidyCh3)
 
 ```{r}
 
-tokens1984 <- data_frame(text = Text1984) %>% 
+tokens1984 <- data.frame(text = Text1984) %>% 
   unnest_tokens(word, text)
 
 
