@@ -199,7 +199,7 @@ tidy_tokens_1984 %>%
 
 
 
-```{r, cache = TRUE}
+```{r, cache = FALSE}
 
 
 tidy_tokens_1984 %>%
