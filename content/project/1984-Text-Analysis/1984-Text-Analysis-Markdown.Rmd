@@ -73,7 +73,7 @@ mytheme <- theme(text = element_text(family = "Rockwell", color = "white"),
         panel.grid.major = element_blank(),
         strip.background = element_rect(fill = "#353635", color = "#353635"),
         strip.text = element_text(color = "white"),
-        legend.background = element_rect(fill = "#353635"),
+        legend.background = element_rect(fill = "#353635", color = "#353635"),
         plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), units = "cm"))
 
 
@@ -199,7 +199,7 @@ tidy_tokens_1984 %>%
 
 
 
-```{r, warning = FALSE}
+```{r, cache = TRUE}
 
 
 tidy_tokens_1984 %>%
@@ -229,7 +229,7 @@ wordcloud2(worddf2, backgroundColor = "#353635")
 
 
 
-```{r Bing Analysis, warning = FALSE}
+```{r Bing Analysis, cache = TRUE}
 
 
 
@@ -241,13 +241,7 @@ bing_1984 <- tidy_tokens_1984 %>%
 
 
 
-tidy_tokens_1984 %>%
-  inner_join(get_sentiments("bing")) %>%
-  count(word, sentiment, sort = TRUE) %>%
-  acast(word ~ sentiment, value.var = "n", fill = 0) %>%
-  comparison.cloud(scale = c(2.5, 0.5), colors = c("grey20", "coral"),
-                   max.words = 30, title.size = 2.5, title.bg.colors = NA,
-                   title.colors = "skyblue")
+
 
 tidy_tokens_1984 %>%
   inner_join(get_sentiments("bing")) %>%
@@ -264,7 +258,7 @@ tidy_tokens_1984 %>%
 ```
 
 ### Bing Analysis
-```{r Bing by Chapter, warning = FALSE}
+```{r Bing by Chapter, cache = TRUE}
 
 TidyCh1 %>%
   inner_join(get_sentiments("bing")) %>%
@@ -374,7 +368,7 @@ ggplot(bookAfinn, aes(value, n, color = as.factor(chapter))) +
   facet_wrap(~ chapter, ncol = 2, scales = "free", labeller = labeller(chapter = chapter.labs)) +
   labs(y = "Word Count", x = "AFINN Value", 
        title = "AFINN Value of Words by Chapter in 1984 by George Orwell") +
-  scale_fill_manual(values = threeColors)
+  scale_color_manual(values = threeColors)
 
 ```
 
