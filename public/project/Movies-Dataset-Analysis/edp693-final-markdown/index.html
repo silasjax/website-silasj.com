@@ -1,0 +1,1008 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Silas Jackson" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Slide with BulletsSlide with R OutputSlide with PlotSlide with BulletsBullet 1Bullet 2Bullet 3Slide with R OutputSlide with Plot{&#34;" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://www.silasj.com/project/movies-dataset-analysis/edp693-final-markdown/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'">
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.723afd626019ab00989b5bb72d1a8dc4.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu79ef4ba8ba0357260ae705468dd50191_71466_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu79ef4ba8ba0357260ae705468dd50191_71466_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://www.silasj.com/project/movies-dataset-analysis/edp693-final-markdown/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Silas Jackson" />
+  <meta property="og:url" content="https://www.silasj.com/project/movies-dataset-analysis/edp693-final-markdown/" />
+  <meta property="og:title" content="Exploring IMDB Movie Ratings | Silas Jackson" />
+  <meta property="og:description" content="Slide with BulletsSlide with R OutputSlide with PlotSlide with BulletsBullet 1Bullet 2Bullet 3Slide with R OutputSlide with Plot{&#34;" /><meta property="og:image" content="https://www.silasj.com/media/icon_hu79ef4ba8ba0357260ae705468dd50191_71466_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://www.silasj.com/media/icon_hu79ef4ba8ba0357260ae705468dd50191_71466_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="article:published_time" content="2021-04-24T23:09:32-04:00" />
+    
+    <meta property="article:modified_time" content="2021-04-24T23:09:32-04:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Exploring IMDB Movie Ratings | Silas Jackson</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark " data-wc-page-id="43334e087d0214822355a1c644d2b536" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2d8061215dc93287a5abdd55127bd1f8.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Silas Jackson</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Silas Jackson</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/project"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about/about-me/"><span>About Me</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="/"  aria-label="">
+              <i class="fas fa-" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/blog/visualizations/data-visualizations/">Posts</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/blog/visualizations/data-visualizations/">Fun Data Visualizations</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/project/academic-self-concept-project/academic-self-project/">Projects</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/project/academic-self-concept-project/academic-self-project/">Academic Self and Careerism</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/project/movies-dataset-analysis/edp693-final-markdown/">Movie Rating Dataset</a>
+      </li>
+
+      
+      <li >
+        <a href="/project/1984-text-analysis/1984-text-analysis-markdown/">1984 Text Analysis</a>
+      </li>
+
+      
+      <li >
+        <a href="/project/experimental-hazing-project/experimental-hazing-project-analysis/">Experimental Survey on Hazing</a>
+      </li>
+
+      
+      <li >
+        <a href="/project/election-2016-maps/2016-election-maps/">2016 General Election Results</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Exploring IMDB Movie Ratings</h1>
+
+          <div class="article-style">
+            
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="/rmarkdown-libs/wordcloud2/wordcloud.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/wordcloud2/wordcloud2-all.js"></script>
+<script src="/rmarkdown-libs/wordcloud2/hover.js"></script>
+<script src="/rmarkdown-libs/wordcloud2-binding/wordcloud2.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#slide-with-bullets">Slide with Bullets</a></li>
+<li><a href="#slide-with-r-output">Slide with R Output</a></li>
+<li><a href="#slide-with-plot">Slide with Plot</a></li>
+</ul>
+</div>
+
+<div id="slide-with-bullets" class="section level2">
+<h2>Slide with Bullets</h2>
+<ul>
+<li>Bullet 1</li>
+<li>Bullet 2</li>
+<li>Bullet 3</li>
+</ul>
+</div>
+<div id="slide-with-r-output" class="section level2">
+<h2>Slide with R Output</h2>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Explore%20All%20Movies-1.png" width="672" /></p>
+</div>
+<div id="slide-with-plot" class="section level2">
+<h2>Slide with Plot</h2>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/70s-1.png" width="672" /><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/70s-2.png" width="672" /><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/70s-3.png" width="672" /></p>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/80s-1.png" width="672" /><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/80s-2.png" width="672" /><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/80s-3.png" width="672" /></p>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/90s-1.png" width="672" /><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/90s-2.png" width="672" /><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/90s-3.png" width="672" /></p>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/2000s-1.png" width="672" /><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/2000s-2.png" width="672" /><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/2000s-3.png" width="672" /></p>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Horror-1.gif" /><!-- --><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Horror-2.png" width="672" /></p>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"word":["alien","animal","based","blood","child","cult","death","female","film","frankenstein","ghost","gore","horror","house","independent","island","killer","mad","monster","movie","murder","nudity","police","relationship","remake","revenge","scientist","sequel","sex","slasher","supernatural","town","vampire","violence","zombie"],"freq":[19,15,12,23,13,12,19,22,54,26,14,14,39,12,18,12,28,14,34,11,40,38,11,21,14,11,16,13,14,16,15,13,19,25,17],"fontFamily":"Segoe UI","fontWeight":"bold","color":["#8B0202","#910606","#970A0A","#9D0F0F","#A31313","#AC1116","#B70C18","#C1071A","#CB021C","#C40019","#AB0012","#92000B","#780005","#6A0A09","#7D352D","#8F6052","#A28B77","#B5B69C","#A7A892","#9A9B88","#8D8E7F","#808175","#7E7A71","#81756E","#83706C","#856B6A","#836464","#7D5A5A","#775151","#714848","#6A3F3F","#603737","#562F2F","#4C2727","#422020"],"minSize":0,"weightFactor":3.33333333333333,"backgroundColor":"black","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Romance-1.gif" /><!-- --><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Romance-2.png" width="672" /></p>
+<div id="htmlwidget-2" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"word":["adultery","affair","age","based","brother","car","child","city","class","comedy","coming","crisis","daughter","death","depression","difference","director","divorce","drug","dying","england","extramarital","family","fashion","father","female","film","friendship","gay","hotel","husband","identity","independent","infidelity","jealousy","lgbt","life","london","loss","love","lover","lovers","lovesickness","male","marriage","mother","movie","murder","music","musical","nudity","paris","pregnancy","prostitute","relationship","secret","sex","sexual","sight","single","sister","son","suicide","summer","teacher","teenage","time","triangle","war","wedding","wife","woman","world","york"],"freq":[23,24,16,22,26,13,16,13,11,15,14,14,33,24,11,11,47,11,12,16,26,24,30,11,22,21,54,24,21,13,31,16,33,14,24,12,59,20,28,179,17,15,13,13,42,29,15,14,21,23,30,30,16,11,109,22,60,25,14,14,25,15,23,15,13,13,11,20,25,31,22,60,16,16],"fontFamily":"Segoe UI","fontWeight":"bold","color":["#FE7F6C","#FE8A78","#FE9684","#FEA291","#FEAE9D","#FEB9AA","#FDC1B4","#FDC2BA","#FCC3C1","#FCC5C7","#FBC6CE","#FBC7D4","#F9C2CF","#F7BBC6","#F5B4BD","#F3ADB5","#F1A6AC","#F09CA1","#F1808A","#F26473","#F3485C","#F52C45","#F6102E","#F21328","#EB2F2F","#E44B37","#DC683F","#D58446","#CDA04E","#CB8B53","#C97258","#C8585E","#C63F63","#C52568","#C71D6E","#D13C78","#DC5B81","#E67B8A","#F19A93","#FBB99D","#FFC9A6","#FFD3B0","#FFDDBA","#FFE7C4","#FFF1CD","#FEFBD6","#F1FBD6","#E4FBD6","#D7FBD5","#CAFBD5","#BDFBD5","#B5F0CD","#B5D6BC","#B5BDAA","#B4A399","#B48A88","#B47077","#B57077","#B7747A","#BA787D","#BC7C7F","#BE8082","#C28785","#CA9489","#D3A28D","#DCB091","#E4BE95","#EDCB99","#EECB98","#EAC393","#E5BB8E","#E1B389","#DDAB84","#D9A380"],"minSize":0,"weightFactor":1.00558659217877,"backgroundColor":"black","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Comedy-1.gif" /><!-- --><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Comedy-2.png" width="672" /></p>
+<div id="htmlwidget-3" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3">{"x":{"word":["abuse","adult","adultery","affair","aftercreditsstinger","age","agent","alcohol","american","anarchic","angeles","animal","bank","based","beach","berlin","black","book","boy","brother","business","california","car","cat","chase","chicago","child","christmas","city","class","comedy","coming","cop","couple","crime","crisis","dancing","daughter","death","detective","difference","director","dog","dream","drug","duringcreditsstinger","dying","england","escape","extramarital","family","fashion","father","female","fight","film","friend","friendship","gay","girl","holiday","hotel","house","husband","identity","independent","infidelity","jealousy","life","london","los","loss","love","lovesickness","magic","male","marriage","mother","movie","murder","music","musical","night","nudity","operation","parent","paris","party","person","police","pregnancy","prison","radio","relationship","restaurant","road","robbery","rock","school","secret","sex","sexual","single","sister","soccer","son","space","spoof","suicide","summer","taxi","teacher","teenage","time","train","travel","tv","undercover","usa","war","wedding","wife","woman","world","york"],"freq":[13,16,11,21,15,20,12,12,14,13,19,13,19,28,12,12,13,12,14,47,11,11,42,11,18,11,34,18,17,15,51,11,12,11,13,15,12,38,27,23,11,57,14,11,25,26,18,25,13,18,40,14,38,36,11,92,22,45,21,19,23,14,11,25,26,52,12,20,53,19,19,28,106,11,15,21,34,38,29,42,23,27,11,53,11,18,32,14,12,37,16,18,13,136,21,13,20,13,28,20,47,15,28,17,15,24,14,16,17,13,12,12,21,18,17,24,22,11,12,22,40,21,61,23,28],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":1.32352941176471,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Action-1.gif" /><!-- --><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Action-2.png" width="672" /></p>
+<div id="htmlwidget-4" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4">{"x":{"word":["aftercreditsstinger","agent","airplane","alien","angeles","army","arts","assassin","assassination","bank","based","battle","bomb","brother","car","chase","cia","city","comic","computer","cop","corruption","crime","criminal","cult","daughter","dc","dealer","death","detective","disaster","drug","duringcreditsstinger","dystopia","england","escape","evil","explosion","family","fbi","female","fight","fighter","film","future","game","gang","giant","gun","gunfight","hand","helicopter","hero","hostage","human","identity","ii","independent","intelligence","investigation","island","japan","kidnapping","killer","life","london","los","loss","love","mafia","marine","martial","mission","monster","movie","murder","nuclear","nudity","opera","operation","paris","pirate","police","prison","relationship","rescue","revenge","robbery","robot","saving","secret","sequel","service","ship","shootout","space","spy","super","superhero","suspense","sword","terrorist","time","travel","treasure","tv","undercover","video","villain","violence","war","woman","world","york"],"freq":[16,41,17,25,24,22,19,14,11,25,48,19,23,22,42,37,12,17,14,15,20,16,19,13,11,11,11,12,29,20,17,34,16,33,20,15,11,19,12,19,21,16,16,37,16,15,14,16,18,11,11,12,25,13,12,29,11,14,22,12,12,17,12,22,21,13,24,18,22,11,13,21,30,25,13,46,12,19,15,11,17,11,54,18,26,12,31,23,15,13,69,21,18,20,20,53,18,12,16,21,16,13,13,13,19,12,19,16,13,40,72,12,37,25],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":2.5,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Drama-1.gif" /><!-- --><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Drama-2.png" width="672" /></p>
+<div id="htmlwidget-5" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5">{"x":{"word":["1970s","abuse","accident","addiction","adult","adultery","affair","age","agent","airplane","alcohol","alcoholic","alien","american","amnesia","angeles","animal","army","art","arts","assassination","attack","attempt","attempted","author","bad","bank","bar","based","battle","beach","berlin","biography","birthday","black","blackmail","blindness","bomb","book","boxer","boxing","boy","british","brother","brutality","business","california","camp","car","cat","catholicism","celebration","century","chase","cheating","child","childhood","china","christmas","church","cia","cinema","city","civil","class","classic","club","cold","comedy","coming","concert","conflict","cop","corruption","country","court","cowardliness","crash","crime","criminal","crisis","crush","cult","culture","daily","dance","dancing","daughter","dealer","death","depression","despair","detective","difference","director","disabled","disaster","divorce","doctor","dog","double","drama","dream","driver","drug","duringcreditsstinger","dying","dystopia","east","england","epic","erotic","eroticism","escape","extramarital","factory","faith","falling","family","fantasy","farm","fashion","father","fbi","female","fight","film","forbidden","france","french","friend","friends","friendship","funeral","future","gang","gangster","gay","german","germany","girl","gold","guilt","gun","hero","holiday","home","homeless","homosexuality","horse","hospital","hostage","hotel","house","human","husband","identity","ii","illegal","illness","immigration","independent","individual","infidelity","insanity","investigation","irish","island","italy","japan","japanese","jazz","jealousy","jew","jewish","job","journalist","junkie","kidnapping","killer","law","lawyer","lesbian","letter","lgbt","life","london","los","loss","love","lover","lovers","lovesickness","madrid","mafia","male","marriage","martial","memory","menage","mental","mentally","mexico","middle","military","mission","money","motel","mother","movie","murder","music","musical","nazi","nazis","neighbor","newspaper","night","nightclub","noir","nuclear","nudity","nurse","obsession","ocean","officer","operation","painting","paranoia","parent","paris","party","past","peasant","penalty","period","person","photographer","planned","play","police","political","politics","pop","power","pregnancy","president","priest","prison","prisoner","private","producer","professor","prostitute","prostitution","psychiatrist","puberty","race","racism","radio","rape","reality","record","relationship","religion","rescue","resistance","restaurant","revenge","revolution","road","robbery","rock","romance","school","scotland","sea","secret","sense","sequel","setting","sex","sexual","sexuality","ship","sight","silent","singer","single","sister","society","soldier","son","south","southern","space","spain","sport","star","station","story","street","student","suicide","summer","suspense","taxi","teacher","teenage","teenager","terror","thief","time","torture","town","tradition","train","training","travel","triangle","trip","trois","true","tv","underdog","unsimulated","unsociability","usa","vacation","veteran","vietnam","village","violence","violent","vision","waitress","war","wedding","white","wife","woman","womens","worker","world","xenophobia","york","youth"],"freq":[23,45,14,13,26,39,42,35,28,19,18,13,13,28,12,34,13,24,12,13,19,11,23,13,22,13,29,13,101,14,19,37,40,12,21,21,14,29,15,13,12,11,18,97,12,24,11,20,55,14,12,11,13,20,12,91,16,12,11,14,11,14,24,20,28,12,11,16,13,22,14,14,12,28,17,30,11,18,25,18,30,20,15,12,17,12,16,75,18,125,30,13,43,21,122,19,13,20,26,16,18,11,31,15,88,12,70,13,17,44,11,12,21,17,38,11,15,12,90,17,13,11,82,24,58,15,227,11,18,29,18,12,77,11,17,28,13,44,20,23,23,11,12,17,13,13,12,11,19,16,22,13,35,16,12,69,61,40,19,21,14,125,36,19,15,17,11,20,16,25,15,14,36,17,12,12,22,11,15,20,16,11,13,19,20,147,33,34,123,267,35,17,22,13,13,28,68,13,13,11,17,11,15,15,18,21,34,12,72,47,140,49,39,13,14,14,11,18,11,42,11,79,14,21,13,15,19,14,11,28,52,19,18,11,14,11,27,11,13,13,76,11,20,15,16,28,11,13,56,13,12,11,12,30,20,11,15,13,11,20,52,18,15,241,16,12,15,21,39,23,23,33,16,13,52,11,18,52,20,12,13,96,58,13,24,21,16,12,29,58,22,22,52,19,19,18,15,23,18,17,24,17,12,71,18,53,12,43,27,16,19,17,24,19,21,14,14,12,17,28,14,11,23,23,12,12,28,38,12,11,17,20,64,13,11,11,172,28,11,55,146,16,12,69,11,59,19],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":0.674157303370786,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<p><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Thriller-1.gif" /><!-- --><img src="/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Thriller-2.png" width="672" /></p>
+<div id="htmlwidget-6" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6">{"x":{"word":["abuse","affair","agent","alien","amnesia","angeles","animal","army","assassin","assassination","bank","based","berlin","black","blackmail","blood","bomb","brother","car","chase","child","cia","class","cold","computer","corruption","crime","daughter","dealer","death","detective","double","drug","duringcreditsstinger","dying","dystopia","england","escape","extramarital","family","father","fbi","female","fight","film","friendship","future","gun","helicopter","hitman","hotel","human","husband","identity","independent","intelligence","invasion","investigation","island","kidnapping","killer","life","london","los","loss","love","mental","mission","money","movie","murder","neonoir","noir","nuclear","nudity","paris","planned","police","prison","rape","relationship","revenge","robbery","school","secret","serial","service","sex","sexual","shark","sister","son","space","spy","suicide","suspense","terror","terrorist","time","train","travel","undercover","usa","violence","virus","war","white","wife","woman","world","york"],"freq":[18,13,43,19,11,21,11,11,11,19,17,33,17,11,13,16,25,25,43,18,17,12,12,15,18,15,12,25,12,31,30,11,48,11,15,30,35,18,13,18,16,29,22,12,57,16,13,12,11,15,11,11,26,30,22,20,11,13,11,14,44,27,27,21,37,30,13,25,19,12,114,14,29,13,29,14,11,45,21,18,44,30,17,11,70,12,20,20,11,11,13,16,34,21,27,41,12,15,11,12,12,16,16,55,11,55,12,21,15,19,20],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":1.57894736842105,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/project/academic-self-concept-project/academic-self-project/" rel="prev">Academic Self-Concept Project</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Apr 24, 2021</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.b61a8f62b6e5c0cd322c8158c5b5dfb6.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

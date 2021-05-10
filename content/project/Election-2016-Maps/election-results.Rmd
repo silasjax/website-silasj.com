@@ -1,0 +1,214 @@
+---
+title: 2016 General Election Maps
+author: 'Silas Jackson'
+date: '2021-03-24'
+summary: Using maps to explore the 2016 U.S. General Election results.
+slug: 2016-election-maps
+linktitle: "2016 General Election Results"
+output:
+  blogdown::html_page:
+    
+    toc: true
+menu:
+  projects:
+    parent: Projects
+    weight: 5
+type: docs
+editor_options: 
+  chunk_output_type: inline
+lastmod: '2021-04-24T23:09:32-04:00'
+featured: no
+projects: []
+shiny: true
+---
+
+# **Overview**
+
+## **Research Questions**
+
+## **Methods**
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(leaflet)
+library(ggthemes)
+library(viridis)
+library(maps)
+library(scales)
+library(RColorBrewer)
+
+load("election2016.Rdata")
+
+map16 <- map_data("state")
+election2016$region <- tolower(election2016$state)
+state_elec <- left_join(map16, election2016) 
+state_elec <- state_elec %>%
+  mutate(repev = case_when(ev_dem == 0 ~ as.integer(NA),
+                           TRUE ~ ev_dem))
+state_elec <- state_elec %>%
+  mutate(demev = case_when(ev_rep == 0 ~ as.integer(NA),
+                           TRUE ~ ev_rep))
+
+
+
+
+countymap <- map_data("county")
+cres16 <- read.csv("president-wide.csv")
+
+drop <- c("AK", "HI")
+
+cres16 <- subset(cres16, state != "AK" & state != "HI")
+cres16$jurisdiction <- tolower(cres16$jurisdiction)
+cres16 <- cres16 %>%
+  rename(subregion = jurisdiction)
+
+c16map2 <- left_join(countymap, cres16)
+c16map2 <- c16map2 %>%
+  mutate(pct_clinton = clinton/totalvotes*100)
+c16map2 <- c16map2 %>%
+  mutate(pct_trump = trump/totalvotes*100)
+
+
+
+
+
+mapbase <- map_data("state.vbm") %>% 
+  rename(state = region)  %>% # Rename the column region to state
+  select_if(~sum(!is.na(.)) > 0) # Drop any columns where the entire set is NA
+
+map("state.vbm", fill=T, col="white")
+
+truncated_map <- state.vbm.center %>% 
+  as.data.frame() %>% 
+  mutate(state = unique(mapbase$state))
+
+merged_electoral <- 
+  election2016 %>% 
+  filter(!st == "DC") %>% 
+  right_join(mapbase) %>% 
+  select_if(~sum(!is.na(.)) > 0) 
+
+
+merged_map <- merged_electoral %>% 
+  left_join(truncated_map)
+
+  rescaledByEC <- merged_map %>% 
+  group_by(state) %>% 
+  mutate(longscale = (votes*10/538)*(long - x) + x, # number of electoral votes x 10 divided by the total electoral votes
+         latscale = (votes*10/538)*(lat - y) + y) 
+
+
+```
+
+
+```{r 2016 State Electoral Votes Trump}
+ggplot(state_elec, aes(x = long, y = lat, group = group, fill = repev)) +
+  geom_polygon(color = "black") +
+  coord_map(projection = "albers", lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = "white",
+                       high = "red",
+                       na.value = "grey40"
+                       ) +
+  theme_map() +
+  ggtitle("Replublican Electoral College votes") +
+  labs(fill = "Electoral Votes")
+```
+
+```{r 2016 State Electoral Votes Clinton}
+ggplot(state_elec, aes(x = long, y = lat, group = group, fill = demev)) +
+  geom_polygon(color = "black") +
+  coord_map(projection = "albers", lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = "white",
+                      high = muted("blue"),
+                      na.value = "grey40"
+  ) +
+  theme_map() +
+  ggtitle("Democrat Electoral College votes") +
+  labs(fill = "Electoral Votes")
+```
+
+
+```{r 2016 State Percentage of Votes Trump}
+
+ggplot(state_elec, aes(x = long, y = lat, group = group, fill = pct_trump)) +
+  geom_polygon(color = "black") +
+  coord_map(projection = "albers", lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = "white",
+                      high = "red") +
+  theme_map() +
+  ggtitle("Percentage of Votes for Trump") +
+  labs(fill = "Percent of Votes")
+
+```
+
+```{r 2016 State Percetage of Votes Clinton}
+ggplot(state_elec, aes(x = long, y = lat, group = group, fill = pct_clinton)) +
+  geom_polygon(color = "black") +
+  coord_map(projection = "albers", lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = "white",
+                      high = "blue") +
+  theme_map() +
+  ggtitle("Percentage of Votes for Clinton") +
+  labs(fill = "Percent of Votes")
+```
+
+```{r 2016 State Percent Margin of Votes Clinton Trump}
+ggplot(state_elec, aes(x = long, y = lat, group = group, fill = r_points)) +
+  geom_polygon(color = "black") +
+  coord_map(projection = "albers", lat0 = 39, lat1 = 45) +
+  scale_fill_gradient2(low = "blue",
+                       mid = "white",
+                      high = "red",
+                      midpoint = 0) +
+  theme_map() +
+  ggtitle("Percent Margin of Votes for Clinton and Trump") +
+  labs(fill = "Percent")
+
+```
+
+```{r State Winner Resized by Electoral Vote}
+ggplot(rescaledByEC, aes(long, lat, group = group, fill = winner)) + 
+  #  geom_path() + # Enable if you want to see the original outline
+  geom_polygon(aes(longscale, latscale)) +
+  coord_fixed() + 
+  theme_void() + 
+  scale_fill_manual(values = c("blue", "red")) +
+  labs(title = str_wrap("Winner in States Resized by Electoral Vote For States Won", 30),
+       fill = "Winner") 
+```
+
+
+
+```{r 2016 County Percent Votees Trump}
+
+ggplot(c16map2, aes(long, lat, group = group, fill = pct_trump)) +
+  geom_polygon(color = "gray50") +
+  labs(fill = "Percentage of Votes") +
+  theme_map() +
+  coord_map(projection = "albers", lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = "white",
+                     high = "red",
+                     na.value = "gray50") +
+  ggtitle("Percentage of Votes for D. Trump in 2016 General Election by County")
+```
+
+
+```{r 2016 County Percent Votes Clinton}
+
+ggplot(c16map2, aes(long, lat, group = group, fill = pct_clinton)) +
+  geom_polygon(color = "gray50") +
+  labs(fill = "Percentage of Votes") +
+  theme_map() +
+  coord_map(projection = "albers", lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = "white",
+                     high = "blue",
+                     na.value = "gray50") +
+  ggtitle("Percentage of Votes for H. Clinton in 2016 General Election by County")
+```
+
+
+
+
+

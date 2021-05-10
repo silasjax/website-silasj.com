@@ -2,23 +2,31 @@
 title: "Exploring IMDB Movie Ratings"
 author: "Silas Jackson"
 date: "5/6/2021"
+summary: An exploration of the IMDB Movies dataset with ratings, genre, and keywords.
+slug: movie-data-project
 linktitle: "Movie Rating Dataset"
 output:
   blogdown::html_page:
     
     toc: true
 menu:
-  docs:
-    parent: "Projects"
+  projects:
+    parent: Projects
     weight: 1
 type: docs
 editor_options: 
   chunk_output_type: inline
 lastmod: '2021-04-24T23:09:32-04:00'
-featured: no
-projects: []
 shiny: true
 ---
+
+# **Overview**
+
+## **Research Questions**
+
+## **Methods**
+
+### Dataset
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
@@ -54,7 +62,6 @@ library(pacman)
 library(grid)
 library(gridExtra)
 
-loadfonts(device="win")
 
 windowsFonts("a dripping marker" = windowsFont("a dripping marker"))
 ```

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs | Silas Jackson</title>
+    <link>https://www.silasj.com/blog/</link>
+      <atom:link href="https://www.silasj.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <description>Blogs</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 24 Apr 2021 23:09:32 -0400</lastBuildDate>
+    <image>
+      <url>https://www.silasj.com/media/icon_hu79ef4ba8ba0357260ae705468dd50191_71466_512x512_fill_lanczos_center_2.png</url>
+      <title>Blogs</title>
+      <link>https://www.silasj.com/blog/</link>
+    </image>
+    
+    <item>
+      <title>Fun Data Visualizations</title>
+      <link>https://www.silasj.com/blog/visualizations/data-visualizations/</link>
+      <pubDate>Sat, 24 Apr 2021 23:09:32 -0400</pubDate>
+      <guid>https://www.silasj.com/blog/visualizations/data-visualizations/</guid>
+      <description>
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#tba&#34;&gt;TBA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;tba&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;TBA&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

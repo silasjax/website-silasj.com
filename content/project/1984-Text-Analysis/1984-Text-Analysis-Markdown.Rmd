@@ -3,16 +3,15 @@ title: "1984 Text Analysis"
 author: "C. Jackson"
 date: "March 16, 2021"
 summary: A Text analysis of 1984 by George Orwell.
+slug: 1984-text-analysis
 linktitle: "1984 Text Analysis"
 output:
   blogdown::html_page:
     
     toc: true
 menu:
-  docs:
-    
-    
-    parent: "Projects"
+  projects:
+    parent: Projects
     weight: 2
 type: docs
 tag:
@@ -21,6 +20,12 @@ editor_options:
   chunk_output_type: inline
 shiny: true
 ---
+# **Overview**
+
+## **Research Questions**
+
+## **Methods**
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = TRUE, message = FALSE)

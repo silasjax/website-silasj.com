@@ -9,8 +9,8 @@ output:
     
     toc: true
 menu:
-  docs:
-    parent: "Projects"
+  projects:
+    parent: Projects
     weight: 3
 type: docs
 tag:

@@ -31,10 +31,6 @@ address:
  
 appointment_url: 
 contact_links:
-  - icon: twitter
-    icon_pack: fab
-    name: Twitter
-    link: 'https://twitter.com/silasjax'
   - icon: linkedin
     icon_pack: fab
     name: LinkedIn

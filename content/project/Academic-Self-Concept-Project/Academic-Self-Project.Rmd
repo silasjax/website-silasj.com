@@ -10,15 +10,13 @@ output:
     
     toc: true
 menu:
-  docs:
-    parent: "Projects"
+  projects:
+    parent: Projects
     weight: 1
 type: docs
 editor_options: 
   chunk_output_type: inline
 lastmod: '2021-04-24T23:09:32-04:00'
-featured: no
-projects: []
 shiny: true
 ---
 # **Overview**

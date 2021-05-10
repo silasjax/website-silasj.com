@@ -12,6 +12,10 @@ main:
     url: "/project"
     weight: 30
     
+  - name: Blog
+    url: "/Blog"
+    weight: 35
+    
   - name: About Me
     url: "/about/about-me/"
     weight: 40
@@ -19,3 +23,7 @@ main:
   - name: Contact
     url: '#contact'
     weight: 70
+
+
+
+

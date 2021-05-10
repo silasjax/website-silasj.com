@@ -5,12 +5,93 @@
     <link>https://www.silasj.com/</link>
       <atom:link href="https://www.silasj.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Silas Jackson</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 24 Apr 2021 23:09:32 -0400</lastBuildDate>
     <image>
       <url>https://www.silasj.com/media/icon_hu79ef4ba8ba0357260ae705468dd50191_71466_512x512_fill_lanczos_center_2.png</url>
       <title>Silas Jackson</title>
       <link>https://www.silasj.com/</link>
     </image>
+    
+    <item>
+      <title>Fun Data Visualizations</title>
+      <link>https://www.silasj.com/blog/visualizations/data-visualizations/</link>
+      <pubDate>Sat, 24 Apr 2021 23:09:32 -0400</pubDate>
+      <guid>https://www.silasj.com/blog/visualizations/data-visualizations/</guid>
+      <description>
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#tba&#34;&gt;TBA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;tba&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;TBA&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring IMDB Movie Ratings</title>
+      <link>https://www.silasj.com/project/movies-dataset-analysis/edp693-final-markdown/</link>
+      <pubDate>Sat, 24 Apr 2021 23:09:32 -0400</pubDate>
+      <guid>https://www.silasj.com/project/movies-dataset-analysis/edp693-final-markdown/</guid>
+      <description>
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://www.silasj.com/rmarkdown-libs/wordcloud2/wordcloud.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/wordcloud2/wordcloud2-all.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/wordcloud2/hover.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/wordcloud2-binding/wordcloud2.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#slide-with-bullets&#34;&gt;Slide with Bullets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slide-with-r-output&#34;&gt;Slide with R Output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slide-with-plot&#34;&gt;Slide with Plot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;slide-with-bullets&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slide with Bullets&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bullet 1&lt;/li&gt;
+&lt;li&gt;Bullet 2&lt;/li&gt;
+&lt;li&gt;Bullet 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slide-with-r-output&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slide with R Output&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Explore%20All%20Movies-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slide-with-plot&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slide with Plot&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/70s-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/70s-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/70s-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/80s-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/80s-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/80s-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/90s-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/90s-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/90s-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/2000s-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/2000s-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/2000s-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Horror-1.gif&#34; /&gt;&lt;!-- --&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Horror-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;wordcloud2 html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;word&#34;:[&#34;alien&#34;,&#34;animal&#34;,&#34;based&#34;,&#34;blood&#34;,&#34;child&#34;,&#34;cult&#34;,&#34;death&#34;,&#34;female&#34;,&#34;film&#34;,&#34;frankenstein&#34;,&#34;ghost&#34;,&#34;gore&#34;,&#34;horror&#34;,&#34;house&#34;,&#34;independent&#34;,&#34;island&#34;,&#34;killer&#34;,&#34;mad&#34;,&#34;monster&#34;,&#34;movie&#34;,&#34;murder&#34;,&#34;nudity&#34;,&#34;police&#34;,&#34;relationship&#34;,&#34;remake&#34;,&#34;revenge&#34;,&#34;scientist&#34;,&#34;sequel&#34;,&#34;sex&#34;,&#34;slasher&#34;,&#34;supernatural&#34;,&#34;town&#34;,&#34;vampire&#34;,&#34;violence&#34;,&#34;zombie&#34;],&#34;freq&#34;:[19,15,12,23,13,12,19,22,54,26,14,14,39,12,18,12,28,14,34,11,40,38,11,21,14,11,16,13,14,16,15,13,19,25,17],&#34;fontFamily&#34;:&#34;Segoe UI&#34;,&#34;fontWeight&#34;:&#34;bold&#34;,&#34;color&#34;:[&#34;#8B0202&#34;,&#34;#910606&#34;,&#34;#970A0A&#34;,&#34;#9D0F0F&#34;,&#34;#A31313&#34;,&#34;#AC1116&#34;,&#34;#B70C18&#34;,&#34;#C1071A&#34;,&#34;#CB021C&#34;,&#34;#C40019&#34;,&#34;#AB0012&#34;,&#34;#92000B&#34;,&#34;#780005&#34;,&#34;#6A0A09&#34;,&#34;#7D352D&#34;,&#34;#8F6052&#34;,&#34;#A28B77&#34;,&#34;#B5B69C&#34;,&#34;#A7A892&#34;,&#34;#9A9B88&#34;,&#34;#8D8E7F&#34;,&#34;#808175&#34;,&#34;#7E7A71&#34;,&#34;#81756E&#34;,&#34;#83706C&#34;,&#34;#856B6A&#34;,&#34;#836464&#34;,&#34;#7D5A5A&#34;,&#34;#775151&#34;,&#34;#714848&#34;,&#34;#6A3F3F&#34;,&#34;#603737&#34;,&#34;#562F2F&#34;,&#34;#4C2727&#34;,&#34;#422020&#34;],&#34;minSize&#34;:0,&#34;weightFactor&#34;:3.33333333333333,&#34;backgroundColor&#34;:&#34;black&#34;,&#34;gridSize&#34;:0,&#34;minRotation&#34;:-0.785398163397448,&#34;maxRotation&#34;:0.785398163397448,&#34;shuffle&#34;:true,&#34;rotateRatio&#34;:0.4,&#34;shape&#34;:&#34;circle&#34;,&#34;ellipticity&#34;:0.65,&#34;figBase64&#34;:null,&#34;hover&#34;:null},&#34;evals&#34;:[],&#34;jsHooks&#34;:{&#34;render&#34;:[{&#34;code&#34;:&#34;function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }&#34;,&#34;data&#34;:null}]}}&lt;/script&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Romance-1.gif&#34; /&gt;&lt;!-- --&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Romance-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;htmlwidget-2&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;wordcloud2 html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-2&#34;&gt;{&#34;x&#34;:{&#34;word&#34;:[&#34;adultery&#34;,&#34;affair&#34;,&#34;age&#34;,&#34;based&#34;,&#34;brother&#34;,&#34;car&#34;,&#34;child&#34;,&#34;city&#34;,&#34;class&#34;,&#34;comedy&#34;,&#34;coming&#34;,&#34;crisis&#34;,&#34;daughter&#34;,&#34;death&#34;,&#34;depression&#34;,&#34;difference&#34;,&#34;director&#34;,&#34;divorce&#34;,&#34;drug&#34;,&#34;dying&#34;,&#34;england&#34;,&#34;extramarital&#34;,&#34;family&#34;,&#34;fashion&#34;,&#34;father&#34;,&#34;female&#34;,&#34;film&#34;,&#34;friendship&#34;,&#34;gay&#34;,&#34;hotel&#34;,&#34;husband&#34;,&#34;identity&#34;,&#34;independent&#34;,&#34;infidelity&#34;,&#34;jealousy&#34;,&#34;lgbt&#34;,&#34;life&#34;,&#34;london&#34;,&#34;loss&#34;,&#34;love&#34;,&#34;lover&#34;,&#34;lovers&#34;,&#34;lovesickness&#34;,&#34;male&#34;,&#34;marriage&#34;,&#34;mother&#34;,&#34;movie&#34;,&#34;murder&#34;,&#34;music&#34;,&#34;musical&#34;,&#34;nudity&#34;,&#34;paris&#34;,&#34;pregnancy&#34;,&#34;prostitute&#34;,&#34;relationship&#34;,&#34;secret&#34;,&#34;sex&#34;,&#34;sexual&#34;,&#34;sight&#34;,&#34;single&#34;,&#34;sister&#34;,&#34;son&#34;,&#34;suicide&#34;,&#34;summer&#34;,&#34;teacher&#34;,&#34;teenage&#34;,&#34;time&#34;,&#34;triangle&#34;,&#34;war&#34;,&#34;wedding&#34;,&#34;wife&#34;,&#34;woman&#34;,&#34;world&#34;,&#34;york&#34;],&#34;freq&#34;:[23,24,16,22,26,13,16,13,11,15,14,14,33,24,11,11,47,11,12,16,26,24,30,11,22,21,54,24,21,13,31,16,33,14,24,12,59,20,28,179,17,15,13,13,42,29,15,14,21,23,30,30,16,11,109,22,60,25,14,14,25,15,23,15,13,13,11,20,25,31,22,60,16,16],&#34;fontFamily&#34;:&#34;Segoe UI&#34;,&#34;fontWeight&#34;:&#34;bold&#34;,&#34;color&#34;:[&#34;#FE7F6C&#34;,&#34;#FE8A78&#34;,&#34;#FE9684&#34;,&#34;#FEA291&#34;,&#34;#FEAE9D&#34;,&#34;#FEB9AA&#34;,&#34;#FDC1B4&#34;,&#34;#FDC2BA&#34;,&#34;#FCC3C1&#34;,&#34;#FCC5C7&#34;,&#34;#FBC6CE&#34;,&#34;#FBC7D4&#34;,&#34;#F9C2CF&#34;,&#34;#F7BBC6&#34;,&#34;#F5B4BD&#34;,&#34;#F3ADB5&#34;,&#34;#F1A6AC&#34;,&#34;#F09CA1&#34;,&#34;#F1808A&#34;,&#34;#F26473&#34;,&#34;#F3485C&#34;,&#34;#F52C45&#34;,&#34;#F6102E&#34;,&#34;#F21328&#34;,&#34;#EB2F2F&#34;,&#34;#E44B37&#34;,&#34;#DC683F&#34;,&#34;#D58446&#34;,&#34;#CDA04E&#34;,&#34;#CB8B53&#34;,&#34;#C97258&#34;,&#34;#C8585E&#34;,&#34;#C63F63&#34;,&#34;#C52568&#34;,&#34;#C71D6E&#34;,&#34;#D13C78&#34;,&#34;#DC5B81&#34;,&#34;#E67B8A&#34;,&#34;#F19A93&#34;,&#34;#FBB99D&#34;,&#34;#FFC9A6&#34;,&#34;#FFD3B0&#34;,&#34;#FFDDBA&#34;,&#34;#FFE7C4&#34;,&#34;#FFF1CD&#34;,&#34;#FEFBD6&#34;,&#34;#F1FBD6&#34;,&#34;#E4FBD6&#34;,&#34;#D7FBD5&#34;,&#34;#CAFBD5&#34;,&#34;#BDFBD5&#34;,&#34;#B5F0CD&#34;,&#34;#B5D6BC&#34;,&#34;#B5BDAA&#34;,&#34;#B4A399&#34;,&#34;#B48A88&#34;,&#34;#B47077&#34;,&#34;#B57077&#34;,&#34;#B7747A&#34;,&#34;#BA787D&#34;,&#34;#BC7C7F&#34;,&#34;#BE8082&#34;,&#34;#C28785&#34;,&#34;#CA9489&#34;,&#34;#D3A28D&#34;,&#34;#DCB091&#34;,&#34;#E4BE95&#34;,&#34;#EDCB99&#34;,&#34;#EECB98&#34;,&#34;#EAC393&#34;,&#34;#E5BB8E&#34;,&#34;#E1B389&#34;,&#34;#DDAB84&#34;,&#34;#D9A380&#34;],&#34;minSize&#34;:0,&#34;weightFactor&#34;:1.00558659217877,&#34;backgroundColor&#34;:&#34;black&#34;,&#34;gridSize&#34;:0,&#34;minRotation&#34;:-0.785398163397448,&#34;maxRotation&#34;:0.785398163397448,&#34;shuffle&#34;:true,&#34;rotateRatio&#34;:0.4,&#34;shape&#34;:&#34;circle&#34;,&#34;ellipticity&#34;:0.65,&#34;figBase64&#34;:null,&#34;hover&#34;:null},&#34;evals&#34;:[],&#34;jsHooks&#34;:{&#34;render&#34;:[{&#34;code&#34;:&#34;function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }&#34;,&#34;data&#34;:null}]}}&lt;/script&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Comedy-1.gif&#34; /&gt;&lt;!-- --&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Comedy-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;htmlwidget-3&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;wordcloud2 html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-3&#34;&gt;{&#34;x&#34;:{&#34;word&#34;:[&#34;abuse&#34;,&#34;adult&#34;,&#34;adultery&#34;,&#34;affair&#34;,&#34;aftercreditsstinger&#34;,&#34;age&#34;,&#34;agent&#34;,&#34;alcohol&#34;,&#34;american&#34;,&#34;anarchic&#34;,&#34;angeles&#34;,&#34;animal&#34;,&#34;bank&#34;,&#34;based&#34;,&#34;beach&#34;,&#34;berlin&#34;,&#34;black&#34;,&#34;book&#34;,&#34;boy&#34;,&#34;brother&#34;,&#34;business&#34;,&#34;california&#34;,&#34;car&#34;,&#34;cat&#34;,&#34;chase&#34;,&#34;chicago&#34;,&#34;child&#34;,&#34;christmas&#34;,&#34;city&#34;,&#34;class&#34;,&#34;comedy&#34;,&#34;coming&#34;,&#34;cop&#34;,&#34;couple&#34;,&#34;crime&#34;,&#34;crisis&#34;,&#34;dancing&#34;,&#34;daughter&#34;,&#34;death&#34;,&#34;detective&#34;,&#34;difference&#34;,&#34;director&#34;,&#34;dog&#34;,&#34;dream&#34;,&#34;drug&#34;,&#34;duringcreditsstinger&#34;,&#34;dying&#34;,&#34;england&#34;,&#34;escape&#34;,&#34;extramarital&#34;,&#34;family&#34;,&#34;fashion&#34;,&#34;father&#34;,&#34;female&#34;,&#34;fight&#34;,&#34;film&#34;,&#34;friend&#34;,&#34;friendship&#34;,&#34;gay&#34;,&#34;girl&#34;,&#34;holiday&#34;,&#34;hotel&#34;,&#34;house&#34;,&#34;husband&#34;,&#34;identity&#34;,&#34;independent&#34;,&#34;infidelity&#34;,&#34;jealousy&#34;,&#34;life&#34;,&#34;london&#34;,&#34;los&#34;,&#34;loss&#34;,&#34;love&#34;,&#34;lovesickness&#34;,&#34;magic&#34;,&#34;male&#34;,&#34;marriage&#34;,&#34;mother&#34;,&#34;movie&#34;,&#34;murder&#34;,&#34;music&#34;,&#34;musical&#34;,&#34;night&#34;,&#34;nudity&#34;,&#34;operation&#34;,&#34;parent&#34;,&#34;paris&#34;,&#34;party&#34;,&#34;person&#34;,&#34;police&#34;,&#34;pregnancy&#34;,&#34;prison&#34;,&#34;radio&#34;,&#34;relationship&#34;,&#34;restaurant&#34;,&#34;road&#34;,&#34;robbery&#34;,&#34;rock&#34;,&#34;school&#34;,&#34;secret&#34;,&#34;sex&#34;,&#34;sexual&#34;,&#34;single&#34;,&#34;sister&#34;,&#34;soccer&#34;,&#34;son&#34;,&#34;space&#34;,&#34;spoof&#34;,&#34;suicide&#34;,&#34;summer&#34;,&#34;taxi&#34;,&#34;teacher&#34;,&#34;teenage&#34;,&#34;time&#34;,&#34;train&#34;,&#34;travel&#34;,&#34;tv&#34;,&#34;undercover&#34;,&#34;usa&#34;,&#34;war&#34;,&#34;wedding&#34;,&#34;wife&#34;,&#34;woman&#34;,&#34;world&#34;,&#34;york&#34;],&#34;freq&#34;:[13,16,11,21,15,20,12,12,14,13,19,13,19,28,12,12,13,12,14,47,11,11,42,11,18,11,34,18,17,15,51,11,12,11,13,15,12,38,27,23,11,57,14,11,25,26,18,25,13,18,40,14,38,36,11,92,22,45,21,19,23,14,11,25,26,52,12,20,53,19,19,28,106,11,15,21,34,38,29,42,23,27,11,53,11,18,32,14,12,37,16,18,13,136,21,13,20,13,28,20,47,15,28,17,15,24,14,16,17,13,12,12,21,18,17,24,22,11,12,22,40,21,61,23,28],&#34;fontFamily&#34;:&#34;Segoe UI&#34;,&#34;fontWeight&#34;:&#34;bold&#34;,&#34;color&#34;:&#34;random-dark&#34;,&#34;minSize&#34;:0,&#34;weightFactor&#34;:1.32352941176471,&#34;backgroundColor&#34;:&#34;white&#34;,&#34;gridSize&#34;:0,&#34;minRotation&#34;:-0.785398163397448,&#34;maxRotation&#34;:0.785398163397448,&#34;shuffle&#34;:true,&#34;rotateRatio&#34;:0.4,&#34;shape&#34;:&#34;circle&#34;,&#34;ellipticity&#34;:0.65,&#34;figBase64&#34;:null,&#34;hover&#34;:null},&#34;evals&#34;:[],&#34;jsHooks&#34;:{&#34;render&#34;:[{&#34;code&#34;:&#34;function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }&#34;,&#34;data&#34;:null}]}}&lt;/script&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Action-1.gif&#34; /&gt;&lt;!-- --&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Action-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;htmlwidget-4&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;wordcloud2 html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-4&#34;&gt;{&#34;x&#34;:{&#34;word&#34;:[&#34;aftercreditsstinger&#34;,&#34;agent&#34;,&#34;airplane&#34;,&#34;alien&#34;,&#34;angeles&#34;,&#34;army&#34;,&#34;arts&#34;,&#34;assassin&#34;,&#34;assassination&#34;,&#34;bank&#34;,&#34;based&#34;,&#34;battle&#34;,&#34;bomb&#34;,&#34;brother&#34;,&#34;car&#34;,&#34;chase&#34;,&#34;cia&#34;,&#34;city&#34;,&#34;comic&#34;,&#34;computer&#34;,&#34;cop&#34;,&#34;corruption&#34;,&#34;crime&#34;,&#34;criminal&#34;,&#34;cult&#34;,&#34;daughter&#34;,&#34;dc&#34;,&#34;dealer&#34;,&#34;death&#34;,&#34;detective&#34;,&#34;disaster&#34;,&#34;drug&#34;,&#34;duringcreditsstinger&#34;,&#34;dystopia&#34;,&#34;england&#34;,&#34;escape&#34;,&#34;evil&#34;,&#34;explosion&#34;,&#34;family&#34;,&#34;fbi&#34;,&#34;female&#34;,&#34;fight&#34;,&#34;fighter&#34;,&#34;film&#34;,&#34;future&#34;,&#34;game&#34;,&#34;gang&#34;,&#34;giant&#34;,&#34;gun&#34;,&#34;gunfight&#34;,&#34;hand&#34;,&#34;helicopter&#34;,&#34;hero&#34;,&#34;hostage&#34;,&#34;human&#34;,&#34;identity&#34;,&#34;ii&#34;,&#34;independent&#34;,&#34;intelligence&#34;,&#34;investigation&#34;,&#34;island&#34;,&#34;japan&#34;,&#34;kidnapping&#34;,&#34;killer&#34;,&#34;life&#34;,&#34;london&#34;,&#34;los&#34;,&#34;loss&#34;,&#34;love&#34;,&#34;mafia&#34;,&#34;marine&#34;,&#34;martial&#34;,&#34;mission&#34;,&#34;monster&#34;,&#34;movie&#34;,&#34;murder&#34;,&#34;nuclear&#34;,&#34;nudity&#34;,&#34;opera&#34;,&#34;operation&#34;,&#34;paris&#34;,&#34;pirate&#34;,&#34;police&#34;,&#34;prison&#34;,&#34;relationship&#34;,&#34;rescue&#34;,&#34;revenge&#34;,&#34;robbery&#34;,&#34;robot&#34;,&#34;saving&#34;,&#34;secret&#34;,&#34;sequel&#34;,&#34;service&#34;,&#34;ship&#34;,&#34;shootout&#34;,&#34;space&#34;,&#34;spy&#34;,&#34;super&#34;,&#34;superhero&#34;,&#34;suspense&#34;,&#34;sword&#34;,&#34;terrorist&#34;,&#34;time&#34;,&#34;travel&#34;,&#34;treasure&#34;,&#34;tv&#34;,&#34;undercover&#34;,&#34;video&#34;,&#34;villain&#34;,&#34;violence&#34;,&#34;war&#34;,&#34;woman&#34;,&#34;world&#34;,&#34;york&#34;],&#34;freq&#34;:[16,41,17,25,24,22,19,14,11,25,48,19,23,22,42,37,12,17,14,15,20,16,19,13,11,11,11,12,29,20,17,34,16,33,20,15,11,19,12,19,21,16,16,37,16,15,14,16,18,11,11,12,25,13,12,29,11,14,22,12,12,17,12,22,21,13,24,18,22,11,13,21,30,25,13,46,12,19,15,11,17,11,54,18,26,12,31,23,15,13,69,21,18,20,20,53,18,12,16,21,16,13,13,13,19,12,19,16,13,40,72,12,37,25],&#34;fontFamily&#34;:&#34;Segoe UI&#34;,&#34;fontWeight&#34;:&#34;bold&#34;,&#34;color&#34;:&#34;random-dark&#34;,&#34;minSize&#34;:0,&#34;weightFactor&#34;:2.5,&#34;backgroundColor&#34;:&#34;white&#34;,&#34;gridSize&#34;:0,&#34;minRotation&#34;:-0.785398163397448,&#34;maxRotation&#34;:0.785398163397448,&#34;shuffle&#34;:true,&#34;rotateRatio&#34;:0.4,&#34;shape&#34;:&#34;circle&#34;,&#34;ellipticity&#34;:0.65,&#34;figBase64&#34;:null,&#34;hover&#34;:null},&#34;evals&#34;:[],&#34;jsHooks&#34;:{&#34;render&#34;:[{&#34;code&#34;:&#34;function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }&#34;,&#34;data&#34;:null}]}}&lt;/script&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Drama-1.gif&#34; /&gt;&lt;!-- --&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Drama-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;htmlwidget-5&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;wordcloud2 html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-5&#34;&gt;{&#34;x&#34;:{&#34;word&#34;:[&#34;1970s&#34;,&#34;abuse&#34;,&#34;accident&#34;,&#34;addiction&#34;,&#34;adult&#34;,&#34;adultery&#34;,&#34;affair&#34;,&#34;age&#34;,&#34;agent&#34;,&#34;airplane&#34;,&#34;alcohol&#34;,&#34;alcoholic&#34;,&#34;alien&#34;,&#34;american&#34;,&#34;amnesia&#34;,&#34;angeles&#34;,&#34;animal&#34;,&#34;army&#34;,&#34;art&#34;,&#34;arts&#34;,&#34;assassination&#34;,&#34;attack&#34;,&#34;attempt&#34;,&#34;attempted&#34;,&#34;author&#34;,&#34;bad&#34;,&#34;bank&#34;,&#34;bar&#34;,&#34;based&#34;,&#34;battle&#34;,&#34;beach&#34;,&#34;berlin&#34;,&#34;biography&#34;,&#34;birthday&#34;,&#34;black&#34;,&#34;blackmail&#34;,&#34;blindness&#34;,&#34;bomb&#34;,&#34;book&#34;,&#34;boxer&#34;,&#34;boxing&#34;,&#34;boy&#34;,&#34;british&#34;,&#34;brother&#34;,&#34;brutality&#34;,&#34;business&#34;,&#34;california&#34;,&#34;camp&#34;,&#34;car&#34;,&#34;cat&#34;,&#34;catholicism&#34;,&#34;celebration&#34;,&#34;century&#34;,&#34;chase&#34;,&#34;cheating&#34;,&#34;child&#34;,&#34;childhood&#34;,&#34;china&#34;,&#34;christmas&#34;,&#34;church&#34;,&#34;cia&#34;,&#34;cinema&#34;,&#34;city&#34;,&#34;civil&#34;,&#34;class&#34;,&#34;classic&#34;,&#34;club&#34;,&#34;cold&#34;,&#34;comedy&#34;,&#34;coming&#34;,&#34;concert&#34;,&#34;conflict&#34;,&#34;cop&#34;,&#34;corruption&#34;,&#34;country&#34;,&#34;court&#34;,&#34;cowardliness&#34;,&#34;crash&#34;,&#34;crime&#34;,&#34;criminal&#34;,&#34;crisis&#34;,&#34;crush&#34;,&#34;cult&#34;,&#34;culture&#34;,&#34;daily&#34;,&#34;dance&#34;,&#34;dancing&#34;,&#34;daughter&#34;,&#34;dealer&#34;,&#34;death&#34;,&#34;depression&#34;,&#34;despair&#34;,&#34;detective&#34;,&#34;difference&#34;,&#34;director&#34;,&#34;disabled&#34;,&#34;disaster&#34;,&#34;divorce&#34;,&#34;doctor&#34;,&#34;dog&#34;,&#34;double&#34;,&#34;drama&#34;,&#34;dream&#34;,&#34;driver&#34;,&#34;drug&#34;,&#34;duringcreditsstinger&#34;,&#34;dying&#34;,&#34;dystopia&#34;,&#34;east&#34;,&#34;england&#34;,&#34;epic&#34;,&#34;erotic&#34;,&#34;eroticism&#34;,&#34;escape&#34;,&#34;extramarital&#34;,&#34;factory&#34;,&#34;faith&#34;,&#34;falling&#34;,&#34;family&#34;,&#34;fantasy&#34;,&#34;farm&#34;,&#34;fashion&#34;,&#34;father&#34;,&#34;fbi&#34;,&#34;female&#34;,&#34;fight&#34;,&#34;film&#34;,&#34;forbidden&#34;,&#34;france&#34;,&#34;french&#34;,&#34;friend&#34;,&#34;friends&#34;,&#34;friendship&#34;,&#34;funeral&#34;,&#34;future&#34;,&#34;gang&#34;,&#34;gangster&#34;,&#34;gay&#34;,&#34;german&#34;,&#34;germany&#34;,&#34;girl&#34;,&#34;gold&#34;,&#34;guilt&#34;,&#34;gun&#34;,&#34;hero&#34;,&#34;holiday&#34;,&#34;home&#34;,&#34;homeless&#34;,&#34;homosexuality&#34;,&#34;horse&#34;,&#34;hospital&#34;,&#34;hostage&#34;,&#34;hotel&#34;,&#34;house&#34;,&#34;human&#34;,&#34;husband&#34;,&#34;identity&#34;,&#34;ii&#34;,&#34;illegal&#34;,&#34;illness&#34;,&#34;immigration&#34;,&#34;independent&#34;,&#34;individual&#34;,&#34;infidelity&#34;,&#34;insanity&#34;,&#34;investigation&#34;,&#34;irish&#34;,&#34;island&#34;,&#34;italy&#34;,&#34;japan&#34;,&#34;japanese&#34;,&#34;jazz&#34;,&#34;jealousy&#34;,&#34;jew&#34;,&#34;jewish&#34;,&#34;job&#34;,&#34;journalist&#34;,&#34;junkie&#34;,&#34;kidnapping&#34;,&#34;killer&#34;,&#34;law&#34;,&#34;lawyer&#34;,&#34;lesbian&#34;,&#34;letter&#34;,&#34;lgbt&#34;,&#34;life&#34;,&#34;london&#34;,&#34;los&#34;,&#34;loss&#34;,&#34;love&#34;,&#34;lover&#34;,&#34;lovers&#34;,&#34;lovesickness&#34;,&#34;madrid&#34;,&#34;mafia&#34;,&#34;male&#34;,&#34;marriage&#34;,&#34;martial&#34;,&#34;memory&#34;,&#34;menage&#34;,&#34;mental&#34;,&#34;mentally&#34;,&#34;mexico&#34;,&#34;middle&#34;,&#34;military&#34;,&#34;mission&#34;,&#34;money&#34;,&#34;motel&#34;,&#34;mother&#34;,&#34;movie&#34;,&#34;murder&#34;,&#34;music&#34;,&#34;musical&#34;,&#34;nazi&#34;,&#34;nazis&#34;,&#34;neighbor&#34;,&#34;newspaper&#34;,&#34;night&#34;,&#34;nightclub&#34;,&#34;noir&#34;,&#34;nuclear&#34;,&#34;nudity&#34;,&#34;nurse&#34;,&#34;obsession&#34;,&#34;ocean&#34;,&#34;officer&#34;,&#34;operation&#34;,&#34;painting&#34;,&#34;paranoia&#34;,&#34;parent&#34;,&#34;paris&#34;,&#34;party&#34;,&#34;past&#34;,&#34;peasant&#34;,&#34;penalty&#34;,&#34;period&#34;,&#34;person&#34;,&#34;photographer&#34;,&#34;planned&#34;,&#34;play&#34;,&#34;police&#34;,&#34;political&#34;,&#34;politics&#34;,&#34;pop&#34;,&#34;power&#34;,&#34;pregnancy&#34;,&#34;president&#34;,&#34;priest&#34;,&#34;prison&#34;,&#34;prisoner&#34;,&#34;private&#34;,&#34;producer&#34;,&#34;professor&#34;,&#34;prostitute&#34;,&#34;prostitution&#34;,&#34;psychiatrist&#34;,&#34;puberty&#34;,&#34;race&#34;,&#34;racism&#34;,&#34;radio&#34;,&#34;rape&#34;,&#34;reality&#34;,&#34;record&#34;,&#34;relationship&#34;,&#34;religion&#34;,&#34;rescue&#34;,&#34;resistance&#34;,&#34;restaurant&#34;,&#34;revenge&#34;,&#34;revolution&#34;,&#34;road&#34;,&#34;robbery&#34;,&#34;rock&#34;,&#34;romance&#34;,&#34;school&#34;,&#34;scotland&#34;,&#34;sea&#34;,&#34;secret&#34;,&#34;sense&#34;,&#34;sequel&#34;,&#34;setting&#34;,&#34;sex&#34;,&#34;sexual&#34;,&#34;sexuality&#34;,&#34;ship&#34;,&#34;sight&#34;,&#34;silent&#34;,&#34;singer&#34;,&#34;single&#34;,&#34;sister&#34;,&#34;society&#34;,&#34;soldier&#34;,&#34;son&#34;,&#34;south&#34;,&#34;southern&#34;,&#34;space&#34;,&#34;spain&#34;,&#34;sport&#34;,&#34;star&#34;,&#34;station&#34;,&#34;story&#34;,&#34;street&#34;,&#34;student&#34;,&#34;suicide&#34;,&#34;summer&#34;,&#34;suspense&#34;,&#34;taxi&#34;,&#34;teacher&#34;,&#34;teenage&#34;,&#34;teenager&#34;,&#34;terror&#34;,&#34;thief&#34;,&#34;time&#34;,&#34;torture&#34;,&#34;town&#34;,&#34;tradition&#34;,&#34;train&#34;,&#34;training&#34;,&#34;travel&#34;,&#34;triangle&#34;,&#34;trip&#34;,&#34;trois&#34;,&#34;true&#34;,&#34;tv&#34;,&#34;underdog&#34;,&#34;unsimulated&#34;,&#34;unsociability&#34;,&#34;usa&#34;,&#34;vacation&#34;,&#34;veteran&#34;,&#34;vietnam&#34;,&#34;village&#34;,&#34;violence&#34;,&#34;violent&#34;,&#34;vision&#34;,&#34;waitress&#34;,&#34;war&#34;,&#34;wedding&#34;,&#34;white&#34;,&#34;wife&#34;,&#34;woman&#34;,&#34;womens&#34;,&#34;worker&#34;,&#34;world&#34;,&#34;xenophobia&#34;,&#34;york&#34;,&#34;youth&#34;],&#34;freq&#34;:[23,45,14,13,26,39,42,35,28,19,18,13,13,28,12,34,13,24,12,13,19,11,23,13,22,13,29,13,101,14,19,37,40,12,21,21,14,29,15,13,12,11,18,97,12,24,11,20,55,14,12,11,13,20,12,91,16,12,11,14,11,14,24,20,28,12,11,16,13,22,14,14,12,28,17,30,11,18,25,18,30,20,15,12,17,12,16,75,18,125,30,13,43,21,122,19,13,20,26,16,18,11,31,15,88,12,70,13,17,44,11,12,21,17,38,11,15,12,90,17,13,11,82,24,58,15,227,11,18,29,18,12,77,11,17,28,13,44,20,23,23,11,12,17,13,13,12,11,19,16,22,13,35,16,12,69,61,40,19,21,14,125,36,19,15,17,11,20,16,25,15,14,36,17,12,12,22,11,15,20,16,11,13,19,20,147,33,34,123,267,35,17,22,13,13,28,68,13,13,11,17,11,15,15,18,21,34,12,72,47,140,49,39,13,14,14,11,18,11,42,11,79,14,21,13,15,19,14,11,28,52,19,18,11,14,11,27,11,13,13,76,11,20,15,16,28,11,13,56,13,12,11,12,30,20,11,15,13,11,20,52,18,15,241,16,12,15,21,39,23,23,33,16,13,52,11,18,52,20,12,13,96,58,13,24,21,16,12,29,58,22,22,52,19,19,18,15,23,18,17,24,17,12,71,18,53,12,43,27,16,19,17,24,19,21,14,14,12,17,28,14,11,23,23,12,12,28,38,12,11,17,20,64,13,11,11,172,28,11,55,146,16,12,69,11,59,19],&#34;fontFamily&#34;:&#34;Segoe UI&#34;,&#34;fontWeight&#34;:&#34;bold&#34;,&#34;color&#34;:&#34;random-dark&#34;,&#34;minSize&#34;:0,&#34;weightFactor&#34;:0.674157303370786,&#34;backgroundColor&#34;:&#34;white&#34;,&#34;gridSize&#34;:0,&#34;minRotation&#34;:-0.785398163397448,&#34;maxRotation&#34;:0.785398163397448,&#34;shuffle&#34;:true,&#34;rotateRatio&#34;:0.4,&#34;shape&#34;:&#34;circle&#34;,&#34;ellipticity&#34;:0.65,&#34;figBase64&#34;:null,&#34;hover&#34;:null},&#34;evals&#34;:[],&#34;jsHooks&#34;:{&#34;render&#34;:[{&#34;code&#34;:&#34;function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }&#34;,&#34;data&#34;:null}]}}&lt;/script&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Thriller-1.gif&#34; /&gt;&lt;!-- --&gt;&lt;img src=&#34;https://www.silasj.com/project/Movies-Dataset-Analysis/EDP693-Final-Markdown_files/figure-html/Thriller-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;htmlwidget-6&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;wordcloud2 html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-6&#34;&gt;{&#34;x&#34;:{&#34;word&#34;:[&#34;abuse&#34;,&#34;affair&#34;,&#34;agent&#34;,&#34;alien&#34;,&#34;amnesia&#34;,&#34;angeles&#34;,&#34;animal&#34;,&#34;army&#34;,&#34;assassin&#34;,&#34;assassination&#34;,&#34;bank&#34;,&#34;based&#34;,&#34;berlin&#34;,&#34;black&#34;,&#34;blackmail&#34;,&#34;blood&#34;,&#34;bomb&#34;,&#34;brother&#34;,&#34;car&#34;,&#34;chase&#34;,&#34;child&#34;,&#34;cia&#34;,&#34;class&#34;,&#34;cold&#34;,&#34;computer&#34;,&#34;corruption&#34;,&#34;crime&#34;,&#34;daughter&#34;,&#34;dealer&#34;,&#34;death&#34;,&#34;detective&#34;,&#34;double&#34;,&#34;drug&#34;,&#34;duringcreditsstinger&#34;,&#34;dying&#34;,&#34;dystopia&#34;,&#34;england&#34;,&#34;escape&#34;,&#34;extramarital&#34;,&#34;family&#34;,&#34;father&#34;,&#34;fbi&#34;,&#34;female&#34;,&#34;fight&#34;,&#34;film&#34;,&#34;friendship&#34;,&#34;future&#34;,&#34;gun&#34;,&#34;helicopter&#34;,&#34;hitman&#34;,&#34;hotel&#34;,&#34;human&#34;,&#34;husband&#34;,&#34;identity&#34;,&#34;independent&#34;,&#34;intelligence&#34;,&#34;invasion&#34;,&#34;investigation&#34;,&#34;island&#34;,&#34;kidnapping&#34;,&#34;killer&#34;,&#34;life&#34;,&#34;london&#34;,&#34;los&#34;,&#34;loss&#34;,&#34;love&#34;,&#34;mental&#34;,&#34;mission&#34;,&#34;money&#34;,&#34;movie&#34;,&#34;murder&#34;,&#34;neonoir&#34;,&#34;noir&#34;,&#34;nuclear&#34;,&#34;nudity&#34;,&#34;paris&#34;,&#34;planned&#34;,&#34;police&#34;,&#34;prison&#34;,&#34;rape&#34;,&#34;relationship&#34;,&#34;revenge&#34;,&#34;robbery&#34;,&#34;school&#34;,&#34;secret&#34;,&#34;serial&#34;,&#34;service&#34;,&#34;sex&#34;,&#34;sexual&#34;,&#34;shark&#34;,&#34;sister&#34;,&#34;son&#34;,&#34;space&#34;,&#34;spy&#34;,&#34;suicide&#34;,&#34;suspense&#34;,&#34;terror&#34;,&#34;terrorist&#34;,&#34;time&#34;,&#34;train&#34;,&#34;travel&#34;,&#34;undercover&#34;,&#34;usa&#34;,&#34;violence&#34;,&#34;virus&#34;,&#34;war&#34;,&#34;white&#34;,&#34;wife&#34;,&#34;woman&#34;,&#34;world&#34;,&#34;york&#34;],&#34;freq&#34;:[18,13,43,19,11,21,11,11,11,19,17,33,17,11,13,16,25,25,43,18,17,12,12,15,18,15,12,25,12,31,30,11,48,11,15,30,35,18,13,18,16,29,22,12,57,16,13,12,11,15,11,11,26,30,22,20,11,13,11,14,44,27,27,21,37,30,13,25,19,12,114,14,29,13,29,14,11,45,21,18,44,30,17,11,70,12,20,20,11,11,13,16,34,21,27,41,12,15,11,12,12,16,16,55,11,55,12,21,15,19,20],&#34;fontFamily&#34;:&#34;Segoe UI&#34;,&#34;fontWeight&#34;:&#34;bold&#34;,&#34;color&#34;:&#34;random-dark&#34;,&#34;minSize&#34;:0,&#34;weightFactor&#34;:1.57894736842105,&#34;backgroundColor&#34;:&#34;white&#34;,&#34;gridSize&#34;:0,&#34;minRotation&#34;:-0.785398163397448,&#34;maxRotation&#34;:0.785398163397448,&#34;shuffle&#34;:true,&#34;rotateRatio&#34;:0.4,&#34;shape&#34;:&#34;circle&#34;,&#34;ellipticity&#34;:0.65,&#34;figBase64&#34;:null,&#34;hover&#34;:null},&#34;evals&#34;:[],&#34;jsHooks&#34;:{&#34;render&#34;:[{&#34;code&#34;:&#34;function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }&#34;,&#34;data&#34;:null}]}}&lt;/script&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Academic Self-Concept Project</title>
@@ -565,6 +646,116 @@
     </item>
     
     <item>
+      <title>2016 General Election Maps</title>
+      <link>https://www.silasj.com/project/election-2016-maps/2016-election-maps/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.silasj.com/project/election-2016-maps/2016-election-maps/</guid>
+      <description>
+&lt;script src=&#34;https://www.silasj.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#research-questions&#34;&gt;&lt;strong&gt;Research Questions&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#methods&#34;&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;overview&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/h1&gt;
+&lt;div id=&#34;research-questions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Research Questions&lt;/strong&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;methods&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(state_elec, aes(x = long, y = lat, group = group, fill = repev)) +
+  geom_polygon(color = &amp;quot;black&amp;quot;) +
+  coord_map(projection = &amp;quot;albers&amp;quot;, lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = &amp;quot;white&amp;quot;,
+                       high = &amp;quot;red&amp;quot;,
+                       na.value = &amp;quot;grey40&amp;quot;
+                       ) +
+  theme_map() +
+  ggtitle(&amp;quot;Replublican Electoral College votes&amp;quot;) +
+  labs(fill = &amp;quot;Electoral Votes&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Electoral%20Votes%20Trump-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(state_elec, aes(x = long, y = lat, group = group, fill = demev)) +
+  geom_polygon(color = &amp;quot;black&amp;quot;) +
+  coord_map(projection = &amp;quot;albers&amp;quot;, lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = &amp;quot;white&amp;quot;,
+                      high = muted(&amp;quot;blue&amp;quot;),
+                      na.value = &amp;quot;grey40&amp;quot;
+  ) +
+  theme_map() +
+  ggtitle(&amp;quot;Democrat Electoral College votes&amp;quot;) +
+  labs(fill = &amp;quot;Electoral Votes&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Electoral%20Votes%20Clinton-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(state_elec, aes(x = long, y = lat, group = group, fill = pct_trump)) +
+  geom_polygon(color = &amp;quot;black&amp;quot;) +
+  coord_map(projection = &amp;quot;albers&amp;quot;, lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = &amp;quot;white&amp;quot;,
+                      high = &amp;quot;red&amp;quot;) +
+  theme_map() +
+  ggtitle(&amp;quot;Percentage of Votes for Trump&amp;quot;) +
+  labs(fill = &amp;quot;Percent of Votes&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Percentage%20of%20Votes%20Trump-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(state_elec, aes(x = long, y = lat, group = group, fill = pct_clinton)) +
+  geom_polygon(color = &amp;quot;black&amp;quot;) +
+  coord_map(projection = &amp;quot;albers&amp;quot;, lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = &amp;quot;white&amp;quot;,
+                      high = &amp;quot;blue&amp;quot;) +
+  theme_map() +
+  ggtitle(&amp;quot;Percentage of Votes for Clinton&amp;quot;) +
+  labs(fill = &amp;quot;Percent of Votes&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Percetage%20of%20Votes%20Clinton-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(state_elec, aes(x = long, y = lat, group = group, fill = r_points)) +
+  geom_polygon(color = &amp;quot;black&amp;quot;) +
+  coord_map(projection = &amp;quot;albers&amp;quot;, lat0 = 39, lat1 = 45) +
+  scale_fill_gradient2(low = &amp;quot;blue&amp;quot;,
+                       mid = &amp;quot;white&amp;quot;,
+                      high = &amp;quot;red&amp;quot;,
+                      midpoint = 0) +
+  theme_map() +
+  ggtitle(&amp;quot;Percent Margin of Votes for Clinton and Trump&amp;quot;) +
+  labs(fill = &amp;quot;Percent&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Percent%20Margin%20of%20Votes%20Clinton%20Trump-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(rescaledByEC, aes(long, lat, group = group, fill = winner)) + 
+  #  geom_path() + # Enable if you want to see the original outline
+  geom_polygon(aes(longscale, latscale)) +
+  coord_fixed() + 
+  theme_void() + 
+  scale_fill_manual(values = c(&amp;quot;blue&amp;quot;, &amp;quot;red&amp;quot;)) +
+  labs(title = str_wrap(&amp;quot;Winner in States Resized by Electoral Vote For States Won&amp;quot;, 30),
+       fill = &amp;quot;Winner&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Election-2016-Maps/election-results_files/figure-html/State%20Winner%20Resized%20by%20Electoral%20Vote-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(c16map2, aes(long, lat, group = group, fill = pct_trump)) +
+  geom_polygon(color = &amp;quot;gray50&amp;quot;) +
+  labs(fill = &amp;quot;Percentage of Votes&amp;quot;) +
+  theme_map() +
+  coord_map(projection = &amp;quot;albers&amp;quot;, lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = &amp;quot;white&amp;quot;,
+                     high = &amp;quot;red&amp;quot;,
+                     na.value = &amp;quot;gray50&amp;quot;) +
+  ggtitle(&amp;quot;Percentage of Votes for D. Trump in 2016 General Election by County&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Election-2016-Maps/election-results_files/figure-html/2016%20County%20Percent%20Votees%20Trump-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(c16map2, aes(long, lat, group = group, fill = pct_clinton)) +
+  geom_polygon(color = &amp;quot;gray50&amp;quot;) +
+  labs(fill = &amp;quot;Percentage of Votes&amp;quot;) +
+  theme_map() +
+  coord_map(projection = &amp;quot;albers&amp;quot;, lat0 = 39, lat1 = 45) +
+  scale_fill_gradient(low = &amp;quot;white&amp;quot;,
+                     high = &amp;quot;blue&amp;quot;,
+                     na.value = &amp;quot;gray50&amp;quot;) +
+  ggtitle(&amp;quot;Percentage of Votes for H. Clinton in 2016 General Election by County&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Election-2016-Maps/election-results_files/figure-html/2016%20County%20Percent%20Votes%20Clinton-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Slides</title>
       <link>https://www.silasj.com/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
@@ -934,293 +1125,6 @@ Three
     </item>
     
     <item>
-      <title>1984 Text Analysis</title>
-      <link>https://www.silasj.com/project/1984-text-analysis/edp-693e-1984-text-markdown/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.silasj.com/project/1984-text-analysis/edp-693e-1984-text-markdown/</guid>
-      <description>
-&lt;script src=&#34;EDP 693e 1984 Text Markdown_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#importing-the-text-by-chapter&#34;&gt;Importing the text by Chapter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#importing-the-whole-text&#34;&gt;Importing the whole text&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#tidying-data&#34;&gt;Tidying data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#exploring-most-used-words&#34;&gt;Exploring Most used Words&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#bing-analysis&#34;&gt;Bing Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#nrc-analysis&#34;&gt;NRC Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#afinn-analysis&#34;&gt;AFINN Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;div id=&#34;importing-the-text-by-chapter&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Importing the text by Chapter&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div id=&#34;importing-the-whole-text&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Importing the whole text&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div id=&#34;tidying-data&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Tidying data&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div id=&#34;exploring-most-used-words&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Exploring Most used Words&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;left&#34;&gt;word&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;winston&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;172&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;party&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;98&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;time&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;64&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;moment&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;53&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;people&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;49&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;brother&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;46&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;left&#34;&gt;word&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;winston&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;141&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;party&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;126&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;time&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;85&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;war&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;83&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;julia&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;69&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;moment&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;55&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;left&#34;&gt;word&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;winston&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;141&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;o’brien&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;119&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;pain&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;55&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;party&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;52&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;eyes&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;49&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;moment&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;48&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;left&#34;&gt;word&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;winston&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;454&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;party&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;276&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;time&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;197&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;o’brien&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;178&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;moment&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;156&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;war&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;124&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20Analysis-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;div id=&#34;bing-analysis&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Bing Analysis&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-3.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/Bing%20by%20Chapter-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;nrc-analysis&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;NRC Analysis&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;left&#34;&gt;sentiment&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;negative&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;6214&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;positive&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;5632&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;trust&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3406&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;fear&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3274&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;sadness&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2661&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;anticipation&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2619&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;anger&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2458&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;joy&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2026&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;disgust&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2013&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;surprise&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1350&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
-## font family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
-## font family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/nrc%20Analysis-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;afinn-analysis&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;AFINN Analysis&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database
-
-## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
-## font family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
-## font family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
-## family not found in Windows font database&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/1984-Text-Analysis/EDP%20693e%201984%20Text%20Markdown_files/figure-html/AFINN%20Analysis-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Experimental Survey on Hazing</title>
       <link>https://www.silasj.com/project/experimental-hazing-project/experimental-hazing-project-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1452,284 +1356,6 @@ Three
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Experimental-Hazing-Project/Experimental-Hazing-Project-Analysis_files/figure-html/unnamed-chunk-6-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;colgroup&gt;
-&lt;col width=&#34;8%&#34; /&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;7%&#34; /&gt;
-&lt;col width=&#34;8%&#34; /&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;46%&#34; /&gt;
-&lt;col width=&#34;11%&#34; /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;right&#34;&gt;estimate&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;statistic&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;conf.low&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;conf.high&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;method&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;alternative&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;right&#34;&gt;3.000048&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;67582&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2.000049&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;4.000004&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Wilcoxon rank sum test with continuity correction&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;two.sided&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Experimental Survey on Hazing</title>
-      <link>https://www.silasj.com/project/experimental-hazing-project/project-1-md/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.silasj.com/project/experimental-hazing-project/project-1-md/</guid>
-      <description>
-&lt;script src=&#34;Project 1 Md_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#background&#34;&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#research-questions&#34;&gt;&lt;strong&gt;Research Questions&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#methods&#34;&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#survey&#34;&gt;Survey&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#sample-characteristics&#34;&gt;Sample Characteristics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#determination-of-guilt-and-punishment&#34;&gt;Determination of Guilt and Punishment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#general-views-about-hazing&#34;&gt;General Views about Hazing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#creating-the-hazing-score-variable&#34;&gt;Creating the Hazing Score Variable&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#hazing-score&#34;&gt;Hazing Score&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#analysis&#34;&gt;Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;div id=&#34;overview&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/h1&gt;
-&lt;div id=&#34;background&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div id=&#34;research-questions&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;strong&gt;Research Questions&lt;/strong&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div id=&#34;methods&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/h2&gt;
-&lt;div id=&#34;survey&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Survey&lt;/h3&gt;
-&lt;p&gt;Download the survey &lt;a href=&#34;https://www.silasj.com/media/Experimental%20Hazing%20Survey%20Using%20Vignettes.pdf&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;sample-characteristics&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Sample Characteristics&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-2.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-1-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;determination-of-guilt-and-punishment&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Determination of Guilt and Punishment&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/Determination%20of%20Guilt-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-2-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;general-views-about-hazing&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;General Views about Hazing&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/Likerts-1.png&#34; width=&#34;768&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/Likerts-2.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;creating-the-hazing-score-variable&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Creating the Hazing Score Variable&lt;/h2&gt;
-&lt;p&gt;The hazing score is a numeric representation of how positively or negatively a participant views hazing in general. The score can range from -18 to 18 and higher values indicate less positive views of hazing. The score was generated using 9 of the 15 Likert scale level of agreement items included in the survey.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;All initiations of new group members are hazing.&lt;/li&gt;
-&lt;li&gt;An action is not hazing if the victim consents.&lt;/li&gt;
-&lt;li&gt;Hazing is useful for group cohesion&lt;/li&gt;
-&lt;li&gt;Hazing can be fun.&lt;/li&gt;
-&lt;li&gt;Hazing is a serious issue which needs to be prevented.&lt;/li&gt;
-&lt;li&gt;Hazing is dangerous&lt;/li&gt;
-&lt;li&gt;Hazing should be illegal.&lt;/li&gt;
-&lt;li&gt;Sometimes hazing is acceptable.&lt;/li&gt;
-&lt;li&gt;There are no benefits to hazing new group members.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;An action is not hazing if the victim consents.&amp;quot;       
-## [2] &amp;quot;Hazing is useful for group cohesion.&amp;quot;                  
-## [3] &amp;quot;Hazing can be fun.&amp;quot;                                    
-## [4] &amp;quot;Hazing is a serious issue which needs to be prevented.&amp;quot;
-## [5] &amp;quot;Hazng is dangerous.&amp;quot;                                   
-## [6] &amp;quot;Hazing should be illegal.&amp;quot;                             
-## [7] &amp;quot;Sometimes hazing is acceptable.&amp;quot;                       
-## [8] &amp;quot;There are no benefis to hazing neww group members.&amp;quot;    
-## [9] &amp;quot;All initiations of new group members are hazing.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;div id=&#34;hazing-score&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Hazing Score&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;analysis&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Analysis&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-5-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;table style=&#34;width:100%;&#34;&gt;
-&lt;colgroup&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;3%&#34; /&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;8%&#34; /&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;10%&#34; /&gt;
-&lt;col width=&#34;8%&#34; /&gt;
-&lt;col width=&#34;6%&#34; /&gt;
-&lt;col width=&#34;4%&#34; /&gt;
-&lt;col width=&#34;6%&#34; /&gt;
-&lt;col width=&#34;6%&#34; /&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;left&#34;&gt;Guilty?&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;mean&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;sd&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;stderr&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;LCL&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;UCL&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;median&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;IQR&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;LCLmed&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;UCLmed&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;W Stat&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;No/Unsure&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;87&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.9310345&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;8.093628&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.8677280&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;-0.7939517&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2.656021&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;13.5&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;-1&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.9630041&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.0137775&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;Yes&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;615&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;8.8699187&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;5.847073&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.2357767&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;8.4068921&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;9.332945&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;9.0&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.9089050&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.0000000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;left&#34;&gt;Gender&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;mean&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;sd&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;stderr&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;LCL&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;UCL&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;median&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;IQR&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;LCLmed&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;UCLmed&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;W Stat&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;Female&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;486&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;9.100823&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;5.619931&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.2549253&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;8.599929&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;9.601717&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.9100816&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;left&#34;&gt;Male&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;216&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;5.152778&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;8.005800&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.5447257&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;4.079091&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;6.226464&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0.9344956&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-5-3.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;https://www.silasj.com/project/Hazing Project/Project%201%20Md_files/figure-html/unnamed-chunk-5-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;colgroup&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;7%&#34; /&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;9%&#34; /&gt;
-&lt;col width=&#34;45%&#34; /&gt;
-&lt;col width=&#34;10%&#34; /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;right&#34;&gt;estimate&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;statistic&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;p.value&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;conf.low&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;conf.high&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;method&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;alternative&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;right&#34;&gt;-7.999952&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;11363&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;-9.999998&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;-5.99999&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Wilcoxon rank sum test with continuity correction&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;two.sided&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 &lt;table&gt;
 &lt;colgroup&gt;
 &lt;col width=&#34;8%&#34; /&gt;
