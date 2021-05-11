@@ -30,3 +30,7 @@ Blog:
     weight: 1
   - name: Data
     weight: 2
+project:
+    - name: Projects
+      weight: 1
+    

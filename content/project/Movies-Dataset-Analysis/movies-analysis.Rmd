@@ -149,7 +149,7 @@ plot70s1 <- seventies %>%
   scale_fill_manual(values = col70s) +
   theme_cowplot() +
   theme(text = element_text(family = "Rockwell", color = "white"),
-        axis.text.x = element_text(family = "Rockwell", color = "white"),
+        axis.text.x = element_text(family = "Rockwell", color = "white", angle = 90),
         axis.text.y = element_text(family = "Rockwell", color = "white"),
         plot.title = element_text(family = "Rockwell", size = 15, face = "bold"),
         plot.title.position = "plot",
@@ -186,7 +186,7 @@ plot70s2 <- seventies %>%
   scale_fill_manual(values = col70s) +
   theme_cowplot() +
   theme(text = element_text(family = "Rockwell", color = "white"),
-        axis.text.x = element_text(family = "Rockwell", color = "white"),
+        axis.text.x = element_text(family = "Rockwell", color = "white", angle = 90),
         axis.text.y = element_text(family = "Rockwell", color = "white"),
         plot.title = element_text(family = "Rockwell", size = 15, face = "bold"),
         plot.title.position = "plot",
@@ -221,7 +221,7 @@ plot70s3 <- seventies %>%
   scale_fill_manual(values = col70s) +
   theme_cowplot() +
   theme(text = element_text(family = "Rockwell", color = "white"),
-        axis.text.x = element_text(family = "Rockwell", color = "white"),
+        axis.text.x = element_text(family = "Rockwell", color = "white", angle = 90),
         axis.text.y = element_text(family = "Rockwell", color = "white"),
         plot.title = element_text(family = "Rockwell", size = 15, face = "bold"),
         plot.title.position = "plot",
@@ -555,7 +555,7 @@ ggplot(aes(label = word, size = n, color = n)) +
 
 
 ```{r}
-wordcloud2(funnywords)  
+wordcloud2(funnywords, backgroundColor = "black")  
 ```
 
 
@@ -583,7 +583,7 @@ ggplot(aes(label = word, size = n, color = n)) +
 
 
 ```{r}
-wordcloud2(actionwords)  
+wordcloud2(actionwords, backgroundColor = "black")  
 ```
 
 
@@ -610,7 +610,7 @@ ggplot(aes(label = word, size = n, color = n)) +
 ```
 
 ```{r}
-wordcloud2(dramawords)  
+wordcloud2(dramawords, backgroundColor = "black")  
 ```
 
 
@@ -637,6 +637,6 @@ ggplot(aes(label = word, size = n, color = n)) +
 ```
 
 ```{r}
-wordcloud2(thrillwords)  
+wordcloud2(thrillwords, backgroundColor = "black")  
 ```
 
