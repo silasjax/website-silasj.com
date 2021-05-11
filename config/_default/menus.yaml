@@ -25,5 +25,8 @@ main:
     weight: 70
 
 
-
-
+Blog:
+  - name: Posts
+    weight: 1
+  - name: Data
+    weight: 2

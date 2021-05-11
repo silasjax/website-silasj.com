@@ -9,7 +9,7 @@ output:
   blogdown::html_page:
     toc: true
 menu:
-  posts:
+  Blog:
     parent: Posts
     weight: 1
 type: docs

@@ -10,9 +10,9 @@ output:
     
     toc: true
 menu:
-  projects:
+  project:
     parent: Projects
-    weight: 2
+    weight: 1
 type: docs
 tag:
   - Orwell

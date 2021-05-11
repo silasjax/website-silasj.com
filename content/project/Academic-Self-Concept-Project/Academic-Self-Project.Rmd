@@ -10,9 +10,9 @@ output:
     
     toc: true
 menu:
-  projects:
+  project:
     parent: Projects
-    weight: 1
+    weight: 2
 type: docs
 editor_options: 
   chunk_output_type: inline
