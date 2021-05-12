@@ -4,7 +4,7 @@ headless: true
 weight: 10
 title: Welcome!
 
-active: true
+active: false
 
 hero_media: silasjlogo.png
 

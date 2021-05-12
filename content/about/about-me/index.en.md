@@ -17,4 +17,6 @@ Following my undergraduate studies, I completed three years of graduate coursewo
 
 When I'm not tinkering around in RStudio, I enjoy weightlifting, karaoke, and spending time with my cat, Bagel.
 
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Resume - C Silas Jackson PDF.pdf" "newtab" >}}resumé{{< /staticref >}}.
+
 {{< figure src="bagel.JPG" width="250" height="375" caption="Bagel Jackson" >}}

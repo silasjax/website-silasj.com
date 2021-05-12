@@ -9,7 +9,7 @@ output:
   blogdown::html_page:
     toc: true
 menu:
-  Blog:
+  blog:
     parent: Posts
     weight: 1
 type: docs
@@ -18,7 +18,155 @@ editor_options:
 lastmod: '2021-04-24T23:09:32-04:00'
 shiny: true
 ---
-# TBA
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+
+```{r Libraries, include = FALSE}
+library(tidyverse)
+library(tm)  
+library(viridis)
+
+library(vapoRwave)
+library(plotly)
+library(ggwordcloud)
+library(wordcloud2)
+library(ggthemes)
+
+library(extrafont)
+library(gganimate)
+library(ggpubr)
+library(png)
+library(stringr)
+library(cowplot)
+
+library(magick)
+library(gridExtra)
+library(jpeg)
+library(tidytext)
+library(tm)
+library(pacman)
+library(grid)
+library(gridExtra)
+
+
+windowsFonts("a dripping marker" = windowsFont("a dripping marker"))
+```
+
+```{r Load Data, include = FALSE}
+
+load("Movies_Data.Rdata")
+
+```
+
+
+```{r Comedy}
+subset(data.w.genre.ratings, Comedy == 1) %>% 
+  arrange(desc(avg_rating)) %>% 
+  slice(1:5) %>% 
+  ggplot(aes(original_title, avg_rating, label = round(avg_rating, 2))) +
+  geom_point(color = "blue") +
+  geom_label(color = "blue", vjust = -0.5) +
+  labs(title = "Top 5 Comedy Movies by Average IMDB User Rating",
+       y = NULL,
+       x = NULL) +
+  ylim(0, 5) +
+  transition_states(original_title)
+
+funnywords %>% 
+ggplot(aes(label = word, size = n, color = n)) +
+  geom_text_wordcloud_area() +
+  scale_size_area(max_size = 8)
+
+```
+
+
+```{r}
+wordcloud2(funnywords, backgroundColor = "black")  
+```
+
+
+
+```{r Action}
+subset(data.w.genre.ratings, Action == 1) %>% 
+  arrange(desc(avg_rating)) %>% 
+  slice(1:5) %>% 
+  ggplot(aes(original_title, avg_rating, label = round(avg_rating, 2))) +
+  geom_point(color = "red") +
+  geom_label(color = "red", vjust = -0.5) +
+  labs(title = "Top 5 Action Movies by Average IMDB User Rating",
+       y = NULL,
+       x = NULL) +
+  ylim(0, 5) +
+  transition_states(original_title)
+
+ 
+actionwords %>% 
+ggplot(aes(label = word, size = n, color = n)) +
+  geom_text_wordcloud_area() +
+  scale_size_area(max_size = 8) 
+
+```
+
+
+```{r}
+wordcloud2(actionwords, backgroundColor = "black")  
+```
+
+
+
+```{r Drama}
+subset(data.w.genre.ratings, Drama == 1) %>% 
+  arrange(desc(avg_rating)) %>% 
+  slice(1:5) %>% 
+  ggplot(aes(original_title, avg_rating, label = round(avg_rating, 2))) +
+  geom_point(color = "red") +
+  geom_label(color = "red", vjust = -0.5) +
+  labs(title = "Top 5 Drama Movies by Average IMDB User Rating",
+       y = NULL,
+       x = NULL) +
+  ylim(0, 5) +
+  transition_states(original_title)
+
+
+dramawords %>% 
+ggplot(aes(label = word, size = n, color = n)) +
+  geom_text_wordcloud_area() +
+  scale_size_area(max_size = 8)
+
+```
+
+```{r}
+wordcloud2(dramawords, backgroundColor = "black")  
+```
+
+
+```{r Thriller}
+subset(data.w.genre.ratings, Thriller == 1) %>% 
+  arrange(desc(avg_rating)) %>% 
+  slice(1:5) %>% 
+  ggplot(aes(original_title, avg_rating, label = round(avg_rating, 2))) +
+  geom_point(color = "red") +
+  geom_label(color = "red", vjust = -0.5) +
+  labs(title = "Top 5 Thriller Movies by Average IMDB User Rating",
+       y = NULL,
+       x = NULL) +
+  ylim(0, 5) +
+  transition_states(original_title)
+
+
+thrillwords %>% 
+ggplot(aes(label = word, size = n, color = n)) +
+  geom_text_wordcloud_area() +
+  scale_size_area(max_size = 8)
+
+
+```
+
+```{r}
+wordcloud2(thrillwords, backgroundColor = "black")  
+```
 
 
 

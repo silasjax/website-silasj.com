@@ -24,12 +24,12 @@ main:
     url: '#contact'
     weight: 70
 
-
-Blog:
+blog:
   - name: Posts
     weight: 1
   - name: Data
     weight: 2
+
 project:
     - name: Projects
       weight: 1
