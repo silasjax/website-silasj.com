@@ -1,10 +1,10 @@
 ---
-title: 2016 General Election Maps
+title: Using Maps to Visualize Data
 author: 'Silas Jackson'
 date: '2021-03-24'
-summary: Using maps to explore the 2016 U.S. General Election results.
-slug: 2016-election-maps
-linktitle: "2016 General Election Results"
+summary: Using maps to explore the 2016 U.S. General Election results, Census data, and more.
+slug: maps
+linktitle: "Visualizing with Maps"
 output:
   blogdown::html_page:
     
@@ -38,6 +38,7 @@ library(viridis)
 library(maps)
 library(scales)
 library(RColorBrewer)
+library(sf)
 
 load("election2016.Rdata")
 
@@ -114,6 +115,7 @@ ggplot(state_elec, aes(x = long, y = lat, group = group, fill = repev)) +
   theme_map() +
   ggtitle("Replublican Electoral College votes") +
   labs(fill = "Electoral Votes")
+
 ```
 
 ```{r 2016 State Electoral Votes Clinton}

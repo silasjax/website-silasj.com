@@ -1,10 +1,10 @@
 ---
-title: 2016 General Election Maps
+title: Using Maps to Visualize Data
 author: 'Silas Jackson'
 date: '2021-03-24'
-summary: Using maps to explore the 2016 U.S. General Election results.
-slug: 2016-election-maps
-linktitle: "2016 General Election Results"
+summary: Using maps to explore the 2016 U.S. General Election results, Census data, and more.
+slug: maps
+linktitle: "Visualizing with Maps"
 output:
   blogdown::html_page:
     
@@ -51,7 +51,7 @@ shiny: true
   theme_map() +
   ggtitle(&quot;Replublican Electoral College votes&quot;) +
   labs(fill = &quot;Electoral Votes&quot;)</code></pre>
-<p><img src="/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Electoral%20Votes%20Trump-1.png" width="672" /></p>
+<p><img src="/project/Election-2016-Maps/map-visualizations_files/figure-html/2016%20State%20Electoral%20Votes%20Trump-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(state_elec, aes(x = long, y = lat, group = group, fill = demev)) +
   geom_polygon(color = &quot;black&quot;) +
   coord_map(projection = &quot;albers&quot;, lat0 = 39, lat1 = 45) +
@@ -62,7 +62,7 @@ shiny: true
   theme_map() +
   ggtitle(&quot;Democrat Electoral College votes&quot;) +
   labs(fill = &quot;Electoral Votes&quot;)</code></pre>
-<p><img src="/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Electoral%20Votes%20Clinton-1.png" width="672" /></p>
+<p><img src="/project/Election-2016-Maps/map-visualizations_files/figure-html/2016%20State%20Electoral%20Votes%20Clinton-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(state_elec, aes(x = long, y = lat, group = group, fill = pct_trump)) +
   geom_polygon(color = &quot;black&quot;) +
   coord_map(projection = &quot;albers&quot;, lat0 = 39, lat1 = 45) +
@@ -71,7 +71,7 @@ shiny: true
   theme_map() +
   ggtitle(&quot;Percentage of Votes for Trump&quot;) +
   labs(fill = &quot;Percent of Votes&quot;)</code></pre>
-<p><img src="/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Percentage%20of%20Votes%20Trump-1.png" width="672" /></p>
+<p><img src="/project/Election-2016-Maps/map-visualizations_files/figure-html/2016%20State%20Percentage%20of%20Votes%20Trump-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(state_elec, aes(x = long, y = lat, group = group, fill = pct_clinton)) +
   geom_polygon(color = &quot;black&quot;) +
   coord_map(projection = &quot;albers&quot;, lat0 = 39, lat1 = 45) +
@@ -80,7 +80,7 @@ shiny: true
   theme_map() +
   ggtitle(&quot;Percentage of Votes for Clinton&quot;) +
   labs(fill = &quot;Percent of Votes&quot;)</code></pre>
-<p><img src="/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Percetage%20of%20Votes%20Clinton-1.png" width="672" /></p>
+<p><img src="/project/Election-2016-Maps/map-visualizations_files/figure-html/2016%20State%20Percetage%20of%20Votes%20Clinton-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(state_elec, aes(x = long, y = lat, group = group, fill = r_points)) +
   geom_polygon(color = &quot;black&quot;) +
   coord_map(projection = &quot;albers&quot;, lat0 = 39, lat1 = 45) +
@@ -91,7 +91,7 @@ shiny: true
   theme_map() +
   ggtitle(&quot;Percent Margin of Votes for Clinton and Trump&quot;) +
   labs(fill = &quot;Percent&quot;)</code></pre>
-<p><img src="/project/Election-2016-Maps/election-results_files/figure-html/2016%20State%20Percent%20Margin%20of%20Votes%20Clinton%20Trump-1.png" width="672" /></p>
+<p><img src="/project/Election-2016-Maps/map-visualizations_files/figure-html/2016%20State%20Percent%20Margin%20of%20Votes%20Clinton%20Trump-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(rescaledByEC, aes(long, lat, group = group, fill = winner)) + 
   #  geom_path() + # Enable if you want to see the original outline
   geom_polygon(aes(longscale, latscale)) +
@@ -100,7 +100,7 @@ shiny: true
   scale_fill_manual(values = c(&quot;blue&quot;, &quot;red&quot;)) +
   labs(title = str_wrap(&quot;Winner in States Resized by Electoral Vote For States Won&quot;, 30),
        fill = &quot;Winner&quot;) </code></pre>
-<p><img src="/project/Election-2016-Maps/election-results_files/figure-html/State%20Winner%20Resized%20by%20Electoral%20Vote-1.png" width="672" /></p>
+<p><img src="/project/Election-2016-Maps/map-visualizations_files/figure-html/State%20Winner%20Resized%20by%20Electoral%20Vote-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(c16map2, aes(long, lat, group = group, fill = pct_trump)) +
   geom_polygon(color = &quot;gray50&quot;) +
   labs(fill = &quot;Percentage of Votes&quot;) +
@@ -110,7 +110,7 @@ shiny: true
                      high = &quot;red&quot;,
                      na.value = &quot;gray50&quot;) +
   ggtitle(&quot;Percentage of Votes for D. Trump in 2016 General Election by County&quot;)</code></pre>
-<p><img src="/project/Election-2016-Maps/election-results_files/figure-html/2016%20County%20Percent%20Votees%20Trump-1.png" width="672" /></p>
+<p><img src="/project/Election-2016-Maps/map-visualizations_files/figure-html/2016%20County%20Percent%20Votees%20Trump-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(c16map2, aes(long, lat, group = group, fill = pct_clinton)) +
   geom_polygon(color = &quot;gray50&quot;) +
   labs(fill = &quot;Percentage of Votes&quot;) +
@@ -120,6 +120,6 @@ shiny: true
                      high = &quot;blue&quot;,
                      na.value = &quot;gray50&quot;) +
   ggtitle(&quot;Percentage of Votes for H. Clinton in 2016 General Election by County&quot;)</code></pre>
-<p><img src="/project/Election-2016-Maps/election-results_files/figure-html/2016%20County%20Percent%20Votes%20Clinton-1.png" width="672" /></p>
+<p><img src="/project/Election-2016-Maps/map-visualizations_files/figure-html/2016%20County%20Percent%20Votes%20Clinton-1.png" width="672" /></p>
 </div>
 </div>

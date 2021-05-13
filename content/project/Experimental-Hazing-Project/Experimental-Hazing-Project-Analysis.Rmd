@@ -26,6 +26,9 @@ shiny: true
 
 ## **Research Questions**
 
+* Are students' perceptions of hazing incidents more affected by situational characteristics or preconceived ideas about hazing?
+* Do men and women differ in their perceptions of hazing?
+
 ## **Methods**
 
 ### Survey

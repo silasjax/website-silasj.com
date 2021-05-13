@@ -24,6 +24,9 @@ shiny: true
 
 ## **Research Questions**
 
+* Do higher movie budgets correlate with higher revenue and popularity?
+* How do movie keywords vary by genre?
+
 ## **Methods**
 
 ### Dataset

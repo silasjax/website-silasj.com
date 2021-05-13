@@ -24,6 +24,8 @@ shiny: true
 
 ## **Research Questions**
 
+* Which sentiment analysis lexicon (Bing, AFINN, or NRC) is most appropriate for examining George Orwell's 1984? 
+
 ## **Methods**
 
 

@@ -51,6 +51,8 @@ library(grid)
 library(gridExtra)
 
 
+
+
 windowsFonts("a dripping marker" = windowsFont("a dripping marker"))
 ```
 
@@ -71,8 +73,7 @@ subset(data.w.genre.ratings, Comedy == 1) %>%
   labs(title = "Top 5 Comedy Movies by Average IMDB User Rating",
        y = NULL,
        x = NULL) +
-  ylim(0, 5) +
-  transition_states(original_title)
+  ylim(0, 5)
 
 funnywords %>% 
 ggplot(aes(label = word, size = n, color = n)) +
@@ -98,8 +99,7 @@ subset(data.w.genre.ratings, Action == 1) %>%
   labs(title = "Top 5 Action Movies by Average IMDB User Rating",
        y = NULL,
        x = NULL) +
-  ylim(0, 5) +
-  transition_states(original_title)
+  ylim(0, 5)
 
  
 actionwords %>% 
@@ -110,8 +110,8 @@ ggplot(aes(label = word, size = n, color = n)) +
 ```
 
 
-```{r}
-wordcloud2(actionwords, backgroundColor = "black")  
+```{r, fig.show='asis'}
+
 ```
 
 
@@ -138,7 +138,7 @@ ggplot(aes(label = word, size = n, color = n)) +
 ```
 
 ```{r}
-wordcloud2(dramawords, backgroundColor = "black")  
+
 ```
 
 
@@ -152,8 +152,7 @@ subset(data.w.genre.ratings, Thriller == 1) %>%
   labs(title = "Top 5 Thriller Movies by Average IMDB User Rating",
        y = NULL,
        x = NULL) +
-  ylim(0, 5) +
-  transition_states(original_title)
+  ylim(0, 5)
 
 
 thrillwords %>% 
@@ -165,7 +164,7 @@ ggplot(aes(label = word, size = n, color = n)) +
 ```
 
 ```{r}
-wordcloud2(thrillwords, backgroundColor = "black")  
+
 ```
 
 

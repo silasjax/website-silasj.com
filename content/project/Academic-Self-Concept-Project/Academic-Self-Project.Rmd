@@ -31,10 +31,9 @@ shiny: true
 ## **Research Questions**
 
 * What is the role of self-concept in students’ choice of college major? 
-* What is the role of reflected appraisals in satisfaction with college major?
 * Are students more likely to choose a major based on self-concept or career outcomes?
 * Are students who choose a major based on self-concept more or less satisfied than those who choose a major on career outcomes?
-* What is the bridge between academic self-concept and general self-concept?
+
 
 
 ## **Methods**
