@@ -169,3 +169,84 @@ ggplot(aes(label = word, size = n, color = n)) +
 
 
 
+
+
+
+
+```{r, include = FALSE}
+ggplot(AcadSelfData, aes(true_self, fill = true_self)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
+  labs(title = "My major is a reflection of my true self.",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 275)
+
+
+
+ggplot(AcadSelfData, aes(fulfilled, fill = fulfilled)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
+  labs(title = "How fulfilled do you feel in your major?",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 300)
+
+
+
+ggplot(AcadSelfData, aes(fit_in, fill = fit_in)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
+  labs(title = "I feel like I fit in easily with other students in my major.",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 225)
+
+
+
+ggplot(AcadSelfData, aes(overall_satisfied, fill = overall_satisfied)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
+  labs(title = "Overall, How satisfied or unsatisfied are you\nwith your college academic experience?",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 350)
+
+
+
+
+ggplot(AcadSelfData, aes(rewarding, fill = rewarding)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
+  labs(title = "Being a student is a rewarding experience.",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 225)
+
+
+
+
+ggplot(AcadSelfData, aes(money_issue, fill = money_issue)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
+  labs(title = "If money were not an issue, I would have chosen a different major.",
+       x = NULL,
+       y = NULL) +
+  scale_fill_viridis(discrete = TRUE,
+                     option = "E") +
+  ylim(0, 275)
+
+
+
+
+```

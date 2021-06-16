@@ -31,8 +31,8 @@ shiny: true
 ## **Research Questions**
 
 * What is the role of self-concept in students’ choice of college major? 
-* Are students more likely to choose a major based on self-concept or career outcomes?
-* Are students who choose a major based on self-concept more or less satisfied than those who choose a major on career outcomes?
+* Are students more likely to choose a major based on passion or career outcomes?
+* Are students who choose a major based on passion more or less satisfied than those who choose a major on career outcomes?
 
 
 
@@ -145,7 +145,8 @@ mytheme <- theme(text = element_text(family = "Rockwell", color = "white"),
         panel.grid.major.x = element_blank(),
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
-        legend.background = element_rect(fill = "#353635"),
+        legend.background = element_rect(fill = "#353635", color = "#353635"),
+        legend.key = element_rect(fill = "#353635", color = "#353635"),
         plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), units = "cm"))
 
 theme_set(mytheme)
@@ -179,6 +180,8 @@ gtx <- "white"
 
 # **Sample Characteristics**
 
+In total, 657 undergraduate students completed the survey. Female students comprised about 74% of the sample. Eighty students indicated their race was something other than white. Seventy-nine respondents were transfer students, 205 were honors students, and 15 were international students. Respondents were nearly evenly distributed across class level. See the plots below for select visualizations of these results.
+
 ```{r Sample Characteristics}
 ggplot(AcadSelfData, aes(Gender, fill = Gender)) +
   geom_bar(show.legend = FALSE) +
@@ -187,7 +190,6 @@ ggplot(AcadSelfData, aes(Gender, fill = Gender)) +
        y = NULL) +
   scale_fill_manual(values = threeColors) +
   ylim(0, 550)
-
 
 ggplot(AcadSelfData, aes(ClassLvl, fill = ClassLvl)) +
   geom_bar(show.legend = FALSE) +
@@ -199,6 +201,38 @@ ggplot(AcadSelfData, aes(ClassLvl, fill = ClassLvl)) +
   ylim(0, 225)
 
 
+```
+
+```{r}
+ggplot(AcadSelfData, aes(GPA, fill = GPA)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5, color = gtx) +
+  labs(title = "Sample Characteristics: GPA",
+       y = NULL) +
+  ylim(0, 200) +
+  scale_fill_manual(values = eightColors)
+
+
+
+ggplot(AcadSelfData, aes(GPA2, fill = GPA2)) +
+  geom_bar(show.legend = FALSE) +
+  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5, color = gtx) +
+  labs(title = "Sample Characteristics: GPA",
+       y = NULL,
+       x = "GPA") +
+  scale_fill_manual(values = threeColors) +
+  ylim(0, 425)
+
+```
+
+
+
+Because respondents' college major was important to analysis, the survey was constructed in a way such that major could be viewed in a variety of ways. Surveyed students were provided with a list of about 20 disciplines and areas of study and asked to select which most closely reflected their current major. A fill in the blank "other" option was also provided to allow students to manually enter their area of study had none of the provided options fit.
+
+For this analysis, I consolidated each response into 6 major areas of study and 1 "other" option. Other and STEM were the most common areas of study each with about 120 respondents. Because of the ambiguity of what majors are a part of the category "STEM", surveyed students were also asked whether they considered themselves STEM majors.
+
+
+```{r}
 ggplot(AcadSelfData, aes(Majorgrouped2, fill = Majorgrouped2)) +
   geom_bar(show.legend = FALSE) +
   geom_text(aes(label = ..count..), stat = "count", hjust = -0.5, color = gtx) +
@@ -209,7 +243,6 @@ ggplot(AcadSelfData, aes(Majorgrouped2, fill = Majorgrouped2)) +
   scale_fill_manual(values = sevenColors) +
   ylim(0, 150) +
   coord_flip()
-
 
 ```
 
@@ -239,28 +272,6 @@ ggplotly(k,
 
 
 
-```{r}
-ggplot(AcadSelfData, aes(GPA, fill = GPA)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5, color = gtx) +
-  labs(title = "Sample Characteristics: GPA",
-       y = NULL) +
-  ylim(0, 200) +
-  scale_fill_manual(values = eightColors)
-
-
-
-ggplot(AcadSelfData, aes(GPA2, fill = GPA2)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = - 0.5, color = gtx) +
-  labs(title = "Sample Characteristics: GPA",
-       y = NULL,
-       x = "GPA") +
-  scale_fill_manual(values = threeColors) +
-  ylim(0, 425)
-
-```
-
 
 
 
@@ -288,6 +299,10 @@ ggplotly(p)
 
 
 # **Analysis**
+
+Respondents were asked several questions about the importance of passion and career outcomes on their choice of college major. They were also asked to identify whether, in general, career goals or passion should be more important in students' pursuit of a college degree.
+
+Overall, students were much more likely to value passion over career outcomes.
 
 
 ```{r}
@@ -318,7 +333,65 @@ ggplot(AcadSelfData, aes(PassionImportant, fill = PassionImportant)) +
 
 
 
+```{r, include = FALSE}
+PasvCar <- subset(AcadSelfData, fulfilled != "Not sure")
 
+PasvCar <- subset(PasvCar, true_self != "Not sure")
+
+
+PasvCar <- PasvCar %>% 
+  mutate(full = case_when(fulfilled == "Unfulfilled" |
+                            fulfilled == "Slightly fulfilled" ~ "Less fulfilled",
+                          TRUE ~ as.character(fulfilled)),
+         sat = case_when(overall_satisfied == "Extremely Unsatisfied" |
+                         overall_satisfied == "Moderately Unsatisfied" |
+                         overall_satisfied == "Slightly Unsatisfied" |
+                           overall_satisfied == "Neutral" ~ "Less Satisfied",
+                         TRUE ~ as.character(overall_satisfied)),
+         tself = case_when(true_self == "Strongly agree" ~ "Strongly Agree",
+                           true_self == "Agree" ~ "Agree",
+                           true_self == "Somewhat agree" ~ "Somewhat Agree",
+                           TRUE ~ "Do not agree"))
+
+
+PasvCar$sat <- factor(PasvCar$sat,
+                ordered = FALSE,
+                c("Less Satisfied",
+                  "Slightly Satisfied",
+                  "Moderately Satisfied",
+                  "Extremely Satisfied"))
+
+PasvCar$tself <- factor(PasvCar$tself,
+                  ordered = FALSE,
+                  c("Do not agree",
+                    "Somewhat Agree",
+                    "Agree",
+                    "Strongly Agree"))
+
+PasvCar$full <- factor(PasvCar$full,
+                 ordered = FALSE,
+                 c("Less fulfilled",
+                   "Moderately fulfilled",
+                   "Very fulfilled",
+                   "Completely fulfilled"))
+
+
+```
+
+
+```{r}
+c1 <- clm(passion_vs_career ~ Gender, data = PasvCar)
+
+gtsummary::tbl_regression(c1)
+```
+
+
+
+```{r}
+c2 <- clm(PassionImportant ~ CareerImportant, data = PasvCar)
+
+gtsummary::tbl_regression(c2)
+```
 
 
 
@@ -541,85 +614,6 @@ kable(g4)
 
 
 
-
-
-```{r}
-ggplot(AcadSelfData, aes(true_self, fill = true_self)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
-  labs(title = "My major is a reflection of my true self.",
-       x = NULL,
-       y = NULL) +
-  scale_fill_viridis(discrete = TRUE,
-                     option = "E") +
-  ylim(0, 275)
-
-
-
-ggplot(AcadSelfData, aes(fulfilled, fill = fulfilled)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
-  labs(title = "How fulfilled do you feel in your major?",
-       x = NULL,
-       y = NULL) +
-  scale_fill_viridis(discrete = TRUE,
-                     option = "E") +
-  ylim(0, 300)
-
-
-
-ggplot(AcadSelfData, aes(fit_in, fill = fit_in)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
-  labs(title = "I feel like I fit in easily with other students in my major.",
-       x = NULL,
-       y = NULL) +
-  scale_fill_viridis(discrete = TRUE,
-                     option = "E") +
-  ylim(0, 225)
-
-
-
-ggplot(AcadSelfData, aes(overall_satisfied, fill = overall_satisfied)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
-  labs(title = "Overall, How satisfied or unsatisfied are you\nwith your college academic experience?",
-       x = NULL,
-       y = NULL) +
-  scale_fill_viridis(discrete = TRUE,
-                     option = "E") +
-  ylim(0, 350)
-
-
-
-
-ggplot(AcadSelfData, aes(rewarding, fill = rewarding)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
-  labs(title = "Being a student is a rewarding experience.",
-       x = NULL,
-       y = NULL) +
-  scale_fill_viridis(discrete = TRUE,
-                     option = "E") +
-  ylim(0, 225)
-
-
-
-
-ggplot(AcadSelfData, aes(money_issue, fill = money_issue)) +
-  geom_bar(show.legend = FALSE) +
-  geom_text(aes(label = ..count..), stat = "count", vjust = -0.5, color = gtx) +
-  labs(title = "If money were not an issue, I would have chosen a different major.",
-       x = NULL,
-       y = NULL) +
-  scale_fill_viridis(discrete = TRUE,
-                     option = "E") +
-  ylim(0, 275)
-
-
-
-
-```
 
 
 
