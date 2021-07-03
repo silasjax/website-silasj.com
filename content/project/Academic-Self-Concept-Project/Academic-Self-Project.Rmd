@@ -229,7 +229,7 @@ ggplot(AcadSelfData, aes(GPA2, fill = GPA2)) +
 
 Because respondents' college major was important to analysis, the survey was constructed in a way such that major could be viewed in a variety of ways. Surveyed students were provided with a list of about 20 disciplines and areas of study and asked to select which most closely reflected their current major. A fill in the blank "other" option was also provided to allow students to manually enter their area of study had none of the provided options fit.
 
-For this analysis, I consolidated each response into 6 major areas of study and 1 "other" option. Other and STEM were the most common areas of study each with about 120 respondents. Because of the ambiguity of what majors are a part of the category "STEM", surveyed students were also asked whether they considered themselves STEM majors.
+For this analysis, I consolidated each response into 6 major areas of study and 1 "other" option. Other and STEM were the most common areas of study each with about 120 respondents. Because of the ambiguity of what majors are a part of the category "STEM", surveyed students were also asked whether they considered themselves STEM majors. Overwhelmingly, students whose area of study I categorized as STEM also answered "Yes" to the question, "Do you consider your major a STEM major?" Interestingly, most students in biological and life sciences also considered themselves STEM majors, but most social science majors did not. About half of students in health pre-professional fields (pre-medical, pre-dental, etc...) considered themselves STEM majors.
 
 
 ```{r}
@@ -260,7 +260,8 @@ k <- ggplot(AcadSelfData, aes(STEMmaj, fill = Majorgrouped2, text = paste("STEM 
   theme(legend.position = "bottom",
         legend.direction = "vertical",
         legend.key.width = unit(3, "cm"),
-        legend.key.height = unit(3, "mm")) +
+        legend.key.height = unit(3, "mm"),
+        axis.text.x = element_text(angle = 25)) +
   guides(fill = guide_legend(nrow = 1,
                       label.position = "right"))
 
@@ -270,7 +271,7 @@ ggplotly(k,
 ```
 
 
-
+A large portion of my survey consisted of level of agreement questions designed to capture students overall satisfaction with their college major, experiences, and performance. These questions used a 7-point scale from strongly disagree to strongly agree. The figure below displays the level of agreement questions and provides a visualization of how the sample answered them.
 
 
 
