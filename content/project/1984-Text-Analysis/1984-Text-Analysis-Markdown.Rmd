@@ -236,7 +236,7 @@ wordcloud2(worddf2, backgroundColor = "#353635")
 
 
 
-```{r Bing Analysis, cache = TRUE}
+```{r Bing Analysis}
 
 
 
@@ -265,7 +265,7 @@ tidy_tokens_1984 %>%
 ```
 
 ### Bing Analysis
-```{r Bing by Chapter, cache = TRUE}
+```{r Bing by Chapter}
 
 TidyCh1 %>%
   inner_join(get_sentiments("bing")) %>%
