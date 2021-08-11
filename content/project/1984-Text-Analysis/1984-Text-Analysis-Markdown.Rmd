@@ -53,6 +53,7 @@ library(knitr)
 library(ggthemes)
 library(extrafont)
 library(ggwordcloud)
+library(textdata)
 
 chapter.labs <- c("Chapter 1", "Chapter 2", "Chapter 3")
 names(chapter.labs) <- c(1, 2, 3)
@@ -206,8 +207,7 @@ tidy_tokens_1984 %>%
 
 
 
-```{r, cache = FALSE}
-
+```{r}
 
 tidy_tokens_1984 %>%
   count(word, sort = TRUE) %>%
@@ -249,7 +249,6 @@ bing_1984 <- tidy_tokens_1984 %>%
 
 
 
-
 tidy_tokens_1984 %>%
   inner_join(get_sentiments("bing")) %>%
   count(word, sentiment, sort = TRUE) %>%
@@ -260,7 +259,6 @@ tidy_tokens_1984 %>%
   facet_wrap(~sentiment) +
   scale_color_manual(values = c("coral", "skyblue")) +
   labs(title = "Bing Analysis of Words in 1984")
-
 
 ```
 
